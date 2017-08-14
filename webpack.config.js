@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtJSReactorWebpackPlugin = require('@extjs/reactor-webpack-plugin');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 const sourcePath = path.join(__dirname, './src');
@@ -74,8 +73,6 @@ module.exports = function (env) {
         template: 'index.html',
         cache: true,
         hash: true
-    }), new OpenBrowserPlugin({ 
-        url: 'http://localhost:8084' 
     }));
 
     return {
