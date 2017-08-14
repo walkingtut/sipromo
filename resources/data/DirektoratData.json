@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "kode": "dir1",
+    "direktorat": "Direktorat Bina Investasi Infrastruktur"
+}, {
+    "id": 2,
+    "kode": "dir2",
+    "direktorat": "Direktorat Bina Penyelenggaraan Jasa Konstruksi"
+}, {
+    "id": 3,
+    "kode": "dir3",
+    "direktorat": "Direktorat Bina Kelembagaan dan Sumber Daya Jasa Konstruksi"
+}, {
+    "id": 4,
+    "kode": "dir4",
+    "direktorat": "Direktorat Kompetensi dan Produktivitas Konstruksi"
+}, {
+    "id": 5,
+    "kode": "dir5",
+    "direktorat": "Direktorat Kerjasama dan Pemberdayaan"
+}, {
+    "id": 6,
+    "kode": "sekretariat",
+    "direktorat": "Sekretariat Dirjen Bina Konstruksi"
+}]
