@@ -22,8 +22,7 @@ body {
 }
 
 .main-background {
-    background-color: #CFCFCF;
-    //background: -webkit-linear-gradient(#B3B3B3, #F2F2F2);
+    background: -webkit-linear-gradient(left top, lighten($base-color, 12%), lighten($base-color, 30%));
 }
 
 //Grid example
@@ -97,11 +96,11 @@ body {
   font-family: Sencha-Examples;
   margin: 12px auto 8px;
   position: relative;
-  background-color: $base-color;
+  background-color: darken($base-color, 20%);
   transition: all 200ms ease-in-out;
 
   &:hover {
-    background-color: darken($base-color, 10%);
+    background-color: darken($base-color, 5%);
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
   }
 }
@@ -121,6 +120,8 @@ body {
 .app-thumbnail-text {
   text-align: center;
   font-size: 14px;
+  font-weight: bold;
+  color: darken($base-color, 30%);
 }
 
 .app-premium-indicator {
