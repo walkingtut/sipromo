@@ -3,8 +3,8 @@ export default Ext.define('sipromo.model.Satker', {
 
     fields: [
         { name: 'id' },
-        { name: 'kodeSatker' },
-        { name: 'namaSatker' },
+        { name: 'kodesatker' },
+        { name: 'namasatker' },
     ]
 });
 

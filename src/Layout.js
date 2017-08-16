@@ -153,7 +153,7 @@ class Layout extends Component {
                                 onSelectionChange={(tree, node) => this.onNavChange(node && node.getId())}
                                 collapsed={!showTree}
                             /> 
-                            <Breadcrumbs docked="top" node={selectedNavNode}/>
+                            <Breadcrumbs docked="top" node={selectedNavNode} cls="main-background"/>
                             <Transition type="slide" bindDirectionToLocation padding="30">
                                 { component ? (
                                     <Container layout={layout} scrollable key={selectedNavNode.id} autoSize={layout !== 'fit'}>

@@ -5,6 +5,7 @@ export default Ext.define('sipromo.model.Direktorat', {
         { name: 'id' },
         { name: 'kode' },
         { name: 'direktorat' },
+        { name: 'alias' },
     ]
 });
 

@@ -33,7 +33,7 @@ export default class TenagaAhli extends Component {
 
             <Container 
                 padding={10} 
-                width={!Ext.os.is.Phone && 1200}
+                width={!Ext.os.is.Phone && 1300}
                 layout={{
                     type: 'vbox',
                     pack: 'center',
@@ -47,15 +47,15 @@ export default class TenagaAhli extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Tenaga Ahli" store={this.store} shadow grouped flex="6">
-                        <Column text="<b>Nama</b>" dataIndex="nama" width="100"/>
-                        <Column text="<b>Pendidikan Terakhir</b>" width="100" dataIndex="pendidikanTerakhir" />
+                    <Grid title="Master Data Tenaga Ahli" store={this.store} shadow grouped flex="7">
+                        <Column text="<b>Nama</b>" dataIndex="nama" width="200"/>
+                        <Column text="<b>Pendidikan Terakhir</b>" width="140" dataIndex="pendidikanTerakhir" />
                         <Column text="<b>Kualifikasi</b>" width="100" dataIndex="kualifikasi"/>
-                        <Column text="<b>Lama Pengalaman</b>" width="100" dataIndex="lamaPengalaman"/>
-                        <Column text="<b>Sertifikasi Keahlian</b>" width="100" dataIndex="sertifikatKeahlian" />
-                        <Column text="<b>Billing Rate</b>" width="100" dataIndex="billingRate" />
+                        <Column text="<b>Lama Pengalaman</b>" width="150" dataIndex="lamaPengalaman"/>
+                        <Column text="<b>Sertifikasi Keahlian</b>" width="120" dataIndex="sertifikatKeahlian" />
+                        <Column text="<b>Billing Rate</b>" width="120" dataIndex="billingRate" />
                     </Grid>
-                    <FormPanel flex="4" height="300">
+                    <FormPanel flex="3" height="500">
                         <FieldSet title="<h4>Input/Edit Master Data Tenaga Ahli</h4>">
                             <TextField label="Nama"/>
                             <TextField label="Pendidikan Terakhir"/>

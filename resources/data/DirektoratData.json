@@ -1,25 +1,31 @@
 [{
     "id": 1,
     "kode": "dir1",
-    "direktorat": "Direktorat Bina Investasi Infrastruktur"
+    "direktorat": "Direktorat Bina Investasi Infrastruktur",
+    "alias": "Dir1"
 }, {
     "id": 2,
     "kode": "dir2",
-    "direktorat": "Direktorat Bina Penyelenggaraan Jasa Konstruksi"
+    "direktorat": "Direktorat Bina Penyelenggaraan Jasa Konstruksi",
+    "alias": "Dir2"
 }, {
     "id": 3,
     "kode": "dir3",
-    "direktorat": "Direktorat Bina Kelembagaan dan Sumber Daya Jasa Konstruksi"
+    "direktorat": "Direktorat Bina Kelembagaan dan Sumber Daya Jasa Konstruksi",
+    "alias": "Dir3"
 }, {
     "id": 4,
     "kode": "dir4",
-    "direktorat": "Direktorat Kompetensi dan Produktivitas Konstruksi"
+    "direktorat": "Direktorat Kompetensi dan Produktivitas Konstruksi",
+    "alias": "Dir4"
 }, {
     "id": 5,
     "kode": "dir5",
-    "direktorat": "Direktorat Kerjasama dan Pemberdayaan"
+    "direktorat": "Direktorat Kerjasama dan Pemberdayaan",
+    "alias": "Dir5"
 }, {
     "id": 6,
     "kode": "sekretariat",
-    "direktorat": "Sekretariat Dirjen Bina Konstruksi"
+    "direktorat": "Sekretariat Dirjen Bina Konstruksi",
+    "alias": "Sekretariat"
 }]

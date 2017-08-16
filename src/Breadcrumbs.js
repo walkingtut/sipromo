@@ -6,13 +6,7 @@ export default function Breadcrumbs(props) {
     const leaf = node.isLeaf();
     const items = [];
 
-    let premium = false;
-
     do {
-        if (node.get('premium')) {
-            premium = true;
-        }
-
         items.unshift(
             <Button 
                 text={node.get('text')} 
@@ -28,10 +22,10 @@ export default function Breadcrumbs(props) {
                     className="x-font-icon md-icon-keyboard-arrow-right" 
                     key={node.get('text') + '>'}
                     style={{ 
-                        fontSize: '20px', 
+                        fontSize: '30px', 
                         lineHeight: '32px', 
                         verticalAlign: 'middle', 
-                        color: '#666'
+                        color: '#16A113'
                     }}
                 />
             );
@@ -41,9 +35,6 @@ export default function Breadcrumbs(props) {
     return (
         <Toolbar {...props}>
             {items}
-            { premium && leaf && (
-                <div className="app-premium">Premium</div>
-            )}
         </Toolbar>
     )
 }

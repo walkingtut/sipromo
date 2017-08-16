@@ -21,7 +21,7 @@ export default class PembuatKomitmen extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/DirektoratData.json'
+            url: 'resources/data/SatkerData.json'
         } 
     });    
 
@@ -48,17 +48,15 @@ export default class PembuatKomitmen extends Component {
                     height="520"
                 >            
                     <Grid title="Master Data PPK" store={this.store} shadow grouped width="70%">
-                        <Column text="<b>Company</b>" dataIndex="name" width="150"/>
-                        <Column text="<b>Price</b>" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="<b>Change</b>" width="100" dataIndex="priceChange"/>
-                        <Column text="<b>% Change</b>" dataIndex="priceChangePct"/>
-                        <Column text="<b>Last Updated</b>" width="125" dataIndex="lastChange" formatter='date("m/d/Y")'/>
+                        <Column text="<b>Nama</b>" dataIndex="name" width="150"/>
+                        <Column text="<b>Satker</b>" width="85" dataIndex="satker"/>
+                        <Column text="<b>Direktorat</b>" width="100" dataIndex="direktorat"/>
                     </Grid>
                     <FormPanel width="30%" height="300">
                         <FieldSet title="<h4>Input/Edit Master Data PPK</h4>">
-                            <TextField label="First Name"/>
-                            <TextField label="Last Name"/>
-                            <TextField label="Account Number"/>
+                            <TextField label="Nama"/>
+                            <TextField label="Satker"/>
+                            <TextField label="Direktorat"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />

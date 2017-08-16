@@ -21,7 +21,7 @@ export default class Satker extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/DirektoratData.json'
+            url: 'resources/data/SatkerData.json'
         } 
     });    
 
@@ -33,7 +33,7 @@ export default class Satker extends Component {
 
             <Container 
                 padding={10} 
-                width={!Ext.os.is.Phone && 1200}
+                width={!Ext.os.is.Phone && 1000}
                 layout={{
                     type: 'vbox',
                     pack: 'center',
@@ -47,18 +47,14 @@ export default class Satker extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Satker" store={this.store} shadow grouped width="70%">
-                        <Column text="<b>Company</b>" dataIndex="name" width="150"/>
-                        <Column text="<b>Price</b>" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="<b>Change</b>" width="100" dataIndex="priceChange"/>
-                        <Column text="<b>% Change</b>" dataIndex="priceChangePct"/>
-                        <Column text="<b>Last Updated</b>" width="125" dataIndex="lastChange" formatter='date("m/d/Y")'/>
+                    <Grid title="Master Data Satker" store={this.store} shadow grouped flex="5.5">
+                        <Column text="<b>Kode</b>" dataIndex="kodesatker" width="150"/>
+                        <Column text="<b>Satuan Kerja</b>" width="350" dataIndex="namasatker"/>
                     </Grid>
-                    <FormPanel width="30%" height="300">
+                    <FormPanel flex="4.5" height="300">
                         <FieldSet title="<h4>Input/Edit Master Data Satker</h4>">
-                            <TextField label="First Name"/>
-                            <TextField label="Last Name"/>
-                            <TextField label="Account Number"/>
+                            <TextField label="Kode"/>
+                            <TextField label="Satuan Kerja"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />
