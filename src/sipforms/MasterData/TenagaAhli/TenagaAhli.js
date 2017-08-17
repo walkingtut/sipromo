@@ -13,6 +13,10 @@ import {
 } from '@extjs/ext-react';
 import model from './TenagaAhliModel';
 
+Ext.require([
+    'Ext.grid.plugin.SummaryRow',
+]);
+
 export default class TenagaAhli extends Component {
 
     store = Ext.create('Ext.data.Store', {
@@ -48,12 +52,31 @@ export default class TenagaAhli extends Component {
                     height="520"
                 >            
                     <Grid title="Master Data Tenaga Ahli" store={this.store} shadow grouped flex="7">
-                        <Column text="<b>Nama</b>" dataIndex="nama" width="200"/>
-                        <Column text="<b>Pendidikan Terakhir</b>" width="140" dataIndex="pendidikanTerakhir" />
-                        <Column text="<b>Kualifikasi</b>" width="100" dataIndex="kualifikasi"/>
-                        <Column text="<b>Lama Pengalaman</b>" width="150" dataIndex="lamaPengalaman"/>
-                        <Column text="<b>Sertifikasi Keahlian</b>" width="120" dataIndex="sertifikatKeahlian" />
-                        <Column text="<b>Billing Rate</b>" width="120" dataIndex="billingRate" />
+                        <Column 
+                            text="<b>Nama</b>" 
+                            dataIndex="nama" 
+                            width="200"
+                            summaryRenderer={this.summarizerecord}/>
+                        <Column 
+                            text="<b>Pendidikan Terakhir</b>" 
+                            width="160" 
+                            dataIndex="pendidikanTerakhir" />
+                        <Column 
+                            text="<b>Kualifikasi</b>" 
+                            width="100" 
+                            dataIndex="kualifikasi"/>
+                        <Column 
+                            text="<b>Lama Pengalaman</b>" 
+                            width="150" 
+                            dataIndex="lamaPengalaman"/>
+                        <Column 
+                            text="<b>Sertifikasi Keahlian</b>" 
+                            width="120" 
+                            dataIndex="sertifikatKeahlian" />
+                        <Column 
+                            text="<b>Billing Rate</b>" 
+                            width="120" 
+                            dataIndex="billingRate" />
                     </Grid>
                     <FormPanel flex="3" height="500">
                         <FieldSet title="<h4>Input/Edit Master Data Tenaga Ahli</h4>">
@@ -73,4 +96,6 @@ export default class TenagaAhli extends Component {
             </Container>
         )
     }
+
+    summarizerecord = (grid, context) => 'Total: ' +context.records.length + ' data';
 }

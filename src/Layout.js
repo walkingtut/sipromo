@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
-import { TitleBar, Container, NestedList, Panel, Button, Transition } from '@extjs/ext-react';
+import { TitleBar, Container, NestedList, Panel, Button, Transition, Toolbar } from '@extjs/ext-react';
 import hljs, { highlightBlock } from 'highlightjs';
 import NavTree from './NavTree';
 import NavView from './NavView';
@@ -12,6 +12,12 @@ import Breadcrumbs from './Breadcrumbs';
 Ext.require('Ext.panel.Collapser');
 
 class Layout extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+
+    }
 
     componentDidMount() {
         if (Ext.os.is.Phone) {
@@ -46,6 +52,11 @@ class Layout extends Component {
                 html: '<div class="app-premium">Premium</div>'
             })
         }
+
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+        );
     }
 
     componentDidUpdate(previousProps) {
@@ -63,6 +74,16 @@ class Layout extends Component {
         }
     }
 
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        this.setState({
+          date: new Date()
+        });
+    }
+
     onNavChange = (nodeId) => {
         if(nodeId === '' || nodeId) {
             location.hash = nodeId;
@@ -71,11 +92,6 @@ class Layout extends Component {
 
     onTitleClick = () => {
         location.hash = '/';
-    }
-
-    isPremium(node) {
-        if (!node) return false;
-        return node.data.premium || this.isPremium(node.parentNode);
     }
 
     render() {
@@ -176,8 +192,6 @@ class Layout extends Component {
                             top={Ext.os.is.Desktop ? 20 : 35}
                             right={21}
                             zIndex={1000}
-                            handler={actions.toggleCode} 
-                            badgeText="2"
                     />
                     <Panel 
                             resizable={{ edges: 'west', dynamic: true }} 
@@ -191,7 +205,20 @@ class Layout extends Component {
                             hideAnimation={{type: 'slideOut', direction: 'right', duration: 100, easing: 'ease' }}
                             showAnimation={{type: 'slideIn', direction: 'left', duration: 100, easing: 'ease' }}>
                     </Panel>
-                    
+                    <Toolbar docked="bottom">
+                        <div style={{margin: '0 7px 0 7px', fontSize: '20px', width: '20px'}}>
+                            <img src="../resources/images/clock4.png" height="30" width="30"/>
+                        </div>
+                        <div style={{margin: '0 5px 0 7px', fontSize: '15px', color: '#242424'}}>
+                            {this.state.date.toLocaleTimeString()}
+                        </div>
+                        <div style={{margin: '0 7px 0 7px', fontSize: '20px', width: '20px'}}>
+                            <img src="../resources/images/calendar4.png" height="28" width="28"/>
+                        </div>                        
+                        <div style={{margin: '0 5px 0 7px', fontSize: '15px', color: '#242424'}}>
+                            {this.state.date.toLocaleDateString()}
+                        </div>
+                    </Toolbar>
                 </Container>
             );
         }

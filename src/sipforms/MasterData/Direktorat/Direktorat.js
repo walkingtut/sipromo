@@ -13,6 +13,10 @@ import {
 } from '@extjs/ext-react';
 import model from './DirektoratModel';
 
+Ext.require([
+    'Ext.grid.plugin.SummaryRow',
+]);
+
 export default class Direktorat extends Component {
 
     store = Ext.create('Ext.data.Store', {
@@ -45,11 +49,21 @@ export default class Direktorat extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Direktorat" store={this.store} shadow grouped flex="6">
+                    <Grid 
+                        title="Master Data Direktorat" 
+                        store={this.store} 
+                        shadow 
+                        grouped 
+                        flex="6"
+                        plugins={{
+                            gridsummaryrow: true
+                        }}
+                    >
                         <Column 
                             text="<b>Kode</b>" 
                             width="100" 
-                            dataIndex="kode"/>
+                            dataIndex="kode"
+                            summaryRenderer={this.summarizerecord}/>
                         <Column 
                             text="<b>Direktorat</b>" 
                             width="400" 
@@ -74,4 +88,6 @@ export default class Direktorat extends Component {
             </Container>
         )
     }
+
+    summarizerecord = (grid, context) => 'Total: ' +context.records.length + ' data';
 }

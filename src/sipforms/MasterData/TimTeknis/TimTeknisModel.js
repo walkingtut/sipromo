@@ -4,7 +4,7 @@ export default Ext.define('sipromo.model.TimTeknis', {
     fields: [
         { name: 'id' },
         { name: 'nama' },
-        { name: 'skTimTeknis' },
+        { name: 'sktimteknis' },
         { name: 'kategori' },
         { name: 'posisi' }
     ]

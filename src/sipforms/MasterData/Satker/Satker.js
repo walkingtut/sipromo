@@ -13,6 +13,10 @@ import {
 } from '@extjs/ext-react';
 import model from './SatkerModel';
 
+Ext.require([
+    'Ext.grid.plugin.SummaryRow',
+]);
+
 export default class Satker extends Component {
 
     store = Ext.create('Ext.data.Store', {
@@ -48,8 +52,15 @@ export default class Satker extends Component {
                     height="520"
                 >            
                     <Grid title="Master Data Satker" store={this.store} shadow grouped flex="5.5">
-                        <Column text="<b>Kode</b>" dataIndex="kodesatker" width="150"/>
-                        <Column text="<b>Satuan Kerja</b>" width="350" dataIndex="namasatker"/>
+                        <Column 
+                            text="<b>Kode</b>" 
+                            dataIndex="kodesatker" 
+                            width="150"
+                            summaryRenderer={this.summarizerecord}/>
+                        <Column 
+                            text="<b>Satuan Kerja</b>" 
+                            width="350" 
+                            dataIndex="namasatker"/>
                     </Grid>
                     <FormPanel flex="4.5" height="300">
                         <FieldSet title="<h4>Input/Edit Master Data Satker</h4>">
@@ -65,4 +76,6 @@ export default class Satker extends Component {
             </Container>
         )
     }
+
+    summarizerecord = (grid, context) => 'Total: ' +context.records.length + ' data';
 }

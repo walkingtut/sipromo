@@ -13,6 +13,10 @@ import {
 } from '@extjs/ext-react';
 import model from './TimTeknisModel';
 
+Ext.require([
+    'Ext.grid.plugin.SummaryRow',
+]);
+
 export default class TimTeknis extends Component {
 
     store = Ext.create('Ext.data.Store', {
@@ -33,7 +37,7 @@ export default class TimTeknis extends Component {
 
             <Container 
                 padding={10} 
-                width={!Ext.os.is.Phone && 1200}
+                width={!Ext.os.is.Phone && 1000}
                 layout={{
                     type: 'vbox',
                     pack: 'center',
@@ -47,18 +51,31 @@ export default class TimTeknis extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Tim Teknis" store={this.store} shadow grouped width="70%">
-                        <Column text="<b>Company</b>" dataIndex="name" width="150"/>
-                        <Column text="<b>Price</b>" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="<b>Change</b>" width="100" dataIndex="priceChange"/>
-                        <Column text="<b>% Change</b>" dataIndex="priceChangePct"/>
-                        <Column text="<b>Last Updated</b>" width="125" dataIndex="lastChange" formatter='date("m/d/Y")'/>
+                    <Grid title="Master Data Tim Teknis" store={this.store} shadow grouped flex="6">
+                        <Column 
+                            text="<b>Nama</b>" 
+                            dataIndex="nama" 
+                            width="200"
+                            summaryRenderer={this.summarizerecord}/>
+                        <Column 
+                            text="<b>SK Tim Teknis</b>" 
+                            width="150" 
+                            dataIndex="sktimteknis"/>
+                        <Column 
+                            text="<b>Kategori</b>" 
+                            width="100" 
+                            dataIndex="kategori"/>
+                        <Column 
+                            text="<b>Posisi</b>" 
+                            width="100"
+                            dataIndex="posisi"/>
                     </Grid>
-                    <FormPanel width="30%" height="300">
+                    <FormPanel flex="4" height="400">
                         <FieldSet title="<h4>Input/Edit Master Data Tim Teknis</h4>">
-                            <TextField label="First Name"/>
-                            <TextField label="Last Name"/>
-                            <TextField label="Account Number"/>
+                            <TextField label="Nama"/>
+                            <TextField label="SK Tim Teknis"/>
+                            <TextField label="Kategori"/>
+                            <TextField label="Posisi"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />
@@ -69,4 +86,6 @@ export default class TimTeknis extends Component {
             </Container>
         )
     }
+
+    summarizerecord = (grid, context) => 'Total: ' +context.records.length + ' data';
 }
