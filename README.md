@@ -1,14 +1,22 @@
-# Ext JS Reactor KitchenSink
+# Sistem Informasi Project Management Office (SIPROMO)
 
-This project demonstrates the use of all ExtReact components.
+Sistem Informasi Project Management Office atau SIPROMO merupakan sistem informasi untuk melakukan pencatatan, pengelolaan, dan penentuan resiko terhadap paket kegiatan-paket kegiatan yang ada di Direktorat Jenderal Bina K
 
-## Running
+## Persiapan
 
-If you have not already, log into Sencha's NPM registry using your trial or support portal credentials:
+Untuk mempersiapkan aplikasi ini, persiapkan Node di sistem dimana aplikasi ini akan diimplementasikan. Untuk melakukan instalasi Node, install terlebih dahulu NVM dari https://github.com/creationix/nvm. Install script instalasi NVM terlebih dahulu menggunakan Curl:
 
 ```
-npm login --registry=http://npm.sencha.com --scope=@extjs
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 ```
+atau menggunakan wget:
+
+```
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+Selanjutnya, masukan $NVM_HOME ke dalam ~/.bashrc atau ~/.bash_profile atau ~/.profile:
+
+
 
 If you do not have credentials, you can get them by [signing up for a trial of ExtReact](https://www.sencha.com/products/extreact/evaluate/).
 

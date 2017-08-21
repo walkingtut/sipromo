@@ -5,6 +5,17 @@ import PembuatKomitmen from './MasterData/PembuatKomitmen/PembuatKomitmen';
 import Satker from './MasterData/Satker/Satker';
 import TimTeknis from './MasterData/TimTeknis/TimTeknis';
 
+// Paket Kegiatan
+import DaftarSeluruhPaket from './PaketKegiatan/DaftarPaket/DaftarSeluruhPaket';
+import DaftarPaketKontraktual from './PaketKegiatan/DaftarPaket/DaftarPaketKontraktual';
+import DaftarPaketSwakelola from './PaketKegiatan/DaftarPaket/DaftarPaketSwakelola';
+import KelolaKontraktual from './PaketKegiatan/Kelola/KelolaKontraktual';
+import KelolaSwakelola from './PaketKegiatan/Kelola/KelolaSwakelola';
+import LengkapiKontraktual from './PaketKegiatan/Lengkapi/LengkapiKontraktual';
+import LengkapiSwakelola from './PaketKegiatan/Lengkapi/LengkapiSwakelola';
+import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktual';
+import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelola';
+
 const root = {
     id: '/',
     text: 'Menu',
@@ -17,15 +28,20 @@ const root = {
             {text: 'Tim Teknis', component: TimTeknis, layout: 'center', navIcon: 'icon-buttons'}
         ]},
         { text: 'Paket Kegiatan', navIcon: 'icon-basic-list', children: [
-            {text: 'Lengkapi Data', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list', children: [
-                {text: 'Kontraktual', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
-                {text: 'Swakelola', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'}
+            {text: 'Daftar Paket Kegiatan', layout: 'center', navIcon: 'icon-basic-list', children: [
+                {text: 'Seluruh Paket Kegiatan', component: DaftarSeluruhPaket, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Kontraktual', component: DaftarPaketKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: DaftarPaketSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+            ]},            
+            {text: 'Lengkapi Data', layout: 'center', navIcon: 'icon-basic-list', children: [
+                {text: 'Kontraktual', component: LengkapiKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: LengkapiSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
             ]},
-            {text: 'Kelola Kegiatan', component: TenagaAhli, layout: 'center', navIcon: 'icon-buttons', children: [
-                {text: 'Kontraktual', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
-                {text: 'Swakelola', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'}
+            {text: 'Kelola Kegiatan', layout: 'center', navIcon: 'icon-buttons', children: [
+                {text: 'Kontraktual', component: KelolaKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: KelolaSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
             ]},
-            {text: 'Amandemen Kegiatan', component: PembuatKomitmen, layout: 'center', navIcon: 'icon-buttons', children: [
+            {text: 'Amandemen Kegiatan', layout: 'center', navIcon: 'icon-buttons', children: [
                 {text: 'Kontraktual', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
                 {text: 'Swakelola', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'}
             ]},         

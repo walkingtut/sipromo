@@ -25,7 +25,7 @@ export default class TenagaAhli extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/DirektoratData.json'
+            url: 'resources/data/TenagaAhliData.json'
         } 
     });    
 

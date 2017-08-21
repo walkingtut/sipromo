@@ -25,7 +25,7 @@ export default class PembuatKomitmen extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/SatkerData.json'
+            url: 'resources/data/PembuatKomitmenData.json'
         } 
     });    
 
