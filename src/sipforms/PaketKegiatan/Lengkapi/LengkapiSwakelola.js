@@ -14,7 +14,8 @@ import model from './LengkapiSwakelolaModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
-    'Ext.grid.plugin.SummaryRow'
+    'Ext.grid.plugin.SummaryRow',
+    'Ext.data.summary.Sum',
 ]);
 
 export default class LengkapiSwakelola extends Component {
@@ -35,7 +36,10 @@ export default class LengkapiSwakelola extends Component {
             <Grid
             title="Daftar Paket Kegiatan Kontraktual"
             store={this.store}
-            plugins="gridviewoptions"
+            plugins={{
+                gridviewoptions: true,
+                gridsummaryrow: true
+            }}
             signTpl={this.signTpl}
             shadow
             height="550"
@@ -53,8 +57,13 @@ export default class LengkapiSwakelola extends Component {
             <Column 
                 text="<b>Kode</b>" 
                 dataIndex="kodepaket" 
-                width="80"
+                width="100"
                 summaryRenderer={this.summarizerecord} />
+            <Column 
+                text="<b>Tahun</b>" 
+                dataIndex="tahun" 
+                width="80"
+                hidden />               
             <Column 
                 text="<b>Nama Paket</b>" 
                 dataIndex="namapaket" 
@@ -66,7 +75,7 @@ export default class LengkapiSwakelola extends Component {
                 hidden />
             <Column 
                 text="<b>Nama PPK</b>" 
-                dataIndex="<b>namappk</b>" 
+                dataIndex="namappk" 
                 width="150" />
             <Column 
                 text="<b>Penanggung Jawab</b>" 
@@ -76,7 +85,10 @@ export default class LengkapiSwakelola extends Component {
             <Column 
                 text="<b>Nilai Paket</b>" 
                 dataIndex="nilaipaket" 
-                width="100" />
+                width="150" 
+                formatter='currency("Rp",0,false," ")' 
+                align="right" 
+                summary="sum" />
             <Column 
                 text="<b>No. Kontrak</b>" 
                 dataIndex="nokontrak" 
@@ -86,7 +98,6 @@ export default class LengkapiSwakelola extends Component {
                 text="<b>Tanggal Kontrak</b>" 
                 dataIndex="tglkontrak" 
                 width="100" 
-                formatter="date('d/m/Y')" 
                 hidden />
             <Column 
                 text="<b>Jenis Paket</b>" 
@@ -95,7 +106,7 @@ export default class LengkapiSwakelola extends Component {
             <Column 
                 text="<b>Durasi Kegiatan</b>" 
                 dataIndex="durasikegiatan" 
-                width="150" />
+                width="100" />
             <Column 
                 text="<b>No. SPMK</b>" 
                 width="150" 
@@ -109,8 +120,7 @@ export default class LengkapiSwakelola extends Component {
             <Column 
                 text="<b>Tanggal Penyelesaian</b>" 
                 dataIndex="tanggalpenyelesaian" 
-                width="150" 
-                formatter="date('d/m/Y')" />           
+                width="150" />           
         </Grid>
         )
     }
