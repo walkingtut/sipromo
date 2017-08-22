@@ -57,29 +57,35 @@ export default class DaftarPaketKontraktual extends Component {
             <Column 
                 text="<b>Kode</b>" 
                 dataIndex="kodepaket" 
-                width="100"
+                width="140"
+                align="center"
                 summaryRenderer={this.summarizerecord} />
             <Column 
                 text="<b>Tahun</b>" 
                 dataIndex="tahun" 
                 width="80"
+                align="left"
                 hidden />               
             <Column 
                 text="<b>Nama Paket</b>" 
                 dataIndex="namapaket" 
-                width="200"/>
+                width="200" 
+                align="left"/>
             <Column 
                 text="<b>Satker</>" 
                 dataIndex="satker" 
                 width="100"
+                align="left"
                 hidden />
             <Column 
                 text="<b>Nama PPK</b>" 
                 dataIndex="namappk" 
+                align="left"
                 width="150" />
             <Column 
                 text="<b>Penanggung Jawab</b>" 
                 dataIndex="penanggungjawab" 
+                align="left"
                 width="150" 
                 hidden />
             <Column 
@@ -93,34 +99,48 @@ export default class DaftarPaketKontraktual extends Component {
                 text="<b>No. Kontrak</b>" 
                 dataIndex="nokontrak" 
                 width="150"
+                align="center"
                 hidden />
             <Column 
                 text="<b>Tanggal Kontrak</b>" 
                 dataIndex="tglkontrak" 
                 width="100" 
+                align="center"
                 hidden />
             <Column 
                 text="<b>Jenis Paket</b>" 
                 dataIndex="jenispaket" 
-                width="120" />
+                width="120"
+                align="center" />
+            <Column text="<b>Durasi Kegiatan</b>" align="center">
+                <Column
+                    text="<b>Durasi</b>"
+                    dataIndex="durasikegiatan" 
+                    width="80"
+                    align="center" />
+                <Column
+                    text="<b>Satuan</b>"
+                    dataIndex="satuandurasi" 
+                    width="80"
+                    align="center" />    
+            </Column>
             <Column 
-                text="<b>Durasi Kegiatan</b>" 
-                dataIndex="durasikegiatan" 
-                width="100" />
-            <Column 
-                text="<b>No. SPMK</b>" 
-                width="150" 
-                dataIndex="nospmk" 
+                text="<b>No. SPMK</b>"                  
+                dataIndex="nospmk"
+                width="150"
+                align="center" 
                 hidden />
             <Column 
                 text="<b>Penyedia Jasa</b>" 
                 dataIndex="penyediajasa" 
-                width="150" 
+                width="150"
+                align="center" 
                 hidden />
             <Column 
                 text="<b>Tanggal Penyelesaian</b>" 
                 dataIndex="tanggalpenyelesaian" 
-                width="150" />           
+                width="150"
+                align="center" />           
         </Grid>
         )
     }

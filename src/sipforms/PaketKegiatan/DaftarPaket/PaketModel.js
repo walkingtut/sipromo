@@ -14,6 +14,7 @@ export default Ext.define('sipromo.model.Paket', {
         { name: 'tglkontrak' },
         { name: 'jenispaket' },
         { name: 'durasikegiatan' },
+        { name: 'satuandurasi' },
         { name: 'nospmk' },
         { name: 'penyediajasa' },
         { name: 'tanggalpenyelesaian' },
