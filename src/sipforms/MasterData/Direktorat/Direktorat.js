@@ -35,7 +35,7 @@ export default class Direktorat extends Component {
 
             <Container 
                 padding={10} 
-                width={!Ext.os.is.Phone && 1100}
+                width={!Ext.os.is.Phone && 1150}
                 layout={{
                     type: 'vbox',
                     pack: 'center',
@@ -73,8 +73,8 @@ export default class Direktorat extends Component {
                             width="150" 
                             dataIndex="alias"/>
                     </Grid>
-                    <FormPanel flex="4" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
+                    <FormPanel flex="4" height="320">
+                        <FieldSet title="<h3>Input/Edit Master Data Direktorat</h3>">
                             <TextField label="Kode"/>
                             <TextField label="Direktorat"/>
                             <TextField label="Nama Singkat"/>
