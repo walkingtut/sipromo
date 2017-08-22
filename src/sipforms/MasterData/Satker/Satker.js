@@ -51,7 +51,15 @@ export default class Satker extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Satker" store={this.store} shadow grouped flex="5.5">
+                    <Grid title="Master Data Satker" 
+                        store={this.store} 
+                        shadow 
+                        grouped
+                        plugins={{
+                            gridsummaryrow: true
+                        }} 
+                        flex="5.5"
+                    >
                         <Column 
                             text="<b>Kode</b>" 
                             dataIndex="kodesatker" 
@@ -63,7 +71,7 @@ export default class Satker extends Component {
                             dataIndex="namasatker"/>
                     </Grid>
                     <FormPanel flex="4.5" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Satker</h4>">
+                        <FieldSet title="<h3>Input/Edit Master Data Satker</h3>">
                             <TextField label="Kode"/>
                             <TextField label="Satuan Kerja"/>
                         </FieldSet>

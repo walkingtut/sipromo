@@ -51,7 +51,15 @@ export default class TenagaAhli extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Tenaga Ahli" store={this.store} shadow grouped flex="7">
+                    <Grid title="Master Data Tenaga Ahli" 
+                        store={this.store} 
+                        shadow 
+                        grouped 
+                        plugins={{
+                            gridsummaryrow: true
+                        }}
+                        flex="7"
+                    >
                         <Column 
                             text="<b>Nama</b>" 
                             dataIndex="nama" 
@@ -79,7 +87,7 @@ export default class TenagaAhli extends Component {
                             dataIndex="billingRate" />
                     </Grid>
                     <FormPanel flex="3" height="500">
-                        <FieldSet title="<h4>Input/Edit Master Data Tenaga Ahli</h4>">
+                        <FieldSet title="<h3>Input/Edit Master Data Tenaga Ahli</h3>">
                             <TextField label="Nama"/>
                             <TextField label="Pendidikan Terakhir"/>
                             <TextField label="Kualifikasi"/>

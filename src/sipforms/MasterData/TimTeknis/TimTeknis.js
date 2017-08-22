@@ -51,7 +51,15 @@ export default class TimTeknis extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data Tim Teknis" store={this.store} shadow grouped flex="6">
+                    <Grid title="Master Data Tim Teknis" 
+                        store={this.store} 
+                        shadow 
+                        grouped 
+                        plugins={{
+                            gridsummaryrow: true
+                        }}
+                        flex="6"
+                    >
                         <Column 
                             text="<b>Nama</b>" 
                             dataIndex="nama" 

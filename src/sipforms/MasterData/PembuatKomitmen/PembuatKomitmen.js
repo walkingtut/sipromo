@@ -51,7 +51,15 @@ export default class PembuatKomitmen extends Component {
                     flex={1}
                     height="520"
                 >            
-                    <Grid title="Master Data PPK" store={this.store} shadow grouped flex="5.5">
+                    <Grid title="Master Data PPK" 
+                        store={this.store} 
+                        shadow 
+                        grouped
+                        plugins={{
+                            gridsummaryrow: true
+                        }} 
+                        flex="5.5"
+                    >
                         <Column 
                             text="<b>Nama</b>" 
                             dataIndex="name" 
@@ -66,8 +74,8 @@ export default class PembuatKomitmen extends Component {
                             width="100" 
                             dataIndex="direktorat"/>
                     </Grid>
-                    <FormPanel flex="4.5" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data PPK</h4>">
+                    <FormPanel flex="4.5" height="350">
+                        <FieldSet title="<h3>Input/Edit Master Data PPK</h3>">
                             <TextField label="Nama"/>
                             <TextField label="Satker"/>
                             <TextField label="Direktorat"/>
