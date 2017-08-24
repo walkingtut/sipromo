@@ -10,7 +10,8 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import model from '../PaketModel';
+import modelLuaran from './Model/LengkapiKontraktualLuaranModel';
+import model from '../../PaketModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -18,11 +19,11 @@ Ext.require([
     'Ext.data.summary.Sum',
 ]);
 
-export default class DaftarPaketKontraktual extends Component {
+export default class LengkapiKontraktualLuaran extends Component {
 
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,
-        modelPaket,
+        model,
         pageSize: 0,
         proxy: {
             type: 'ajax',

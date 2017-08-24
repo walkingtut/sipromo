@@ -10,7 +10,8 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import model from './KelolaSwakelolaModel';
+import modelTahapan from './model/KelolaSwakelolaTahapanModel';
+import model from '../../PaketModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -18,7 +19,7 @@ Ext.require([
     'Ext.data.summary.Sum',
 ]);
 
-export default class KelolaSwakelola extends Component {
+export default class KelolaSwakelolaTahapan extends Component {
 
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,

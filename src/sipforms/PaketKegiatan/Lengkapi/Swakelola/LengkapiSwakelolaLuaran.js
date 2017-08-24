@@ -10,7 +10,7 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import model from './LengkapiSwakelolaModel';
+import model from './Model/LengkapiSwakelolaLuaranModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -18,7 +18,7 @@ Ext.require([
     'Ext.data.summary.Sum',
 ]);
 
-export default class LengkapiSwakelola extends Component {
+export default class LengkapiSwakelolaLuaran extends Component {
 
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,
@@ -34,7 +34,7 @@ export default class LengkapiSwakelola extends Component {
 
         return (
             <Grid
-            title="Daftar Paket Kegiatan Kontraktual"
+            title="Daftar Paket Kegiatan Kontraktual/Melengkapi Data"
             store={this.store}
             plugins={{
                 gridviewoptions: true,

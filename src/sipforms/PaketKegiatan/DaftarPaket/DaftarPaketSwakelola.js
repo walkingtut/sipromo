@@ -10,7 +10,7 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import model from './PaketModel';
+import model from '../PaketModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -57,36 +57,36 @@ export default class DaftarPaketSwakelola extends Component {
             <Column 
                 text="<b>Kode</b>" 
                 dataIndex="kodepaket" 
-                width="100"
+                width="140"
                 align="center"
                 summaryRenderer={this.summarizerecord} />
             <Column 
                 text="<b>Tahun</b>" 
                 dataIndex="tahun" 
                 width="80"
-                align="center"
+                align="left"
                 hidden />               
             <Column 
                 text="<b>Nama Paket</b>" 
                 dataIndex="namapaket" 
                 width="200"
-                align="center" />
+                align="left" />
             <Column 
                 text="<b>Satker</>" 
                 dataIndex="satker" 
                 width="100"
-                align="center"
+                align="left"
                 hidden />
             <Column 
                 text="<b>Nama PPK</b>" 
                 dataIndex="namappk" 
                 width="150"
-                align="center" />
+                align="left" />
             <Column 
                 text="<b>Penanggung Jawab</b>" 
                 dataIndex="penanggungjawab" 
                 width="150"
-                align="center" 
+                align="left" 
                 hidden />
             <Column 
                 text="<b>Nilai Paket</b>" 

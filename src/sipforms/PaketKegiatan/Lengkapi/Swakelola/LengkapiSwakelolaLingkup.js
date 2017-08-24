@@ -10,7 +10,7 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import model from '../PaketModel';
+import model from './Model/LengkapiSwakelolaLingkupModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -18,11 +18,11 @@ Ext.require([
     'Ext.data.summary.Sum',
 ]);
 
-export default class DaftarPaketKontraktual extends Component {
+export default class LengkapiSwakelolaLingkup extends Component {
 
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,
-        modelPaket,
+        model,
         pageSize: 0,
         proxy: {
             type: 'ajax',
@@ -34,7 +34,7 @@ export default class DaftarPaketKontraktual extends Component {
 
         return (
             <Grid
-            title="Daftar Paket Kegiatan Kontraktual"
+            title="Daftar Paket Kegiatan Kontraktual/Melengkapi Data"
             store={this.store}
             plugins={{
                 gridviewoptions: true,
@@ -57,35 +57,29 @@ export default class DaftarPaketKontraktual extends Component {
             <Column 
                 text="<b>Kode</b>" 
                 dataIndex="kodepaket" 
-                width="140"
-                align="center"
+                width="100"
                 summaryRenderer={this.summarizerecord} />
             <Column 
                 text="<b>Tahun</b>" 
                 dataIndex="tahun" 
                 width="80"
-                align="left"
                 hidden />               
             <Column 
                 text="<b>Nama Paket</b>" 
                 dataIndex="namapaket" 
-                width="200" 
-                align="left"/>
+                width="200"/>
             <Column 
                 text="<b>Satker</>" 
                 dataIndex="satker" 
                 width="100"
-                align="left"
                 hidden />
             <Column 
                 text="<b>Nama PPK</b>" 
                 dataIndex="namappk" 
-                align="left"
                 width="150" />
             <Column 
                 text="<b>Penanggung Jawab</b>" 
                 dataIndex="penanggungjawab" 
-                align="left"
                 width="150" 
                 hidden />
             <Column 
@@ -99,48 +93,34 @@ export default class DaftarPaketKontraktual extends Component {
                 text="<b>No. Kontrak</b>" 
                 dataIndex="nokontrak" 
                 width="150"
-                align="center"
                 hidden />
             <Column 
                 text="<b>Tanggal Kontrak</b>" 
                 dataIndex="tglkontrak" 
                 width="100" 
-                align="center"
                 hidden />
             <Column 
                 text="<b>Jenis Paket</b>" 
                 dataIndex="jenispaket" 
-                width="120"
-                align="center" />
-            <Column text="<b>Durasi Kegiatan</b>" align="center">
-                <Column
-                    text="<b>Durasi</b>"
-                    dataIndex="durasikegiatan" 
-                    width="80"
-                    align="center" />
-                <Column
-                    text="<b>Satuan</b>"
-                    dataIndex="satuandurasi" 
-                    width="80"
-                    align="center" />    
-            </Column>
+                width="120" />
             <Column 
-                text="<b>No. SPMK</b>"                  
-                dataIndex="nospmk"
-                width="150"
-                align="center" 
+                text="<b>Durasi Kegiatan</b>" 
+                dataIndex="durasikegiatan" 
+                width="100" />
+            <Column 
+                text="<b>No. SPMK</b>" 
+                width="150" 
+                dataIndex="nospmk" 
                 hidden />
             <Column 
                 text="<b>Penyedia Jasa</b>" 
                 dataIndex="penyediajasa" 
-                width="150"
-                align="center" 
+                width="150" 
                 hidden />
             <Column 
                 text="<b>Tanggal Penyelesaian</b>" 
                 dataIndex="tanggalpenyelesaian" 
-                width="150"
-                align="center" />           
+                width="150" />           
         </Grid>
         )
     }
