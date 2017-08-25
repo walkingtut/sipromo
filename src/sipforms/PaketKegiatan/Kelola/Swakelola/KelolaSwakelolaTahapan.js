@@ -10,7 +10,7 @@ import {
     SearchField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import modelTahapan from './model/KelolaSwakelolaTahapanModel';
+//import modelTahapan from './model/KelolaSwakelolaTahapanModel';
 import model from '../../PaketModel';
 
 Ext.require([
