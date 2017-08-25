@@ -4,17 +4,9 @@ export default Ext.define('sipromo.model.KelolaKontraktualPenyerapan', {
     fields: [
         { name: 'id' },
         { name: 'kodepaket' },
-        { name: 'namapaket' },
-        { name: 'satker' },
-        { name: 'namappk' },
-        { name: 'penanggungjawab' },
-        { name: 'nilaipaket' },
-        { name: 'nokontrak' },
-        { name: 'tglkontrak' },
-        { name: 'jenispaket' },
-        { name: 'durasikegiatan' },
-        { name: 'nospmk' },
-        { name: 'penyediajasa' },
-        { name: 'tanggalpenyelesaian' },
+        { name: 'rencanapenyerapan' },
+        { name: 'tanggalpencairan' },
+        { name: 'persentase' },
+        { name: 'dokumenpendukung' },
     ]
 });

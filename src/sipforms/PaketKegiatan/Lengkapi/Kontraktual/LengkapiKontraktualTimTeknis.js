@@ -233,8 +233,9 @@ export default class LengkapiKontraktualTimTeknis extends Component {
                         </Toolbar>
                     </FormPanel>
                 </Container> 
-                    <Button text="Cancel" handler={this.onCancel}/>
-                    <Button itemId="ok" text="OK" handler={this.onOk}/>
+
+                <Button text="Cancel" handler={this.onCancel}/>
+                <Button itemId="ok" text="OK" handler={this.onOk}/>
             </Dialog>
             
         </Container>    
