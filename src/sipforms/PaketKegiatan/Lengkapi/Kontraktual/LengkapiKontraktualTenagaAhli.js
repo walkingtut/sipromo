@@ -193,6 +193,7 @@ export default class LengkapiKontraktualTenagaAhli extends Component {
                     />
                 </Column>                                   
             </Grid>
+            
             <Dialog 
                 displayed={showDialog}
                 title={this.state.judul}

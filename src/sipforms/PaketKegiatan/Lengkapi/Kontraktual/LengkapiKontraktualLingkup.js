@@ -201,7 +201,7 @@ export default class LengkapiKontraktualLingkup extends Component {
                 defaultFocus="#ok"
                 onHide={() => this.setState({ showDialog: false })}
             >
-                 <Container 
+                 <Container
                         autoSize 
                         defaults={{ flex: 1, bodyPadding: 10, shadow: true, margin: 10 }} 
                         layout={{ type: Ext.os.is.Phone ? 'vbox' : 'hbox', pack: 'center', align: 'stretch' }}

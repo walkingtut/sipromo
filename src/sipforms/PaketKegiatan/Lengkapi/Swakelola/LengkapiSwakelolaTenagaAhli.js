@@ -29,7 +29,15 @@ export default class LengkapiSwakelolaTenagaAhli extends Component {
 
     state = {
         showDialog: false,
-        judul: ""
+        judul: "",
+        kodepaket: "",
+        namatenagaahli: "",
+        pendidikanterakhir: "",
+        kualifikasi: "",
+        durasipengalaman: "",
+        sertifikatkeahlian: "",
+        billingrate: "",
+        durasikontrak: ""
     }
 
     store = Ext.create('Ext.data.Store', {
@@ -54,6 +62,7 @@ export default class LengkapiSwakelolaTenagaAhli extends Component {
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
+        this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
     }
 
@@ -169,33 +178,43 @@ export default class LengkapiSwakelolaTenagaAhli extends Component {
                 displayed={showDialog}
                 title={this.state.judul}
                 closable
-                maximizable
+                maximized
                 closeAction="hide"
                 maskTapHandler={this.onCancel}
                 bodyPadding="20"
                 width="1200"
+                height="700"
                 defaultFocus="#ok"
                 onHide={() => this.setState({ showDialog: false })}
             >
-                 <Container 
+                <Container 
                         autoSize 
                         defaults={{ flex: 1, bodyPadding: 10, shadow: true, margin: 10 }} 
                         layout={{ type: Ext.os.is.Phone ? 'vbox' : 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1}
-                        height="400"
+                        height="650"
                     > 
-                    <Grid title="Stock Prices" store={this.storeGrid} shadow grouped flex="6">
-                        <Column text="Company" dataIndex="name" width="150"/>
-                        <Column text="Price" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="Change" width="100" dataIndex="priceChange"/>
-                        <Column text="% Change" dataIndex="priceChangePct" />
+                    <Grid title="Tenaga Ahli Paket Kegiatan" store={this.storeGrid} shadow grouped flex="7" height="500">
+                        <Column text="Kode Paket" dataIndex="kodepaket" width="100"/>
+                        <Column text="Nama Tenaga Ahli" width="200" dataIndex="namatenagaahli" />
+                        <Column text="Pendidikan Terakhir" width="150" dataIndex="pendidikanterakhir"/>
+                        <Column text="Kualifikasi" dataIndex="kualifikasi" width="150"/>
+                        <Column text="Lama Pengalaman" width="150" dataIndex="durasipengalaman" />
+                        <Column text="Sertifikat Keahlian" width="100" dataIndex="sertifikatkeahlian"/>
+                        <Column text="Billing Rate" dataIndex="billingrate" width="150"/>
+                        <Column text="Lama Kontrak" dataIndex="durasikontrak" width="150"/>
                     </Grid>
 
-                    <FormPanel flex="4" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
-                            <TextField label="Company"/>
-                            <TextField label="Price"/>
-                            <TextField label="Price Change"/>
+                    <FormPanel flex="3" height="620">
+                        <FieldSet title="<h4>Input Tenaga Ahli Paket Kegiatan</h4>">
+                            <TextField label="Kode Paket"/>
+                            <TextField label="Nama Tenaga Ahli"/>
+                            <TextField label="Pendidikan Terakhir"/>
+                            <TextField label="Kualifikasi"/>
+                            <TextField label="Durasi Pengalaman"/>
+                            <TextField label="Sertifikat Keahlian"/>
+                            <TextField label="Billing Rate"/>
+                            <TextField label="Lama Kontrak"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />
@@ -205,7 +224,8 @@ export default class LengkapiSwakelolaTenagaAhli extends Component {
                 </Container> 
                     <Button text="Cancel" handler={this.onCancel}/>
                     <Button itemId="ok" text="OK" handler={this.onOk}/>
-            </Dialog>            
+            </Dialog>   
+
         </Container>    
         )
     }
