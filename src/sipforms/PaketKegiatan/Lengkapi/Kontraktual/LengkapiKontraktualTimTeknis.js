@@ -29,7 +29,12 @@ export default class LengkapiKontraktualTimTeknis extends Component {
 
     state = {
         showDialog: false,
-        judul: ""
+        judul: "",
+        kodepaket: "",
+        nosktimteknis: "",
+        namatimteknis: "",
+        kategori: "",
+        posisi: ""
     }
 
     store = Ext.create('Ext.data.Store', {
@@ -54,6 +59,7 @@ export default class LengkapiKontraktualTimTeknis extends Component {
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
+        this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
     }
 
@@ -194,6 +200,7 @@ export default class LengkapiKontraktualTimTeknis extends Component {
                 maskTapHandler={this.onCancel}
                 bodyPadding="20"
                 width="1200"
+                height="600"
                 defaultFocus="#ok"
                 onHide={() => this.setState({ showDialog: false })}
             >
@@ -202,20 +209,23 @@ export default class LengkapiKontraktualTimTeknis extends Component {
                         defaults={{ flex: 1, bodyPadding: 10, shadow: true, margin: 10 }} 
                         layout={{ type: Ext.os.is.Phone ? 'vbox' : 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1}
-                        height="400"
+                        height="550"
                     > 
-                    <Grid title="Stock Prices" store={this.storeGrid} shadow grouped flex="6">
-                        <Column text="Company" dataIndex="name" width="150"/>
-                        <Column text="Price" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="Change" width="100" dataIndex="priceChange"/>
-                        <Column text="% Change" dataIndex="priceChangePct" />
+                    <Grid title="Tim Teknis Paket Kegiatan" store={this.storeGrid} shadow grouped flex="6" height="450">
+                        <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="100"/>
+                        <Column text="<b>No. SK Tim Teknis</b>" dataIndex="nosktimteknis" width="150"/>
+                        <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="200" />
+                        <Column text="<b>Kategori</b>" dataIndex="kategori" width="150" />
+                        <Column text="<b>Posisi</b>" dataIndex="posisi" width="150" />
                     </Grid>
 
-                    <FormPanel flex="4" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
-                            <TextField label="Company"/>
-                            <TextField label="Price"/>
-                            <TextField label="Price Change"/>
+                    <FormPanel flex="4" height="450">
+                        <FieldSet title="<h4>Input Tim Teknis Paket Kegiatan</h4>">
+                            <TextField label="Kode Paket" value={this.state.kodepaket}/>
+                            <TextField label="No. SK Tim Teknis"/>
+                            <TextField label="Nama"/>
+                            <TextField label="Kategori"/>
+                            <TextField label="Posisi"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />

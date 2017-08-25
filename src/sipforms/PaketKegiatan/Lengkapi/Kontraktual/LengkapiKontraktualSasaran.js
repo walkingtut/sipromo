@@ -57,7 +57,8 @@ export default class LengkapiKontraktualSasaran extends Component {
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
-        this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
+        this.setState({ kodepaket: info.record.data.kodepaket });
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
     }    
 
     render() {
@@ -214,7 +215,7 @@ export default class LengkapiKontraktualSasaran extends Component {
 
                     <FormPanel flex="4" height="300">
                         <FieldSet title="<h4>Input Sasaran Paket Kegiatan</h4>">
-                        <TextField label="Kode Paket"/>
+                        <TextField label="Kode Paket" value={this.state.kodepaket}/>
                         <TextAreaField 
                             label="Sasaran"
                             value={this.state.sasaran}

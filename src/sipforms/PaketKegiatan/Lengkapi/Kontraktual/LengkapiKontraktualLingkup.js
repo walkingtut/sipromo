@@ -57,6 +57,7 @@ export default class LengkapiKontraktualLingkup extends Component {
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
+        this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
     }
 
