@@ -13,7 +13,8 @@ import {
     Dialog,
     FormPanel,
     FieldSet,
-    TextField
+    TextField,
+    TextAreaField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import modelMaksud from './Model/LengkapiKontraktualMaksudModel';
@@ -29,7 +30,9 @@ export default class LengkapiKontraktualMaksud extends Component {
 
     state = {
         showDialog: false,
-        judul: ""
+        judul: "",
+        kodepaket: "",
+        maksud: ""
     }
 
     store = Ext.create('Ext.data.Store', {
@@ -43,7 +46,7 @@ export default class LengkapiKontraktualMaksud extends Component {
     });
 
     storeGrid = Ext.create('Ext.data.Store', {
-        autoLoad: true,
+        autoLoad: false,
         modelMaksud,
         pageSize: 0,
         proxy: {
@@ -54,7 +57,8 @@ export default class LengkapiKontraktualMaksud extends Component {
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
-        this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
+        this.setState({ kodepaket: info.record.data.kodepaket});
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
     }
 
     render() {
@@ -205,17 +209,19 @@ export default class LengkapiKontraktualMaksud extends Component {
                         height="400"
                     > 
                     <Grid title="Stock Prices" store={this.storeGrid} shadow grouped flex="6">
-                        <Column text="Company" dataIndex="name" width="150"/>
-                        <Column text="Price" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="Change" width="100" dataIndex="priceChange"/>
-                        <Column text="% Change" dataIndex="priceChangePct" />
+                        <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="150"/>
+                        <Column text="<b>Maksud</b>" dataIndex="maksud" width="500"/>
                     </Grid>
 
                     <FormPanel flex="4" height="300">
                         <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
-                            <TextField label="Company"/>
-                            <TextField label="Price"/>
-                            <TextField label="Price Change"/>
+                            <TextField label="Kode Paket" value={this.state.kodepaket}/>
+                            <TextAreaField 
+                                label="Maksud"
+                                value={this.state.maksud}
+                                width="300"
+                                maxRows={10}
+                            />
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />
