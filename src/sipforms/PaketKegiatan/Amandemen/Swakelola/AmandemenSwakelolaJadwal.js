@@ -70,7 +70,7 @@ export default class AmandemenSwakelolaJadwal extends Component {
         return (
             <Container>
                 <Grid
-                title="Daftar Paket Kegiatan Kontraktual - Kelola Jadwal Kegiatan"
+                title="Daftar Paket Kegiatan Swakelola - Amandemen Jadwal Paket Kegiatan"
                 store={this.store}
                 plugins={{
                     gridviewoptions: true,

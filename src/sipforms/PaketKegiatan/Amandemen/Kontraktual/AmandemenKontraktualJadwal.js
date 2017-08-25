@@ -70,7 +70,7 @@ export default class AmandemenKontraktualJadwal extends Component {
         return (
             <Container>
                 <Grid
-                title="Daftar Paket Kegiatan Kontraktual - Kelola Jadwal Kegiatan"
+                title="Daftar Paket Kegiatan Kontraktual - Amandemen Jadwal Kegiatan"
                 store={this.store}
                 plugins={{
                     gridviewoptions: true,

@@ -69,7 +69,7 @@ export default class LengkapiSwakelolaLuaran extends Component {
         return (
             <Container>
                 <Grid
-                title="Daftar Paket Kegiatan Kontraktual - Melengkapi Data Luaran"
+                title="Daftar Paket Kegiatan Swakelola - Melengkapi Data Luaran Kegiatan"
                 store={this.store}
                 plugins={{
                     gridviewoptions: true,

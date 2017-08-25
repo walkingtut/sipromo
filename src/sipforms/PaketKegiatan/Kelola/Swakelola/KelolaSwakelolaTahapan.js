@@ -68,7 +68,7 @@ export default class KelolaSwakelolaTahapan extends Component {
         return (
             <Container>
                 <Grid
-                    title="Daftar Paket Kegiatan Kontraktual"
+                    title="Daftar Paket Kegiatan Swakelola - Kelola Tahapan Kegiatan"
                     store={this.store}
                     plugins={{
                         gridviewoptions: true,

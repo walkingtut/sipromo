@@ -68,7 +68,7 @@ export default class AmandemenKontraktualTahapan extends Component {
         return (
             <Container>
                 <Grid
-                title="Daftar Paket Kegiatan Kontraktual"
+                title="Daftar Paket Kegiatan Kontraktual - Amandemen Tahapan Paket Kegiatan"
                 store={this.store}
                 plugins={{
                     gridviewoptions: true,
