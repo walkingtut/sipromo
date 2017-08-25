@@ -1,4 +1,4 @@
-export default Ext.define('sipromo.model.AmandemenSwakelola', {
+export default Ext.define('sipromo.model.AmandemenSwakelolaPenyerapan', {
     extend: 'Ext.data.Model',
 
     fields: [

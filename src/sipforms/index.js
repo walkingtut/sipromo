@@ -38,8 +38,27 @@ import KelolaSwakelolaJadwal from './PaketKegiatan/Kelola/Swakelola/KelolaSwakel
 import KelolaSwakelolaPenyerapan from './PaketKegiatan/Kelola/Swakelola/KelolaSwakelolaPenyerapan';
 
 // Amandemen Paket Kegiatan
-import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktual';
-import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelola';
+import AmandemenKontraktualMaksud from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualMaksud';
+import AmandemenKontraktualTujuan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTujuan';
+import AmandemenKontraktualSasaran from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualSasaran';
+import AmandemenKontraktualLingkup from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualLingkup';
+import AmandemenKontraktualLuaran from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualLuaran';
+import AmandemenKontraktualTimTeknis from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTimTeknis';
+import AmandemenKontraktualTenagaAhli from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTenagaAhli';
+import AmandemenKontraktualTahapan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTahapan';
+import AmandemenKontraktualJadwal from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualJadwal';
+import AmandemenKontraktualPenyerapan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualPenyerapan';
+
+import AmandemenSwakelolaMaksud from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaMaksud';
+import AmandemenSwakelolaTujuan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTujuan';
+import AmandemenSwakelolaSasaran from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaSasaran';
+import AmandemenSwakelolaLingkup from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaLingkup';
+import AmandemenSwakelolaLuaran from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaLuaran';
+import AmandemenSwakelolaTimTeknis from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTimTeknis';
+import AmandemenSwakelolaTenagaAhli from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTenagaAhli';
+import AmandemenSwakelolaTahapan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTahapan';
+import AmandemenSwakelolaJadwal from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaJadwal';
+import AmandemenSwakelolaPenyerapan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaPenyerapan';
 
 const root = {
     id: '/',
@@ -92,28 +111,28 @@ const root = {
             ]},
             {text: 'Amandemen Kegiatan', layout: 'center', navIcon: 'icon-buttons', children: [
                 {text: 'Kontraktual', layout: 'center', navIcon: 'icon-basic-list', children: [
-                    {text: 'Maksud', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tujuan', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Sasaran', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Lingkup Kegiatan', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Luaran', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tenaga Ahli', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tim Teknis', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tahapan Kegiatan', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Jadwal Kegiatan', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Rencana Penyerapan', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'}
+                    {text: 'Maksud', component: AmandemenKontraktualMaksud, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tujuan', component: AmandemenKontraktualTujuan, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Sasaran', component: AmandemenKontraktualSasaran, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Lingkup Kegiatan', component: AmandemenKontraktualLingkup, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Luaran', component: AmandemenKontraktualLuaran, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tenaga Ahli', component: AmandemenKontraktualTenagaAhli, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tim Teknis', component: AmandemenKontraktualTimTeknis, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tahapan Kegiatan', component: AmandemenKontraktualTahapan, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Jadwal Kegiatan', component: AmandemenKontraktualJadwal, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Rencana Penyerapan', component: AmandemenKontraktualPenyerapan, layout: 'center', navIcon: 'icon-basic-list'}
                 ]},
                 {text: 'Swakelola', layout: 'center', navIcon: 'icon-basic-list', children: [
-                    {text: 'Maksud', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tujuan', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Sasaran', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Lingkup Kegiatan', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Luaran', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tenaga Ahli', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tim Teknis', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Tahapan Kegiatan', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Jadwal Kegiatan', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'},
-                    {text: 'Rencana Penyerapan', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+                    {text: 'Maksud', component: AmandemenSwakelolaMaksud, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tujuan', component: AmandemenSwakelolaTujuan, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Sasaran', component: AmandemenSwakelolaSasaran, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Lingkup Kegiatan', component: AmandemenSwakelolaLingkup, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Luaran', component: AmandemenSwakelolaLuaran, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tenaga Ahli', component: AmandemenSwakelolaTenagaAhli, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tim Teknis', component: AmandemenSwakelolaTimTeknis, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Tahapan Kegiatan', component: AmandemenSwakelolaTahapan, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Jadwal Kegiatan', component: AmandemenSwakelolaJadwal, layout: 'center', navIcon: 'icon-basic-list'},
+                    {text: 'Rencana Penyerapan', component: AmandemenSwakelolaPenyerapan, layout: 'center', navIcon: 'icon-basic-list'}
                 ]}
             ]},         
         ]},   
