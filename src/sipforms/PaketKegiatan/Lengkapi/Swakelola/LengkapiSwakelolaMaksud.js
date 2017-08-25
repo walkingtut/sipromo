@@ -13,7 +13,8 @@ import {
     Dialog,
     FormPanel,
     FieldSet,
-    TextField
+    TextField,
+    TextAreaField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import modelMaksud from './Model/LengkapiSwakelolaMaksudModel';
