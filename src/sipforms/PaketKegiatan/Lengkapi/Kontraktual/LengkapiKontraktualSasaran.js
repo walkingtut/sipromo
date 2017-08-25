@@ -13,7 +13,8 @@ import {
     Dialog,
     FormPanel,
     FieldSet,
-    TextField
+    TextField,
+    TextAreaField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import modelSasaran from './Model/LengkapiKontraktualSasaranModel';
@@ -29,7 +30,9 @@ export default class LengkapiKontraktualSasaran extends Component {
 
     state = {
         showDialog: false,
-        judul: ""
+        judul: "",
+        kodepaket: "",
+        sasaran: ""
     }    
 
     store = Ext.create('Ext.data.Store', {
@@ -204,18 +207,20 @@ export default class LengkapiKontraktualSasaran extends Component {
                         flex={1}
                         height="400"
                     > 
-                    <Grid title="Stock Prices" store={this.storeGrid} shadow grouped flex="6">
-                        <Column text="Company" dataIndex="name" width="150"/>
-                        <Column text="Price" width="85" dataIndex="price" formatter='usMoney'/>
-                        <Column text="Change" width="100" dataIndex="priceChange"/>
-                        <Column text="% Change" dataIndex="priceChangePct" />
+                    <Grid title="Sasaran Paket Kegiatan" store={this.storeGrid} shadow grouped flex="6">
+                        <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="150"/>
+                        <Column text="<b>Maksud</b>" dataIndex="sasaran" width="500"/>
                     </Grid>
 
                     <FormPanel flex="4" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
-                            <TextField label="Company"/>
-                            <TextField label="Price"/>
-                            <TextField label="Price Change"/>
+                        <FieldSet title="<h4>Input Sasaran Paket Kegiatan</h4>">
+                        <TextField label="Kode Paket"/>
+                        <TextAreaField 
+                            label="Tujuan"
+                            value={this.state.sasaran}
+                            width="300"
+                            maxRows={10}
+                        />
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />

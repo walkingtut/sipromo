@@ -208,13 +208,13 @@ export default class LengkapiKontraktualMaksud extends Component {
                         flex={1}
                         height="400"
                     > 
-                    <Grid title="Stock Prices" store={this.storeGrid} shadow grouped flex="6">
+                    <Grid title="Maksud Paket Kegiatan" store={this.storeGrid} shadow grouped flex="6">
                         <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="150"/>
                         <Column text="<b>Maksud</b>" dataIndex="maksud" width="500"/>
                     </Grid>
 
                     <FormPanel flex="4" height="300">
-                        <FieldSet title="<h4>Input/Edit Master Data Direktorat</h4>">
+                        <FieldSet title="<h4>Input Maksud Paket Kegiatan</h4>">
                             <TextField label="Kode Paket" value={this.state.kodepaket}/>
                             <TextAreaField 
                                 label="Maksud"
