@@ -209,14 +209,14 @@ export default class LengkapiKontraktualSasaran extends Component {
                     > 
                     <Grid title="Sasaran Paket Kegiatan" store={this.storeGrid} shadow grouped flex="6">
                         <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="150"/>
-                        <Column text="<b>Maksud</b>" dataIndex="sasaran" width="500"/>
+                        <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="500"/>
                     </Grid>
 
                     <FormPanel flex="4" height="300">
                         <FieldSet title="<h4>Input Sasaran Paket Kegiatan</h4>">
                         <TextField label="Kode Paket"/>
                         <TextAreaField 
-                            label="Tujuan"
+                            label="Sasaran"
                             value={this.state.sasaran}
                             width="300"
                             maxRows={10}
