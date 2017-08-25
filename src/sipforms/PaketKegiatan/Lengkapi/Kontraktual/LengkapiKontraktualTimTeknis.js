@@ -16,7 +16,7 @@ import {
     TextField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import modelTimTeknis from './Model/LengkapiKontraktualModel';
+import modelTimTeknis from './Model/LengkapiKontraktualTimTeknisModel';
 import model from '../../PaketModel';
 
 Ext.require([

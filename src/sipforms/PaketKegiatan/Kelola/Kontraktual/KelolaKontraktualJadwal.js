@@ -37,16 +37,6 @@ export default class KelolaKontraktualJadwal extends Component {
         tanggalselesai: "",
     }
 
-    state = {
-        showDialog: false,
-        judul: "",
-        kodepaket: "",
-        nosktimteknis: "",
-        namatimteknis: "",
-        kategori: "",
-        posisi: ""
-    }
-
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,
         model,
@@ -80,7 +70,7 @@ export default class KelolaKontraktualJadwal extends Component {
         return (
             <Container>
                 <Grid
-                title="Daftar Paket Kegiatan Kontraktual"
+                title="Daftar Paket Kegiatan Kontraktual - Kelola Jadwal Kegiatan"
                 store={this.store}
                 plugins={{
                     gridviewoptions: true,
@@ -174,11 +164,7 @@ export default class KelolaKontraktualJadwal extends Component {
                 <Column 
                     text="<b>Tanggal Penyelesaian</b>" 
                     dataIndex="tanggalpenyelesaian" 
-                    width="150" />       
-                <Column 
-                    text="<b>Tanggal Penyelesaian</b>" 
-                    dataIndex="tanggalpenyelesaian" 
-                    width="150" />   
+                    width="150" />         
                 <Column 
                     text="<b>Actions</b>" 
                     width="80" 
