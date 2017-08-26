@@ -60,6 +60,17 @@ import AmandemenSwakelolaTahapan from './PaketKegiatan/Amandemen/Swakelola/Amand
 import AmandemenSwakelolaJadwal from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaJadwal';
 import AmandemenSwakelolaPenyerapan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaPenyerapan';
 
+// Manajemen Resiko
+import PaketKontraktualResiko from './Resiko/PaketKontraktualResiko';
+import PaketSwakelolaResiko from './Resiko/PaketSwakelolaResiko';
+import ForumDiskusi from './Resiko/ForumDiskusi';
+
+// Kalender
+import TampilLengkap from './Kalender/Lengkap/TampilLengkap';
+import TampilBulanan from './Kalender/Bulanan/TampilBulanan';
+import TampilMingguan from './Kalender/Mingguan/TampilMingguan';
+import TampilHarian from './Kalender/Harian/TampilHarian';
+
 const root = {
     id: '/',
     text: 'Menu',
@@ -137,12 +148,15 @@ const root = {
             ]},         
         ]},   
         { text: 'Manajemen Resiko', navIcon: 'icon-basic-list', children: [
-                {text: 'Daftar Paket Beresiko', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'}
+                {text: 'Paket Kontraktual Beresiko', component: PaketKontraktualResiko, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Paket Swakelola Beresiko', component: PaketSwakelolaResiko, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Forum Diskusi', component: ForumDiskusi, layout: 'center', navIcon: 'icon-basic-list'}
         ]},  
         { text: 'Kalender', navIcon: 'icon-basic-list', children: [
-            {text: 'Harian', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Mingguan', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Bulanan', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'}
+            {text: 'Kalender Lengkap', component: TampilLengkap, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'Bulanan', component: TampilBulanan, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'Mingguan', component: TampilMingguan, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'Harian', component: TampilHarian, layout: 'center', navIcon: 'icon-basic-list'}
         ]}, 
         { text: 'Statistik', navIcon: 'icon-basic-list', children: [
         ]},                     
