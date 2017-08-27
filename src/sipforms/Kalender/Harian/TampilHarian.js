@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Calendar_Day, Calendar_List } from '@extjs/ext-react-calendar';
 import { Panel } from '@extjs/ext-react';
-import './data';
+import './../data';
 
 export default class CalendarDayViewExample extends Component {
 
@@ -9,7 +9,7 @@ export default class CalendarDayViewExample extends Component {
         autoLoad: true,
         proxy: {
             type: 'ajax',
-            url: '/KitchenSink/CalendarDays'
+            url: '/KitchenSink/CalendarFull'
         }
     })
 

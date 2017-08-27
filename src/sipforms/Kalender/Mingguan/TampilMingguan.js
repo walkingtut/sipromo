@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Calendar_Week, Calendar_List } from '@extjs/ext-react-calendar';
 import { Panel } from '@extjs/ext-react';
-import './data';
+import './../data';
 
 export default class CalendarWeekViewExample extends Component {
 
@@ -14,7 +14,7 @@ export default class CalendarWeekViewExample extends Component {
         autoLoad: true,
         proxy: {
             type: 'ajax',
-            url: '/KitchenSink/CalendarWeek'
+            url: '/KitchenSink/CalendarFull'
         }
     })
 

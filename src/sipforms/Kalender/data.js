@@ -85,14 +85,12 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
         return arr[n];
     }
 
-    var places = ['London', 'Paris', 'Munich', 'Amsterdam', 'Rome'],
-        people = ['Louis', 'Mitch', 'Ava', 'Shelly', 'Vicki', 'Stefanie', 'Jason', 'Elena', 'Randy', 'Fred', 'Debbie'],
-        teams1 = ['Release', 'QA', 'Development', 'PM', 'R&D'],
-        teams2 = ['Marketing', 'Sales'],
-        clients1 = ['Client A', 'Client B', 'Client C', 'Client D'], 
-        clients2 = ['Client E', 'Client F', 'Client G', 'Client H'],
-        workActions = ['Meet', 'Call', 'Review'],
-        leisure = ['Hike', 'Gallery', 'Gaming', 'Theatre', 'Bowling', 'Concert'];
+    var places = ['Jakarta', 'Bintaro', 'Bandung', 'Bogor'],
+        people = ['Penyusunan Roadmap Simpul KPBU PUPR 2017 / 2019', 'Manajemen Pelaksanaan Pembinaan Investasi Infrastruktur', 'Pendampingan Penerapan Konstruksi Berkelanjutan', 'Pendampingan Kontrak Konstruksi', 'Manajemen Penyelenggaraan Pengendalian Konstruksi', 'Perumusan Kebijakan Peningkatan Penggunaan Penyedia Jasa Pekerjaan Konstruksi Spesialis (Paket 3)', 'Manajemen Pelaksanaan Pembinaan Kompetensi Dan Produktivitas Konstruksi', 'Penyusunan Kebijakan Peningkatan Produktivitas Konstruksi', 'Manajemen Pelaksanaan Kerja Sama dan Pemberdayaan', 'Kajian Link And Match Kerja Sama Pengembangan SDM Konstruksi', 'Pengembangan Workshop Las'],
+        teams1 = ['Sistem Pengendalian Perencanaan dan Pelaksanaan Anggaran', 'Pengembangan Kompetensi Teknis Pembinaan Konstruksi', 'Penyusunan Materi Peningkatan Kapasitas Hukum Kontrak Konstruksi'],
+        teams2 = ['Revisi Renstra DJBK 2015/2019', 'Implementasi Penyelenggaraan ASN DJBK'],
+        workActions = ['FGD', 'Pembahasan'],
+        leisure = ['Workshop'];
     
     var U = KitchenSink.data.calendar.Util,
         D = Ext.Date,
@@ -101,7 +99,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
         start = D.subtract(D.subtract(now, D.YEAR, 1), D.DAY, 15),
         end = D.add(D.add(now, D.YEAR, 1), D.DAY, 15),
         data = {
-            work: (function() {
+            fgd: (function() {
                 var current = D.clone(start),
                     data = [],
                     incr, r, n;
@@ -116,7 +114,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                             if (Math.random() < 0.5) {
                                 n = N.randomInt(8, 12);
                                 data.push({
-                                    title: getRandom(workActions) + ' with ' + getRandom(teams1),
+                                    title: getRandom(workActions) + ' tentang ' + getRandom(teams1),
                                     startDate: U.setDate(current, undefined, n, halfhour()),
                                     endDate: U.setDate(current, undefined, N.randomInt(n + 1, 13), halfhour())
                                 });
@@ -126,7 +124,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                             if (Math.random() > 0.5) {
                                 n = N.randomInt(14, 18);
                                 data.push({
-                                    title: getRandom(workActions) + ' with ' + getRandom(teams1),
+                                    title: getRandom(workActions) + ' dengan ' + getRandom(teams1),
                                     startDate: U.setDate(current, undefined, n, halfhour()),
                                     endDate: U.setDate(current, undefined, N.randomInt(n + 1, 18), halfhour())
                                 });
@@ -134,7 +132,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                         } else if (r > 0.2) {
                             incr = D.FRIDAY - current.getDay() + 1;
                             data.push({
-                                title: 'In ' + getRandom(places) + ' office',
+                                title: 'FGD di ' + getRandom(places) + '',
                                 startDate: current,
                                 endDate: D.add(current, D.DAY, incr),
                                 allDay: true
@@ -146,7 +144,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                 }
                 return U.generateIds(data, 3000);
             })(),
-            personal: (function() {
+            workshop: (function() {
                 var current = D.clone(start),
                     data = [],
                     incr, r, n;
@@ -158,7 +156,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                         r = Math.random();
                         if (current.getDay() === D.SATURDAY && r < 0.1) {
                             data.push({
-                                title: 'Weekend away in ' + getRandom(places),
+                                title: 'Workshop di ' + getRandom(places),
                                 startDate: current,
                                 endDate: D.add(current, D.DAY, 2),
                                 allDay: true
@@ -166,7 +164,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                             incr = 2;
                         } else if (r < 0.3) {
                             data.push({
-                                title: getRandom(leisure) + ' with ' + getRandom(people),
+                                title: getRandom(leisure) + ' tentang ' + getRandom(people),
                                 startDate: current,
                                 endDate: D.add(current, D.DAY, 1),
                                 allDay: true
@@ -174,7 +172,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                         } else if (r < 0.7) {
                             n = N.randomInt(9, 18);
                             data.push({
-                                title: getRandom(leisure) + ' with ' + getRandom(people),
+                                title: getRandom(leisure) + ' tentang ' + getRandom(people),
                                 startDate: U.setDate(current, undefined, n, halfhour()),
                                 endDate: U.setDate(current, undefined, N.randomInt(n + 1, 21), halfhour())
                             });
@@ -182,7 +180,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                     } else {
                         if (Math.random() > 0.7) {
                             data.push({
-                                title: 'Dinner with ' + getRandom(people),
+                                title: 'Pertemuan dengan ' + getRandom(people),
                                 startDate: U.setDate(current, undefined, 19, 30),
                                 endDate: U.setDate(current, undefined, 22)
                             });
@@ -193,7 +191,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
 
                 return U.generateIds(data, 6000);
             })(),
-            projectZeus: (function() {
+            pembahasan: (function() {
                 var current = D.clone(start),
                     data = [],
                     deliverables = 0,
@@ -205,7 +203,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                     if (!D.isWeekend(current)) {
                         if (current.getDay() === D.TUESDAY || current.getDay() === D.THURSDAY) {
                             data.push({
-                                title: 'Scrum',
+                                title: 'Rapat pembahasan dengan tim teknis',
                                 startDate: U.setDate(current, undefined, 9),
                                 endDate: U.setDate(current, undefined, 9, 30)
                             });
@@ -215,14 +213,14 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                         if (r > 0.6) {
                             n = N.randomInt(11, 15);
                             data.push({
-                                title: getRandom(workActions) + ' with ' + getRandom(teams2),
+                                title: getRandom(workActions) + ' tentang ' + getRandom(teams2),
                                 startDate: U.setDate(current, undefined, n, halfhour()),
                                 endDate: U.setDate(current, undefined, N.randomInt(n + 1, 17), halfhour())
                             });
                             if (r > 0.9) {
                                 ++deliverables;
                                 data.push({
-                                    title: 'Deliverable ' + deliverables + ' Due',
+                                    title: 'Penyerahan dokumen ' + deliverables + ' hari lagi',
                                     allDay: true,
                                     startDate: current,
                                     endDate: D.add(current, D.DAY, 1)
@@ -245,7 +243,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
             type: 'json',
             data: [{
                 id: 1,
-                title: 'Work Calendar',
+                title: 'Focus Group Discussion',
                 eventStore: {
                     proxy: {
                         type: 'ajax',
@@ -254,7 +252,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                 }
             }, {
                 id: 2,
-                title: 'Personal',
+                title: 'Pembahasan',
                 eventStore: {
                     proxy: {
                         type: 'ajax',
@@ -263,7 +261,7 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
                 }
             }, {
                 id: 3,
-                title: 'Project Zeus',
+                title: 'Workshop',
                 eventStore: {
                     proxy: {
                         type: 'ajax',
@@ -275,19 +273,19 @@ Ext.define('KitchenSink.data.calendar.Full', { }, function() {
         '/KitchenSink/CalendarFullEvents/1': {
             type: 'json',
             data: function(ctx) {
-                return U.generateOutput(data.work, 1, ctx);
+                return U.generateOutput(data.fgd, 1, ctx);
             }
         },
         '/KitchenSink/CalendarFullEvents/2': {
             type: 'json',
             data: function(ctx) {
-                return U.generateOutput(data.personal, 2, ctx);
+                return U.generateOutput(data.workshop, 2, ctx);
             }
         },
         '/KitchenSink/CalendarFullEvents/3': {
             type: 'json',
             data: function(ctx) {
-                return U.generateOutput(data.projectZeus, 3, ctx);
+                return U.generateOutput(data.pembahasan, 3, ctx);
             }
         }
     });
