@@ -22,7 +22,7 @@ export default class DaftarPaketKontraktual extends Component {
 
     store = Ext.create('Ext.data.Store', {
         autoLoad: true,
-        modelPaket,
+        model,
         pageSize: 0,
         proxy: {
             type: 'ajax',
