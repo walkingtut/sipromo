@@ -79,11 +79,7 @@ export default class KelolaKontraktualTahapan extends Component {
                 height="550"
             >
                 <Toolbar docked="top">     
-                    <div style={{ marginRight: '20px' }}>Cari:</div>
-                    <SearchField 
-                        ui="faded"
-                        placeholder="Search"
-                    />              
+                    <div style={{ marginRight: '20px' }}>Cari:</div>              
                     <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
                         Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat
                     </ToolTip>

@@ -79,16 +79,6 @@ export default class LengkapiSwakelolaLuaran extends Component {
                 shadow
                 height="550"
             >
-                <Toolbar docked="top">     
-                    <div style={{ marginRight: '20px' }}>Cari:</div>
-                    <SearchField 
-                        ui="faded"
-                        placeholder="Search"
-                    />              
-                    <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
-                        Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat
-                    </ToolTip>
-                </Toolbar>
                 <Column 
                     text="<b>Kode</b>" 
                     dataIndex="kodepaket" 

@@ -31,12 +31,14 @@ export default class SeluruhPaket extends Component {
     });
 
     state = {
-        grouped: true
+        grouped: false
     }
 
     onToggleGrouping = on => this.setState({ grouped: on })
 
     render() {
+
+        const { grouped } = this.state;
 
         return (
             <Grid
@@ -46,6 +48,7 @@ export default class SeluruhPaket extends Component {
                 gridviewoptions: true,
                 gridsummaryrow: true
             }}
+            grouped={grouped}
             signTpl={this.signTpl}
             shadow
             height="550"
