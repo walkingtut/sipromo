@@ -3,7 +3,7 @@ export default Ext.define('sipromo.model.PembuatKomitmen', {
 
     fields: [
         { name: 'id' },
-        { name: 'kodeSatker' },
+        { name: 'kodesatker' },
         { name: 'nama' },
         { name: 'satker' },
         { name: 'direktorat' },

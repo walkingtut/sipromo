@@ -54,7 +54,11 @@ export default class LengkapiSwakelolaTimTeknis extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/CompanyData.json'
-        } 
+        },
+        filters: [{
+            property: 'jenispaket',
+            value: 'SWAKELOLA'
+        }] 
     });
 
     onSearch = (grid, info) => {

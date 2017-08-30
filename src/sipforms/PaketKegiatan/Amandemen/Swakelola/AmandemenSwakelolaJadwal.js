@@ -45,6 +45,10 @@ export default class AmandemenSwakelolaJadwal extends Component {
             type: 'ajax',
             url: 'resources/data/PaketData.json'
         },
+        filters: [{
+            property: 'jenispaket',
+            value: 'SWAKELOLA'
+        }]
     });
 
     storeGrid = Ext.create('Ext.data.Store', {

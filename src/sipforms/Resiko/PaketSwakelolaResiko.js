@@ -33,7 +33,11 @@ export default class PaketSwakelolaBeresiko extends Component {
                 implicitIncludes: false
             }
         },
-        groupField: 'jenispaket'
+        groupField: 'jenispaket',
+        filters: [{
+            property: 'jenispaket',
+            value: 'SWAKELOLA'
+        }]
     });
 
     tpl = data => (

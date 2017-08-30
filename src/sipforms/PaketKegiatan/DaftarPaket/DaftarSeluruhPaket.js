@@ -31,7 +31,7 @@ export default class SeluruhPaket extends Component {
     });
 
     state = {
-        grouped: false
+        grouped: true
     }
 
     onToggleGrouping = on => this.setState({ grouped: on })
@@ -56,8 +56,8 @@ export default class SeluruhPaket extends Component {
             <Toolbar docked="top">     
                 <div style={{ marginRight: '20px' }}>Grouping:</div>
                 <SegmentedButton label="Grouping">
-                    <Button ui="toolbar-default" text="ON" handler={this.onToggleGrouping.bind(this, true)}/>
-                    <Button ui="toolbar-default" pressed text="OFF" handler={this.onToggleGrouping.bind(this, false)}/>
+                    <Button ui="toolbar-default" pressed text="ON" handler={this.onToggleGrouping.bind(this, true)}/>
+                    <Button ui="toolbar-default" text="OFF" handler={this.onToggleGrouping.bind(this, false)}/>
                 </SegmentedButton>                
                 <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
                     Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat

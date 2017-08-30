@@ -77,10 +77,10 @@ const root = {
     children: [
         { text: 'Master Data', navIcon: 'icon-basic-list', children: [
             {text: 'Direktorat', component: Direktorat, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Tenaga Ahli', component: TenagaAhli, layout: 'center', navIcon: 'icon-buttons'},
-            {text: 'PPK', component: PembuatKomitmen, layout: 'center', navIcon: 'icon-buttons'},
-            {text: 'Satker', component: Satker, layout: 'center', navIcon: 'icon-buttons'},
-            {text: 'Tim Teknis', component: TimTeknis, layout: 'center', navIcon: 'icon-buttons'}
+            {text: 'Tenaga Ahli', component: TenagaAhli, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'PPK', component: PembuatKomitmen, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'Satker', component: Satker, layout: 'center', navIcon: 'icon-basic-list'},
+            {text: 'Tim Teknis', component: TimTeknis, layout: 'center', navIcon: 'icon-basic-list'}
         ]},
         { text: 'Paket Kegiatan', navIcon: 'icon-basic-list', children: [
             {text: 'Daftar Paket Kegiatan', layout: 'center', navIcon: 'icon-basic-list', children: [
@@ -108,7 +108,7 @@ const root = {
                     {text: 'Tim Teknis', component: LengkapiSwakelolaTimTeknis, layout: 'center', navIcon: 'icon-basic-list'}
                 ]}
             ]},
-            {text: 'Kelola Kegiatan', layout: 'center', navIcon: 'icon-buttons', children: [
+            {text: 'Kelola Kegiatan', layout: 'center', navIcon: 'icon-basic-list', children: [
                 {text: 'Kontraktual', layout: 'center', navIcon: 'icon-basic-list', children: [
                     {text: 'Tahapan Kegiatan', component: KelolaKontraktualTahapan, layout: 'center', navIcon: 'icon-basic-list'},
                     {text: 'Jadwal Kegiatan', component: KelolaKontraktualJadwal, layout: 'center', navIcon: 'icon-basic-list'},
@@ -120,7 +120,7 @@ const root = {
                     {text: 'Rencana Penyerapan', component: KelolaKontraktualPenyerapan, layout: 'center', navIcon: 'icon-basic-list'}
                 ]}
             ]},
-            {text: 'Amandemen Kegiatan', layout: 'center', navIcon: 'icon-buttons', children: [
+            {text: 'Amandemen Kegiatan', layout: 'center', navIcon: 'icon-basic-list', children: [
                 {text: 'Kontraktual', layout: 'center', navIcon: 'icon-basic-list', children: [
                     {text: 'Maksud', component: AmandemenKontraktualMaksud, layout: 'center', navIcon: 'icon-basic-list'},
                     {text: 'Tujuan', component: AmandemenKontraktualTujuan, layout: 'center', navIcon: 'icon-basic-list'},
@@ -152,7 +152,7 @@ const root = {
                 {text: 'Paket Swakelola Beresiko', component: PaketSwakelolaResiko, layout: 'center', navIcon: 'icon-basic-list'},
                 {text: 'Forum Diskusi', component: ForumDiskusi, layout: 'center', navIcon: 'icon-basic-list'}
         ]},  
-        { text: 'Kalender', navIcon: 'icon-basic-list', children: [
+        { text: 'Kalender', navIcon: 'icon-calendar', children: [
             {text: 'Kalender Lengkap', component: TampilLengkap, layout: 'center', navIcon: 'icon-basic-list'},
             {text: 'Bulanan', component: TampilBulanan, layout: 'center', navIcon: 'icon-basic-list'},
             {text: 'Mingguan', component: TampilMingguan, layout: 'center', navIcon: 'icon-basic-list'},

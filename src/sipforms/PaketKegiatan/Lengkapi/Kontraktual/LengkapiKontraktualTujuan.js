@@ -43,6 +43,10 @@ export default class LengkapiKontraktualTujuan extends Component {
             type: 'ajax',
             url: 'resources/data/PaketData.json'
         },
+        filters: [{
+            property: 'jenispaket',
+            value: 'KONTRAKTUAL'
+        }]
     });
 
     storeGrid = Ext.create('Ext.data.Store', {

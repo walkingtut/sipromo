@@ -61,18 +61,18 @@ export default class PembuatKomitmen extends Component {
                         flex="5.5"
                     >
                         <Column 
-                            text="<b>Nama</b>" 
-                            dataIndex="name" 
-                            width="250"
+                            text="<b>Kode</b>" 
+                            dataIndex="kodeppk" 
+                            width="120"
                             summaryRenderer={this.summarizerecord}/>
+                        <Column 
+                            text="<b>Nama</b>" 
+                            width="250" 
+                            dataIndex="nama"/>
                         <Column 
                             text="<b>Satker</b>" 
                             width="100" 
                             dataIndex="satker"/>
-                        <Column 
-                            text="<b>Direktorat</b>" 
-                            width="100" 
-                            dataIndex="direktorat"/>
                     </Grid>
                     <FormPanel flex="4.5" height="350">
                         <FieldSet title="<h3>Input/Edit Master Data PPK</h3>">

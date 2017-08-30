@@ -33,7 +33,11 @@ export default class PaketKontraktualBeresiko extends Component {
                 implicitIncludes: false
             }
         },
-        groupField: 'jenispaket'
+        groupField: 'jenispaket',
+        filters: [{
+            property: 'jenispaket',
+            value: 'KONTRAKTUAL'
+        }]
     });
 
     tpl = data => (
