@@ -55,7 +55,7 @@ export default class LengkapiSwakelolaSasaran extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketSasaranData.json'
         } 
     });
 

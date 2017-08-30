@@ -51,7 +51,7 @@ export default class KelolaKontraktualTahapan extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTahapanData.json'
         } 
     });
 
@@ -78,12 +78,6 @@ export default class KelolaKontraktualTahapan extends Component {
                 shadow
                 height="550"
             >
-                <Toolbar docked="top">     
-                    <div style={{ marginRight: '20px' }}>Cari:</div>              
-                    <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
-                        Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat
-                    </ToolTip>
-                </Toolbar>
                 <Column 
                     text="<b>Kode</b>" 
                     dataIndex="kodepaket" 

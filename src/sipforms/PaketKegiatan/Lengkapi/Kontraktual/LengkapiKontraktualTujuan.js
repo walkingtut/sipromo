@@ -55,7 +55,7 @@ export default class LengkapiKontraktualTujuan extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTujuanData.json'
         } 
     });
 

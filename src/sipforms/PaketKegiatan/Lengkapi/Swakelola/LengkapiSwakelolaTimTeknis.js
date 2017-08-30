@@ -45,6 +45,10 @@ export default class LengkapiSwakelolaTimTeknis extends Component {
             type: 'ajax',
             url: 'resources/data/PaketData.json'
         },
+        filters: [{
+            property: 'jenispaket',
+            value: 'SWAKELOLA'
+        }] 
     });
 
     storeGrid = Ext.create('Ext.data.Store', {
@@ -53,12 +57,8 @@ export default class LengkapiSwakelolaTimTeknis extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTimTeknisData.json'
         },
-        filters: [{
-            property: 'jenispaket',
-            value: 'SWAKELOLA'
-        }] 
     });
 
     onSearch = (grid, info) => {

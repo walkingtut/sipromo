@@ -53,8 +53,12 @@ export default class KelolaKontraktualJadwal extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
-        } 
+            url: 'resources/data/PaketJadwalData.json'
+        },
+        filters: [{
+            property: 'kodepaket',
+            value: this.state.kodepaket
+        }],
     });
 
     onSearch = (grid, info) => {
@@ -80,12 +84,6 @@ export default class KelolaKontraktualJadwal extends Component {
                 shadow
                 height="550"
             >
-                <Toolbar docked="top">     
-                    <div style={{ marginRight: '20px' }}>Cari:</div>             
-                    <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
-                        Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat
-                    </ToolTip>
-                </Toolbar>
                 <Column 
                     text="<b>Kode</b>" 
                     dataIndex="kodepaket" 

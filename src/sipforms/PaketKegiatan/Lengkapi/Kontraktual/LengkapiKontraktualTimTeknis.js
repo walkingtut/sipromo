@@ -57,7 +57,7 @@ export default class LengkapiKontraktualTimTeknis extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTimTeknisData.json'
         } 
     });
 
@@ -209,8 +209,8 @@ export default class LengkapiKontraktualTimTeknis extends Component {
                         <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="100"/>
                         <Column text="<b>No. SK Tim Teknis</b>" dataIndex="nosktimteknis" width="150"/>
                         <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="200" />
-                        <Column text="<b>Kategori</b>" dataIndex="kategori" width="150" />
-                        <Column text="<b>Posisi</b>" dataIndex="posisi" width="150" />
+                        <Column text="<b>Kategori</b>" dataIndex="kategori" width="100" />
+                        <Column text="<b>Posisi</b>" dataIndex="posisi" width="100" />
                     </Grid>
 
                     <FormPanel flex="4" height="450">

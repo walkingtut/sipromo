@@ -50,18 +50,18 @@ export default class LengkapiKontraktualMaksud extends Component {
     });
 
     storeGrid = Ext.create('Ext.data.Store', {
-        autoLoad: false,
+        autoLoad: true,
         modelMaksud,
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketMaksudData.json'
         } 
     });
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
-        this.setState({ kodepaket: info.record.data.kodepaket});
+        this.setState({ kodepaket: info.record.data.kodepaket });
         this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
     }
 

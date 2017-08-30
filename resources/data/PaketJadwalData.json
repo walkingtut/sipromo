@@ -1,0 +1,154 @@
+[
+  {
+    "id": "1",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Kick Off Meeting",
+    "tanggalmulai": "27/3/2017",
+    "tanggalselesai": "31/3/2017"
+  },    
+  {
+    "id": "2",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Menyerahkan Dokumen Rencana Mutu",
+    "tanggalmulai": "3/4/2017",
+    "tanggalselesai": "7/4/2017"
+  }, 
+  {
+    "id": "3",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Pembahasan RMK",
+    "tanggalmulai": "10/4/2017",
+    "tanggalselesai": "14/4/2017"
+  }, 
+  {
+    "id": "4",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Melakukan kompilasi dan pemetaan data proyek atau kegiatan di Direktorat Jenderal Bina Konstruksi Tahun Anggaran 2015 sampai dengan 2017",
+    "tanggalmulai": "3/4/2017",
+    "tanggalselesai": "14/4/2017"
+  }, 
+  {
+    "id": "5",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Melakukan literature review terkait project management office",
+    "tanggalmulai": "10/4/2017",
+    "tanggalselesai": "14/4/2017"
+  }, 
+  {
+    "id": "6",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Melakukan benchmarking organisasi atau institusi yang melaksanakan project management office",
+    "tanggalmulai": "10/4/2017",
+    "tanggalselesai": "21/4/2017"
+  }, 
+  {
+    "id": "7",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Menyusun instrumen yang akan digunakan dalam project management office",
+    "tanggalmulai": "10/4/2017",
+    "tanggalselesai": "28/4/2017"
+  }, 
+  {
+    "id": "8",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Melakukan analisis terhadap data yang diperoleh dan mengeluarkan rekomendasi",
+    "tanggalmulai": "17/4/2017",
+    "tanggalselesai": "12/5/2017"
+  }, 
+  {
+    "id": "9",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "FGD I",
+    "tanggalmulai": "22/4/2017",
+    "tanggalselesai": "26/4/2017"
+  }, 
+  {
+    "id": "10",
+    "kodepaket": "46.1",
+    "tahapan": "Perencanaan",
+    "jadwalkegiatan": "Rapat Pembahasan Output I: Konsep tata kelola pengendalian PMO",
+    "tanggalmulai": "22/4/2017",
+    "tanggalselesai": "26/4/2017"
+  }, 
+  {
+    "id": "11",
+    "kodepaket": "46.1",
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin I",
+    "tanggalmulai": "22/4/2017",
+    "tanggalselesai": "26/4/2017"
+  }, 
+  {
+    "id": "12",
+    "kodepaket": "46.1",
+    "tahapan": "Pelaksanaan",
+    "jadwalkegiatan": "Membuat aplikasi sistem informasi project management office baik dalam bentuk website maupun software mobile phone",
+    "tanggalmulai": "22/4/2017",
+    "tanggalselesai": "14/7/2017"
+  }, 
+  {
+    "id": "13",
+    "kodepaket": "46.1",
+    "tahapan": "Pelaksanaan",
+    "jadwalkegiatan": "Rapat Pembahasan Output II: Aplikasi Sistem Informasi Project Management Office DJBK (SIPROMO)",
+    "tanggalmulai": "17/4/2014",
+    "tanggalselesai": "21/4/2017"
+  }, 
+  {
+    "id": "14",
+    "kodepaket": "46.1",
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin II",
+    "tanggalmulai": "17/4/2017",
+    "tanggalselesai": "21/4/2017"
+  }, 
+  {
+    "id": "15",
+    "kodepaket": "46.1",
+    "tahapan": "Pelaksanaan",
+    "jadwalkegiatan": "Penyusunan Manual Aplikasi SIPROMO DJBK",
+    "tanggalmulai": "17/7/2017",
+    "tanggalselesai": "8/11/2017"
+  }, 
+  {
+    "id": "16",
+    "kodepaket": "46.1",
+    "tahapan": "Evaluasi",
+    "jadwalkegiatan": "Rapat Pembahasan Output III: Manual Aplikasi SIPROMO DJBK",
+    "tanggalmulai": "4/11/2017",
+    "tanggalselesai": "8/11/2017"
+  }, 
+  {
+    "id": "17",
+    "kodepaket": "46.1",
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan Transfer Knowledge, melalui kegiatan workshop, terkait sistem informasi project management office yang telah dibangun kepada pegawai di Direktorat Jenderal Bina Konstruksi (Workshop)",
+    "tanggalmulai": "4/11/2017",
+    "tanggalselesai": "8/11/2017"
+  }, 
+  {
+    "id": "18",
+    "kodepaket": "46.1",
+    "tahapan": "Pelaporan",
+    "jadwalkegiatan": "Membuat dokumen ringkasan eksekutif",
+    "tanggalmulai": "11/11/2017",
+    "tanggalselesai": "15/11/2017"
+  }, 
+  {
+    "id": "19",
+    "kodepaket": "46.1",
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  }
+]

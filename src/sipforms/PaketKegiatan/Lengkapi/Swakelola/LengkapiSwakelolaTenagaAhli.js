@@ -60,7 +60,7 @@ export default class LengkapiSwakelolaTenagaAhli extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTenagaAhliData.json'
         } 
     });
 

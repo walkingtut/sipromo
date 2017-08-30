@@ -158,9 +158,9 @@ const root = {
             {text: 'Mingguan', component: TampilMingguan, layout: 'center', navIcon: 'icon-basic-list'},
             {text: 'Harian', component: TampilHarian, layout: 'center', navIcon: 'icon-basic-list'}
         ]}, 
-        { text: 'Statistik', navIcon: 'icon-basic-list', children: [
+        { text: 'Statistik', navIcon: 'icon-pie-charts', children: [
         ]},                     
-        { text: 'Laporan', navIcon: 'icon-basic-list', children: [
+        { text: 'Laporan', navIcon: 'icon-Redux-Grid', children: [
         ]},   
                        
     ]

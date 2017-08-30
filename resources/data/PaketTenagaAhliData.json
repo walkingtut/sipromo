@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "kodepaket": "46.1",
+    "namatenagaahli": "Iwan Mulyana, SE, M.Si",
+    "posisi": "Team Leader (Ahli Manajemen)",
+    "pendidikanterakhir": "S2",
+    "kualifikasi": "",
+    "durasipengalaman": "",
+    "sertifikatkeahlian": "",
+    "billingrate": "",
+    "durasikontrak": "6 bulan"
+  },
+  {
+    "id": "2",
+    "kodepaket": "46.1",
+    "namatenagaahli": "Edi Purwanto, S.Kom",
+    "posisi": "TA Sistem Analisis",
+    "pendidikanterakhir": "S1",
+    "kualifikasi": "",
+    "durasipengalaman": "",
+    "sertifikatkeahlian": "",
+    "billingrate": "",
+    "durasikontrak": "5 bulan"
+  },    
+  {
+    "id": "3",
+    "kodepaket": "46.1",
+    "namatenagaahli": "Dwi Kurniawan, S.Kom",
+    "posisi": "TA Desain Database",
+    "pendidikanterakhir": "S1",
+    "kualifikasi": "",
+    "durasipengalaman": "",
+    "sertifikatkeahlian": "",
+    "billingrate": "",
+    "durasikontrak": "5 bulan"
+  },
+]

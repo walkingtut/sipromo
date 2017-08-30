@@ -60,7 +60,7 @@ export default class LengkapiKontraktualTenagaAhli extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/CompanyData.json'
+            url: 'resources/data/PaketTenagaAhliData.json'
         } 
     });
 
@@ -196,7 +196,7 @@ export default class LengkapiKontraktualTenagaAhli extends Component {
                 closeAction="hide"
                 maskTapHandler={this.onCancel}
                 bodyPadding="20"
-                width="1200"
+                width="1000"
                 height="700"
                 defaultFocus="#ok"
                 onHide={() => this.setState({ showDialog: false })}
@@ -209,14 +209,14 @@ export default class LengkapiKontraktualTenagaAhli extends Component {
                         height="650"
                     > 
                     <Grid title="Tenaga Ahli Paket Kegiatan" store={this.storeGrid} shadow grouped flex="7" height="500">
-                        <Column text="Kode Paket" dataIndex="kodepaket" width="100"/>
-                        <Column text="Nama Tenaga Ahli" width="200" dataIndex="namatenagaahli" />
-                        <Column text="Pendidikan Terakhir" width="150" dataIndex="pendidikanterakhir"/>
-                        <Column text="Kualifikasi" dataIndex="kualifikasi" width="150"/>
-                        <Column text="Lama Pengalaman" width="150" dataIndex="durasipengalaman" />
-                        <Column text="Sertifikat Keahlian" width="100" dataIndex="sertifikatkeahlian"/>
-                        <Column text="Billing Rate" dataIndex="billingrate" width="150"/>
-                        <Column text="Lama Kontrak" dataIndex="durasikontrak" width="150"/>
+                        <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="100"/>
+                        <Column text="<b>Nama Tenaga Ahli</b>" width="200" dataIndex="namatenagaahli" />
+                        <Column text="<b>Pendidikan Terakhir</b>" width="100" dataIndex="pendidikanterakhir"/>
+                        <Column text="<b>Lama Kontrak</b>" dataIndex="durasikontrak" width="150"/>
+                        <Column text="<b>Kualifikasi</b>" dataIndex="kualifikasi" width="150"/>
+                        <Column text="<b>Lama Pengalaman</b>" width="150" dataIndex="durasipengalaman" />
+                        <Column text="<b>Sertifikat Keahlian</b>" width="100" dataIndex="sertifikatkeahlian"/>
+                        <Column text="<b>Billing Rate</b>" dataIndex="billingrate" width="150"/>           
                     </Grid>
 
                     <FormPanel flex="3" height="620">

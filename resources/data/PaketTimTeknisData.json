@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "kodepaket": "46.1",
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Pandu Gunadi Atmosukarto, ST, MUM",
+    "kategori": "Pengarah",
+    "posisi": "Ketua"
+  },
+  {
+    "id": "2",
+    "kodepaket": "46.1",
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Yolanda Indah Permatasari S.E., M.M.",
+    "kategori": "Pelaksana",
+    "posisi": "Anggota"
+  },
+  {
+    "id": "3",
+    "kodepaket": "46.1",
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Fahrial Farid, ST",
+    "kategori": "Pelaksana",
+    "posisi": "Anggota"
+  },
+  {
+    "id": "4",
+    "kodepaket": "46.1",
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Hasfarm Dian Purba, ST.",
+    "kategori": "Pelaksana",
+    "posisi": "Anggota"
+  }
+]

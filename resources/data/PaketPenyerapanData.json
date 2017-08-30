@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "kodepaket": "46.1",
+    "rencanapenyerapan": "Penarikan Termin I",
+    "tanggalpencairan": "19/5/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": "2",
+    "kodepaket": "46.1",
+    "rencanapenyerapan": "Penarikan Termin II",
+    "tanggalpencairan": "21/7/2017",
+    "persentase": "40%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": "3",
+    "kodepaket": "46.1",
+    "rencanapenyerapan": "Penarikan Termin III",
+    "tanggalpencairan": "18/9/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
+  }
+]

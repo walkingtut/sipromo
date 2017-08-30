@@ -5,6 +5,7 @@ export default Ext.define('sipromo.model.LengkapiKontraktualTenagaAhli', {
         { name: 'id' },
         { name: 'kodepaket' },
         { name: 'namatenagaahli' },
+        { name: 'posisi' },
         { name: 'pendidikanterakhir' },
         { name: 'kualifikasi' },
         { name: 'durasipengalaman' },
