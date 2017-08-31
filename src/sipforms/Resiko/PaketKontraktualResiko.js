@@ -26,7 +26,7 @@ export default class PaketKontraktualBeresiko extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/PaketData.json',
+            url: 'resources/data/PaketResikoData.json',
             reader: {
                 type: 'json',
                 rootProperty: 'data',
@@ -42,9 +42,9 @@ export default class PaketKontraktualBeresiko extends Component {
 
     tpl = data => (
         <div>
-            <div>Tingkat Resiko: </div>
-            <div>Alasan: </div>
-            <div>Rekomendasi: </div>
+            <div><b>Tingkat Resiko</b>: {data.statusresiko}</div>
+            <div><b>Alasan</b>: {data.alasan}</div>
+            <div><b>Rekomendasi</b>: {data.rekomendasi}</div>
             <div style={{marginTop:'1em'}}>{data.desc}</div>
         </div>
     );    
@@ -157,7 +157,7 @@ export default class PaketKontraktualBeresiko extends Component {
                 align="center" />     
             <Column 
                 text="<b>Resiko</b>" 
-                dataIndex="" 
+                dataIndex="statusresiko" 
                 width="150"
                 align="center" />           
         </Grid>

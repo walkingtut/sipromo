@@ -26,7 +26,7 @@ export default class PaketSwakelolaBeresiko extends Component {
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/PaketData.json',
+            url: 'resources/data/PaketResikoData.json',
             reader: {
                 type: 'json',
                 rootProperty: 'data',

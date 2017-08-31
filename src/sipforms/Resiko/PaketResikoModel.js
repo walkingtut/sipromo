@@ -18,5 +18,8 @@ export default Ext.define('sipromo.model.PaketResiko', {
         { name: 'nospmk' },
         { name: 'penyediajasa' },
         { name: 'tanggalpenyelesaian' },
+        { name: 'statusresiko' },
+        { name: 'alasan' },
+        { name: 'rekomendasi' },
     ]
 });
