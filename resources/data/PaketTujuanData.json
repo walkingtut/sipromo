@@ -3,5 +3,25 @@
     "id": "1",
     "kodepaket": "46.1",
     "tujuan": "Membantu pegawai Direktorat Jenderal Bina Konstruksi untuk melakukan pengendalian dan pemantauan kinerja terhadap proyek-proyek pada setiap unit-unit kerja di Direktorat Jenderal Bina Konstruksi"
+  },
+  {
+    "id": "2",
+    "kodepaket": "25.1",
+    "tujuan": "Melakukan konsultasi, monitoring dan evaluasi rekomendasi dalam rangka mewujudkan model kerjasama dan pemberdayaan stakeholders yang harmonis dan sinergis dalam mewujudkan pemberdayaan tenaga kerja konstruksi yang kompeten, handal, profesional dan kompetitif."
+  },
+  {
+    "id": "3",
+    "kodepaket": "20.1",
+    "tujuan": "Menemukan Keterhubungan Interoperatibilitas kerjasama pengembangan SDM Konstruksi antara Proses Bisnis Dunia Pendidikan dan Pelatihan dengan Proses Bisnis Dunia Konstruksi"
+  },
+  {
+    "id": "4",
+    "kodepaket": "20.1",
+    "tujuan": "Menemukan Keterpadupanan Output SDM yang dihasilan oleh Dunia Diklat dengan Input  yang dibutuhkan oleh Dunia Konstruksi"
+  },
+  {
+    "id": "5",
+    "kodepaket": "20.1",
+    "tujuan": "Menemukan keterpadupadanan kerjasama pengembangan SDM Konstruksi antara Dunia Pendidikan dan Pelatihan dengan Dunia Konstruksi"
   }
 ]
