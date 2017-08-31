@@ -56,15 +56,14 @@ export default class LengkapiKontraktualLingkup extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketLingkupData.json'
-        } 
+        }
     });
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
         this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
-        //Ext.getStore('storeGrid').clearFilter();
-        //Ext.getStore('storeGrid').filter('kodepaket', this.state.kodepaket);
+        this.storeGrid.filter('kodepaket', this.state.kodepaket);
     }
 
     render() {

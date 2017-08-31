@@ -54,17 +54,14 @@ export default class KelolaKontraktualJadwal extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketJadwalData.json'
-        },
-        filters: [{
-            property: 'kodepaket',
-            value: this.state.kodepaket
-        }],
+        }
     });
 
     onSearch = (grid, info) => {
         this.setState({ showDialog: true });
         this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
+        this.storeGrid.filter('kodepaket', this.state.kodepaket);
     }
 
     render() {

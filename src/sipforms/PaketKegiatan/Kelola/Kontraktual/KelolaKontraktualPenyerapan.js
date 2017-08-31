@@ -44,7 +44,7 @@ export default class KelolaKontraktualPenyerapan extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketData.json'
-        },
+        }
     });
 
     storeGrid = Ext.create('Ext.data.Store', {
@@ -61,6 +61,7 @@ export default class KelolaKontraktualPenyerapan extends Component {
         this.setState({ showDialog: true });
         this.setState({kodepaket: info.record.data.kodepaket});
         this.setState({judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket});
+        this.storeGrid.filter('kodepaket', this.state.kodepaket);
     }
 
     render() {

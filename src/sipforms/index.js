@@ -71,6 +71,11 @@ import TampilBulanan from './Kalender/Bulanan/TampilBulanan';
 import TampilMingguan from './Kalender/Mingguan/TampilMingguan';
 import TampilHarian from './Kalender/Harian/TampilHarian';
 
+// Statistik
+import JumlahPaketKontraktual from './Statistik/Paket/PerPPK/JumlahPaketKontraktual';
+import JumlahPaketSwakelola from './Statistik/Paket/PerPPK/JumlahPaketSwakelola';
+
+
 const root = {
     id: '/',
     text: 'Menu',
@@ -159,10 +164,9 @@ const root = {
             {text: 'Harian', component: TampilHarian, layout: 'center', navIcon: 'icon-basic-list'}
         ]}, 
         { text: 'Statistik', navIcon: 'icon-pie-charts', children: [
-        ]},                     
-        { text: 'Laporan', navIcon: 'icon-Redux-Grid', children: [
-        ]},   
-                       
+            { text: 'Jumlah Paket Kontraktual per PPK', component: JumlahPaketKontraktual, navIcon: 'icon-bar-basic' },
+            { text: 'Jumlah Paket Swakelola per PPK', component: JumlahPaketSwakelola, navIcon: 'icon-bar-basic' }
+        ]}
     ]
 };
 
