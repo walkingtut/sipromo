@@ -94,7 +94,7 @@ export default class JumlahPaketSwakelola extends Component {
                     }]}
                     captions={{
                         title: {
-                            text: 'Jumlah Paket Kegiatan Kontraktual per PPK',
+                            text: 'Jumlah Paket Kegiatan Swakelola per PPK',
                         }
                     }}
                 />
