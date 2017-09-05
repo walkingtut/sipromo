@@ -74,7 +74,8 @@ import TampilHarian from './Kalender/Harian/TampilHarian';
 // Statistik
 import JumlahPaketKontraktual from './Statistik/Paket/PerPPK/JumlahPaketKontraktual';
 import JumlahPaketSwakelola from './Statistik/Paket/PerPPK/JumlahPaketSwakelola';
-
+import ResikoKontraktual from './Statistik/Paket/PerPPK/ResikoKontraktual';
+import ResikoSwakelola from './Statistik/Paket/PerPPK/ResikoSwakelola';
 
 const root = {
     id: '/',
@@ -164,8 +165,14 @@ const root = {
             {text: 'Harian', component: TampilHarian, layout: 'center', navIcon: 'icon-basic-list'}
         ]}, 
         { text: 'Statistik', navIcon: 'icon-pie-charts', children: [
-            { text: 'Jumlah Paket Kontraktual per PPK', component: JumlahPaketKontraktual, navIcon: 'icon-bar-basic' },
-            { text: 'Jumlah Paket Swakelola per PPK', component: JumlahPaketSwakelola, navIcon: 'icon-bar-basic' }
+            { text: 'Kontraktual', layout: 'center', navIcon: 'icon-charts', children: [
+                { text: 'Jumlah Paket Kontraktual per PPK', component: JumlahPaketKontraktual, navIcon: 'icon-bar-basic' },
+                { text: 'Jumlah Paket Kontraktual dan Paket Beresiko', component: ResikoKontraktual, navIcon: 'icon-bar-stacked' }
+            ]},
+            {text: 'Swakelola', layout: 'center', navIcon: 'icon-charts', children: [   
+                { text: 'Jumlah Paket Swakelola per PPK', component: JumlahPaketSwakelola, navIcon: 'icon-bar-basic' }, 
+                { text: 'Jumlah Paket Swakelola an Paket Beresiko', component: ResikoSwakelola, navIcon: 'icon-bar-stacked' }
+            ]}
         ]}
     ]
 };
