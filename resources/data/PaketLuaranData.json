@@ -1,17 +1,437 @@
 [
   {
-    "id": "1",
-    "kodepaket": "46.1",
-    "luaran": "Konsep tata kelola pengendalian PMO"
+    "id": 1,
+    "kodepaket": 2.1,
+    "luaran": "Pengantar KPBU secara umum dan konsep penyelenggaraan KPBU;"
   },
   {
-    "id": "2",
-    "kodepaket": "46.1",
+    "id": 2,
+    "kodepaket": 2.1,
+    "luaran": "Konsep Materi I: Kelayakan teknis, lingkungan dan dampak sosial proyek KPBU, Kelayakan ekonomi dan finansial proyek KPBU, Analisis resiko proyek KPBU, dan  Dukungan kelayakan dan jaminan pemerintah terhadap proyek KPBU;"
+  },
+  {
+    "id": 3,
+    "kodepaket": 2.1,
+    "luaran": "Konsep Materi II: Kelayakan hukum dan kelembagaan proyek KPBU, Bentuk kerjasama proyek KPBU, dan Konsep perjanjian proyek KPBU; dan"
+  },
+  {
+    "id": 4,
+    "kodepaket": 2.1,
+    "luaran": "Konsep Monitoring dan Evaluasi."
+  },
+  {
+    "id": 5,
+    "kodepaket": 3.1,
+    "luaran": "1. Laporan hasil reviu dan identifikasi tentang seluruh produk pengaturan, dokumen perencanaan dan evaluasi kinerja, organisasi dan tata laksana, serta siklus perencanaan dan evaluasi;"
+  },
+  {
+    "id": 6,
+    "kodepaket": 3.1,
+    "luaran": "2. Buku Pedoman Perencanaan dan Evaluasi Program yang memuat: Siklus tahunan proses perencanaan, dan evaluasi; Kalender program kerja tahunan yang memuat jadwal serta tahapan setiap rangkaian proses perencanaan dan evaluasi; dan Standar format isian yang diperlukan dalam mendukung perencanaan dan evaluasi program."
+  },
+  {
+    "id": 7,
+    "kodepaket": 3.1,
+    "luaran": "3. Bahan sosialisasi pedoman perencanaan dan evaluasi program."
+  },
+  {
+    "id": 8,
+    "kodepaket": 46.1,
+    "luaran": "Konsep tata kelola pengendalian PMO;"
+  },
+  {
+    "id": 9,
+    "kodepaket": 46.1,
     "luaran": "Aplikasi Sistem Informasi Project Management Office DJBK (SIPROMO)"
   },
   {
-    "id": "3",
-    "kodepaket": "46.1",
+    "id": 10,
+    "kodepaket": 46.1,
     "luaran": "Manual Aplikasi SIPROMO"
+  },
+  {
+    "id": 11,
+    "kodepaket": 22.1,
+    "luaran": "Tersediannya Perhitungan TKDN pada Proyek Strategis Konstruksi PUPR sebagai benchmark Roadmap TKDN PUPR"
+  },
+  {
+    "id": 12,
+    "kodepaket": 28.1,
+    "luaran": "Tersedianya Rekomendasikan regulasi terkait dengan tipologi produk (dimensi dan spesifiaksi), peralatan pendukung produksi dan instalasi beton pracetak dan prategang"
+  },
+  {
+    "id": 13,
+    "kodepaket": 17.1,
+    "luaran": "Rekomendasi Kebijakan Penggunaan Pekerjaan Konstruksi spesialis"
+  },
+  {
+    "id": 14,
+    "kodepaket": 17.1,
+    "luaran": "Pedoman Pelaksanaan Pekerjaan Penyedia Jasa Konsultan Kajian"
+  },
+  {
+    "id": 15,
+    "kodepaket": 13.2,
+    "luaran": "Tersedianya Laporan Kinerja Program dan Rekomendasi Pengembangan Pembinaan Kelembagaan dan Sumber Daya Jasa Konstruksi."
+  },
+  {
+    "id": 16,
+    "kodepaket": 13.1,
+    "luaran": "Tersediannya sumber data dan profil terkait asosiasi perushaan dan asosiasi profesi di Indonesia"
+  },
+  {
+    "id": 17,
+    "kodepaket": 13.1,
+    "luaran": "Tersediannya sistem informasi profil asosiasi perusahaan dan asosiasi profesi yang terintegrasi SIPJAKI"
+  },
+  {
+    "id": 18,
+    "kodepaket": 25.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 19,
+    "kodepaket": 25.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 20,
+    "kodepaket": 25.1,
+    "luaran": "Gambaran tatakelola penyelenggaraan investasi infrastruktur skema  KPBU di bidang PUPR saat ini;"
+  },
+  {
+    "id": 21,
+    "kodepaket": 25.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 22,
+    "kodepaket": 25.1,
+    "luaran": "Usulan konsep kebijakan dan strategi dalam pelaksanaan KPBU yang lebih efektif di bidang PUPR;"
+  },
+  {
+    "id": 23,
+    "kodepaket": 25.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 24,
+    "kodepaket": 25.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 25,
+    "kodepaket": 26.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 26,
+    "kodepaket": 26.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 27,
+    "kodepaket": 26.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 28,
+    "kodepaket": 26.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 29,
+    "kodepaket": 26.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 30,
+    "kodepaket": 28.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 31,
+    "kodepaket": 28.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 32,
+    "kodepaket": 28.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 33,
+    "kodepaket": 28.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 34,
+    "kodepaket": 28.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 35,
+    "kodepaket": 32.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 36,
+    "kodepaket": 32.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 37,
+    "kodepaket": 32.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 38,
+    "kodepaket": 32.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 39,
+    "kodepaket": 32.1,
+    "luaran": "Executive Summary"
+  },
+  {
+    "id": 40,
+    "kodepaket": 34.1,
+    "luaran": "Laporan pendahuluan yang terdiri atas usulan rencana kerja, hasil review metodologi dan hasil validasi wawancara pakar;"
+  },
+  {
+    "id": 41,
+    "kodepaket": 34.1,
+    "luaran": "Laporan antara yang terdiri atas usulan penyempurnaan metodologi hasil FGD, dan sebagiah hasil survey daerah ;"
+  },
+  {
+    "id": 42,
+    "kodepaket": 34.1,
+    "luaran": "Draft laporan akhir yang terdiri atas hasil pemeringkatan kapasitas daerah beserta analisisnya dan usulan pola pembinaan berdasarkan pemetaan kapasitas daerah;"
+  },
+  {
+    "id": 43,
+    "kodepaket": 34.1,
+    "luaran": "Laporan akhir yang terdiri atas buku profil kesiapan daerah dan laporan pelaksanaan kajian secara keseluruhan yang telah di workshop kan; dan"
+  },
+  {
+    "id": 44,
+    "kodepaket": 34.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 45,
+    "kodepaket": 35.1,
+    "luaran": "Laporan pendahuluan yang terdiri atas usulan rencana kerja, hasil review metodologi dan hasil validasi wawancara pakar;"
+  },
+  {
+    "id": 46,
+    "kodepaket": 35.1,
+    "luaran": "Laporan antara yang terdiri atas usulan penyempurnaan metodologi hasil FGD, dan sebagian hasil survey daerah;"
+  },
+  {
+    "id": 47,
+    "kodepaket": 35.1,
+    "luaran": "Draft laporan akhir yang terdiri atas hasil pemeringkatan daerah berdasarkan tingkat risiko investasi infrastruktur, beserta analisisnya dan usulan pola penanganan berdasarkan hasil pemetaan risiko di daerah tersebut;"
+  },
+  {
+    "id": 48,
+    "kodepaket": 35.1,
+    "luaran": "Laporan akhir yang terdiri atas buku profil risiko investasi infrastruktur di daerah dan laporan pelaksanaan kajian secara keseluruhan yang telah di workshop kan; dan"
+  },
+  {
+    "id": 49,
+    "kodepaket": 35.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 50,
+    "kodepaket": 39.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 51,
+    "kodepaket": 39.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 52,
+    "kodepaket": 39.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 53,
+    "kodepaket": 39.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 54,
+    "kodepaket": 39.1,
+    "luaran": "Executive Summary"
+  },
+  {
+    "id": 55,
+    "kodepaket": 40.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 56,
+    "kodepaket": 40.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 57,
+    "kodepaket": 40.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 58,
+    "kodepaket": 40.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 59,
+    "kodepaket": 40.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 60,
+    "kodepaket": 42.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 61,
+    "kodepaket": 42.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 62,
+    "kodepaket": 42.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 63,
+    "kodepaket": 42.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 64,
+    "kodepaket": 42.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 65,
+    "kodepaket": 42.1,
+    "luaran": "Buku Pedoman;"
+  },
+  {
+    "id": 66,
+    "kodepaket": 42.1,
+    "luaran": "Buku Panduan Teknis;"
+  },
+  {
+    "id": 67,
+    "kodepaket": 42.1,
+    "luaran": "Buku Mekanisme Baku."
+  },
+  {
+    "id": 68,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Pendahuluan (10 Copy)"
+  },
+  {
+    "id": 69,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Antara (15 Copy)"
+  },
+  {
+    "id": 70,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Akhir, meliputi: Draft Laporan Akhir (15 Copy), Final Laporan Akhir (15 Copy)"
+  },
+  {
+    "id": 71,
+    "kodepaket": 20.1,
+    "luaran": "Executive Summary (15 Copy)"
+  },
+  {
+    "id": 72,
+    "kodepaket": 46.1,
+    "luaran": "Laporan pendahuluan;"
+  },
+  {
+    "id": 73,
+    "kodepaket": 46.1,
+    "luaran": "Laporan antara;"
+  },
+  {
+    "id": 74,
+    "kodepaket": 46.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 75,
+    "kodepaket": 46.1,
+    "luaran": "Rekomendasi model kerjasama pemerintah dengan badan usaha (KPBU) yang terintegrasi dalam manaj`emen konstruksi pada pelaksanaan proyek bidang PUPR;"
+  },
+  {
+    "id": 76,
+    "kodepaket": 46.1,
+    "luaran": "Laporan akhir; dan"
+  },
+  {
+    "id": 77,
+    "kodepaket": 46.1,
+    "luaran": "Executive Summary"
+  },
+  {
+    "id": 78,
+    "kodepaket": 25.1,
+    "luaran": "Laporan Pendahuluan;"
+  },
+  {
+    "id": 79,
+    "kodepaket": 25.1,
+    "luaran": "Laporan Antara;"
+  },
+  {
+    "id": 80,
+    "kodepaket": 25.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 81,
+    "kodepaket": 25.1,
+    "luaran": "Laporan Akhir; dan"
+  },
+  {
+    "id": 82,
+    "kodepaket": 25.1,
+    "luaran": "Executive Summary."
+  },
+  {
+    "id": 83,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Pendahuluan;"
+  },
+  {
+    "id": 84,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Antara;"
+  },
+  {
+    "id": 85,
+    "kodepaket": 20.1,
+    "luaran": "Draft laporan akhir;"
+  },
+  {
+    "id": 86,
+    "kodepaket": 20.1,
+    "luaran": "Laporan Akhir; dan"
+  },
+  {
+    "id": 87,
+    "kodepaket": 20.1,
+    "luaran": "Executive Summary."
   }
-]
+ ]

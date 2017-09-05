@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "kodepaket": "46.1",
     "nosktimteknis": "492/KPTS/KS/2017",
     "namatimteknis": "Pandu Gunadi Atmosukarto, ST, MUM",
@@ -8,7 +8,7 @@
     "posisi": "Ketua"
   },
   {
-    "id": "2",
+    "id": 2,
     "kodepaket": "46.1",
     "nosktimteknis": "492/KPTS/KS/2017",
     "namatimteknis": "Yolanda Indah Permatasari S.E., M.M.",
@@ -16,7 +16,7 @@
     "posisi": "Anggota"
   },
   {
-    "id": "3",
+    "id": 3,
     "kodepaket": "46.1",
     "nosktimteknis": "492/KPTS/KS/2017",
     "namatimteknis": "Fahrial Farid, ST",
@@ -24,11 +24,787 @@
     "posisi": "Anggota"
   },
   {
-    "id": "4",
+    "id": 4,
     "kodepaket": "46.1",
     "nosktimteknis": "492/KPTS/KS/2017",
     "namatimteknis": "Hasfarm Dian Purba, ST.",
     "kategori": "Pelaksana",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 5,
+    "kodepaket": 2.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Pandu Gunadi Atmosukarto, ST, MUM",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 6,
+    "kodepaket": 2.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Yolanda Indah Permatasari S.E., M.M.",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 7,
+    "kodepaket": 2.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Dimas Bayu Susanto, ST, MPSDA",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 8,
+    "kodepaket": 2.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Hasfarm Dian Purba, ST.",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 9,
+    "kodepaket": 3.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Pandu Gunadi Atmosukarto, ST, MUM",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 10,
+    "kodepaket": 3.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Fahrial Farid, ST",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 11,
+    "kodepaket": 3.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Dhany Saputra Bangun, SE",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 12,
+    "kodepaket": 3.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Meylina Hasbullah, ST, MM",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 13,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Dewi Chomistriana, ST.M.Sc",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 14,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Fani Dhuha, ST, M.Sc",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 15,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Bilie Eka Prasetya, SH",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 16,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Chairul Salam, ST, M.Sc",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 17,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sutjipto, S.Sos, M.Si",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 18,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Nurasih Asriningtyas, ST",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 19,
+    "kodepaket": 12.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Tri Berkah, SH, MH",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 20,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Dewi Chomistriana, ST.M.Sc",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 21,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Chairul Salam, ST, M.SC",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 22,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Kiki Patricia Dewi, ST",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 23,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Hasto Agoeng Sapoetro,S.ST,MT.",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 24,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budi Setiawan, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 25,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Fani Dhuha, ST, M.Sc",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 26,
+    "kodepaket": 14.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Immanuel Bonardo Hutagalung, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 27,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Ir. Siwi Subekti,MT",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 28,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Badriya, SH",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 29,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Immanuel Bonardo Hutagalung,ST, MT ",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 30,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Afrijhon Saragih, ST",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 31,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Novi Mekanisari, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 32,
+    "kodepaket": 17.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Dewi Rachmawaty, ST, M. Eng., M.PP",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 33,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budi Setiawan, ST., MT",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 34,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Maya Istarina, ST., MT",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 35,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Ratih Fitriani, ST., MT",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 36,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Melinda Bramanti, S.Sos",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 37,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Nicolast Wahyu Aji P, ST",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 38,
+    "kodepaket": 25.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budiasih Diah Sarsawati,S.Kom",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 39,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budi Setiawan, ST., MT",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 40,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sudarmo, S.IP",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 41,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Raden Rama Arieftianta.A.Md ",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 42,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Eka Prasetyawati, ST., M.Tech",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 43,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sunardi, SE,Sy",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 44,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Teni Agustina Rahyadi,S.IP.MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 45,
+    "kodepaket": 21.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "M. Taufik  ",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 46,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budi Setiawan, ST., MT",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 47,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Eka Prasetyawati, ST., M. Tech",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 48,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Teni Agustina R. S.IP.MT",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 49,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sudarmo, S.IP",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 50,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Cendi Chrisnanto, ST ",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 51,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Raden Rama Arieftianta.A.Md ",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 52,
+    "kodepaket": 19.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sunardi, SE, Sy",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 53,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Dewi Chomistriana, ST. M.Sc",
+    "kategori": "",
+    "posisi": "Ketua"
+  },
+  {
+    "id": 54,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Poliyuni Mulianingsih, S.AP",
+    "kategori": "",
+    "posisi": "Wakil Ketua"
+  },
+  {
+    "id": 55,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Chairul Salam, ST, M.Sc",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 56,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Budi Setiawan , ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 57,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Ratih Fitriani, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 58,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Eka Prasetyawati, ST., M.Tech",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 59,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Badriya, SH",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 60,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Maya Istarina, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 61,
+    "kodepaket": 6.1,
+    "nosktimteknis": "09/KPTS/KP.PPK/2017",
+    "namatimteknis": "Sudarmo, S.IP",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 62,
+    "kodepaket": 46.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Pandu Gunadi Atmosukarto, ST, MUM",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 63,
+    "kodepaket": 46.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Yolanda Indah Permatasari S.E., M.M.",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 64,
+    "kodepaket": 46.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Fahrial Farid, ST",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 65,
+    "kodepaket": 46.1,
+    "nosktimteknis": "492/KPTS/KS/2017",
+    "namatimteknis": "Hasfarm Dian Purba, ST.",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 66,
+    "kodepaket": 22.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2107",
+    "namatimteknis": "Ir.  Yaya Supriyatna S, M.Eng.Sc",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 67,
+    "kodepaket": 22.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2108",
+    "namatimteknis": "Ir. Ati Nurzamiati H. Zubir, MT",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 68,
+    "kodepaket": 22.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2109",
+    "namatimteknis": "Achmad Agus Fitrah Akbarm ST, MT",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 69,
+    "kodepaket": 22.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2110",
+    "namatimteknis": "Anjar Pramularsih, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 70,
+    "kodepaket": 22.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2111",
+    "namatimteknis": "Sabilissalam A. SE",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 71,
+    "kodepaket": 13.2,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2112",
+    "namatimteknis": "Ir.  Yaya Supriyatna S, M.Eng.Sc",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 72,
+    "kodepaket": 13.2,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2113",
+    "namatimteknis": "Muchtar Rosyid Harjono, S.Si, MT",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 73,
+    "kodepaket": 13.2,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2114",
+    "namatimteknis": "Agus Raharyo, SE, M.Si",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 74,
+    "kodepaket": 13.2,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2115",
+    "namatimteknis": "Achmad Agus Fitrah, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 75,
+    "kodepaket": 13.2,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2116",
+    "namatimteknis": "Sabilissalam A. SE",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 76,
+    "kodepaket": 17.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2117",
+    "namatimteknis": "Ir.  Yaya Supriyatna S, M.Eng.Sc",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 77,
+    "kodepaket": 17.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2118",
+    "namatimteknis": "Ir. Suwanto, MM",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 78,
+    "kodepaket": 17.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2119",
+    "namatimteknis": "HendroWidodo, ST, MT",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 79,
+    "kodepaket": 17.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2120",
+    "namatimteknis": "Zuni Ansariffa, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 80,
+    "kodepaket": 17.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2121",
+    "namatimteknis": "Heru Dian Pransiska, ST, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 81,
+    "kodepaket": 13.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2122",
+    "namatimteknis": "Ir.  Yaya Supriyatna S, M.Eng.Sc",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 82,
+    "kodepaket": 13.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2123",
+    "namatimteknis": "Muchtar Rosyid Harjono, S.Si, MT ",
+    "kategori": "",
+    "posisi": "Pengarah"
+  },
+  {
+    "id": 83,
+    "kodepaket": 13.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2124",
+    "namatimteknis": "Nurasih Asriningsih, ST",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 84,
+    "kodepaket": 13.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2125",
+    "namatimteknis": "Merawati Pasenggong, S,Sos",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 85,
+    "kodepaket": 13.1,
+    "nosktimteknis": "42/KPTS/SDBKSDJK/DJBK/KD/IV/2126",
+    "namatimteknis": "Dwi Haryanti Putri, SE",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 86,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Sutjipto, Ssos, Msi",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 87,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "R.J Catherine l.Sihombing, S.Sos",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 88,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Evrillisia Rahayu ., ST., MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 89,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "R. Agoeng Triadi, ST., M.Eng.Sc",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 90,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Gendis Priya Nareswara, ST., MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 91,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Danny Davincy, ST., MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 92,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Tri Berkah, SH, MH",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 93,
+    "kodepaket": 20.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Suyono, SE., M.Si",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 94,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Disantina Ari Nusanti, ST, MM",
+    "kategori": "",
+    "posisi": "Ketua "
+  },
+  {
+    "id": 95,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Decki Rahadian Firdiansyah, S.kom., M.Ec.Dev., M.Sc",
+    "kategori": "",
+    "posisi": "Sekretaris"
+  },
+  {
+    "id": 96,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Aditya Anwar., SH., ME., MPP",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 97,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Tabroni, S.Sos",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 98,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Rino Febrando, SE, MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 99,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Maria Ulfah, SH., MT",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 100,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Tri Berkah, SH, MH",
+    "kategori": "",
+    "posisi": "Anggota"
+  },
+  {
+    "id": 101,
+    "kodepaket": 25.1,
+    "nosktimteknis": "91/KPTS/SATKER-DKSP/IV/2017",
+    "namatimteknis": "Niken Dwi Pramesti, ST",
+    "kategori": "",
     "posisi": "Anggota"
   }
 ]

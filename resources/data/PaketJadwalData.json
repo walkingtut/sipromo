@@ -1,154 +1,554 @@
 [
   {
     "id": "1",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Kick Off Meeting",
     "tanggalmulai": "27/3/2017",
     "tanggalselesai": "31/3/2017"
-  },    
+  },
   {
     "id": "2",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Menyerahkan Dokumen Rencana Mutu",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyerahkan Dokumen Rencana Mutu;",
     "tanggalmulai": "3/4/2017",
     "tanggalselesai": "7/4/2017"
-  }, 
+  },
   {
     "id": "3",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Pembahasan RMK",
     "tanggalmulai": "10/4/2017",
     "tanggalselesai": "14/4/2017"
-  }, 
+  },
   {
     "id": "4",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Melakukan kompilasi dan pemetaan data proyek atau kegiatan di Direktorat Jenderal Bina Konstruksi Tahun Anggaran 2015 sampai dengan 2017",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan kompilasi dan pemetaan data proyek atau kegiatan di Direktorat Jenderal Bina Konstruksi Tahun Anggaran 2015 sampai dengan 2017;",
     "tanggalmulai": "3/4/2017",
     "tanggalselesai": "14/4/2017"
-  }, 
+  },
   {
     "id": "5",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Melakukan literature review terkait project management office",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan literature review terkait project management office;",
     "tanggalmulai": "10/4/2017",
     "tanggalselesai": "14/4/2017"
-  }, 
+  },
   {
     "id": "6",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Melakukan benchmarking organisasi atau institusi yang melaksanakan project management office",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan benchmarking organisasi atau institusi yang melaksanakan project management office;",
     "tanggalmulai": "10/4/2017",
     "tanggalselesai": "21/4/2017"
-  }, 
+  },
   {
     "id": "7",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Menyusun instrumen yang akan digunakan dalam project management office",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun instrumen yang akan digunakan dalam project management office;",
     "tanggalmulai": "10/4/2017",
     "tanggalselesai": "28/4/2017"
-  }, 
+  },
   {
     "id": "8",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
-    "jadwalkegiatan": "Melakukan analisis terhadap data yang diperoleh dan mengeluarkan rekomendasi",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan analisis terhadap data yang diperoleh dan mengeluarkan rekomendasi;",
     "tanggalmulai": "17/4/2017",
     "tanggalselesai": "12/5/2017"
-  }, 
+  },
   {
     "id": "9",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "FGD I",
-    "tanggalmulai": "22/4/2017",
-    "tanggalselesai": "26/4/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "10",
-    "kodepaket": "46.1",
-    "tahapan": "Perencanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Rapat Pembahasan Output I: Konsep tata kelola pengendalian PMO",
-    "tanggalmulai": "22/4/2017",
-    "tanggalselesai": "26/4/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "11",
-    "kodepaket": "46.1",
+    "kodepaket": 46.1,
     "tahapan": "",
     "jadwalkegiatan": "Penarikan Termin I",
-    "tanggalmulai": "22/4/2017",
-    "tanggalselesai": "26/4/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "12",
-    "kodepaket": "46.1",
-    "tahapan": "Pelaksanaan",
-    "jadwalkegiatan": "Membuat aplikasi sistem informasi project management office baik dalam bentuk website maupun software mobile phone",
-    "tanggalmulai": "22/4/2017",
-    "tanggalselesai": "14/7/2017"
-  }, 
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Membuat aplikasi sistem informasi project management office baik dalam bentuk website maupun software mobile phone; dan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "13",
-    "kodepaket": "46.1",
-    "tahapan": "Pelaksanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Rapat Pembahasan Output II: Aplikasi Sistem Informasi Project Management Office DJBK (SIPROMO)",
-    "tanggalmulai": "17/4/2014",
-    "tanggalselesai": "21/4/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "14",
-    "kodepaket": "46.1",
+    "kodepaket": 46.1,
     "tahapan": "",
     "jadwalkegiatan": "Penarikan Termin II",
-    "tanggalmulai": "17/4/2017",
-    "tanggalselesai": "21/4/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "15",
-    "kodepaket": "46.1",
-    "tahapan": "Pelaksanaan",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Penyusunan Manual Aplikasi SIPROMO DJBK",
-    "tanggalmulai": "17/7/2017",
-    "tanggalselesai": "8/11/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "16",
-    "kodepaket": "46.1",
-    "tahapan": "Evaluasi",
+    "kodepaket": 46.1,
+    "tahapan": "",
     "jadwalkegiatan": "Rapat Pembahasan Output III: Manual Aplikasi SIPROMO DJBK",
-    "tanggalmulai": "4/11/2017",
-    "tanggalselesai": "8/11/2017"
-  }, 
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "17",
-    "kodepaket": "46.1",
+    "kodepaket": 46.1,
     "tahapan": "",
-    "jadwalkegiatan": "Melakukan Transfer Knowledge, melalui kegiatan workshop, terkait sistem informasi project management office yang telah dibangun kepada pegawai di Direktorat Jenderal Bina Konstruksi (Workshop)",
-    "tanggalmulai": "4/11/2017",
-    "tanggalselesai": "8/11/2017"
-  }, 
+    "jadwalkegiatan": "Melakukan Transfer Knowledge, melalui kegiatan workshop, terkait sistem informasi project management office yang telah dibangun kepada pegawai di Direktorat Jenderal Bina Konstruksi (Workshop);",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "18",
-    "kodepaket": "46.1",
-    "tahapan": "Pelaporan",
-    "jadwalkegiatan": "Membuat dokumen ringkasan eksekutif",
-    "tanggalmulai": "11/11/2017",
-    "tanggalselesai": "15/11/2017"
-  }, 
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Membuat dokumen ringkasan eksekutif.",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
   {
     "id": "19",
-    "kodepaket": "46.1",
+    "kodepaket": 46.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "20",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Kick Off Meeting",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "21",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyerahkan Dokumen Rencana Mutu;",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "22",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Pembahasan RMK",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "23",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Pengantar KPBU",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "24",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Kelayakan Teknis",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "25",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Lingkungan dan Dampak Sosial",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "26",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "27",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Workshop",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "28",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin I",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "29",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Kelayakan Ekonomi",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "30",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Kelayakan Finansial",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "31",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Analisis Resiko",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "32",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian  Dukungan Kelayakan dan Jaminan Pemerintah",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "33",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Bentuk Kerjasama",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "34",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "35",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Workshop II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "36",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "37",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Kelayakan Hukum dan Kelembagaan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "38",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Kajian Konsep Perjanjian",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "39",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan Konsep Monitoring dan Evaluasi",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "40",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "41",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Workshop III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "42",
+    "kodepaket": 2.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "43",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Kick Off Meeting",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "44",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penyusunan RMK",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "45",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyerahkan Dokumen Rencana Mutu;",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "46",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Pembahasan RMK",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "47",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan reviu seluruh produk pengaturan maupun pedoman tentang proses perencanaan dan evaluas",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "48",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan reviu seluruh dokumen perencanaan (renstra, RKP, RPJMN) dan evaluasi (LAKIP)",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "49",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan identifikasi dan analisis terhadap siklus proses perencanaan dan evaluasi program Ditjen Bina Konstruksi dan kaitannya dengan pemangku kepentingan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "50",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Mengidentifikasi pembagian peran, tugas dan fungsi yang tegas dari setiap unit kerja",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "51",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Rapat Pembahasan Bersama Tim Teknis (Output I)",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "52",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD I",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "53",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin I",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "54",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Melakukan identifikasi kebutuhan penyusunan program kerja tahunan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "55",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun kalender program kerja tahunan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "56",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun standar format isian yang diperlukan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "57",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun siklus tahunan proses perencanaan dan evaluasi",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "58",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Rapat Pembahasan Bersama Tim Teknis (Output II)",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "59",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "60",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Revisi",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "61",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Workshop I",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "62",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Penarikan Termin II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "63",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun bahan sosialisasi pedoman perencanaan dan evaluasi program",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "64",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Rapat Pembahasan Bersama Tim Teknis",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "65",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "FGD III",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "66",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Revisi Hasil Pembahasan",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "67",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Workshop II",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "68",
+    "kodepaket": 3.1,
+    "tahapan": "",
+    "jadwalkegiatan": "Menyusun Ringkasan Eksekutif",
+    "tanggalmulai": "",
+    "tanggalselesai": ""
+  },
+  {
+    "id": "69",
+    "kodepaket": 3.1,
     "tahapan": "",
     "jadwalkegiatan": "Penarikan Termin III",
     "tanggalmulai": "",
     "tanggalselesai": ""
   }
-]
+ ]

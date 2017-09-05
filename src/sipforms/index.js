@@ -76,6 +76,8 @@ import JumlahPaketKontraktual from './Statistik/Paket/PerPPK/JumlahPaketKontrakt
 import JumlahPaketSwakelola from './Statistik/Paket/PerPPK/JumlahPaketSwakelola';
 import ResikoKontraktual from './Statistik/Paket/PerPPK/ResikoKontraktual';
 import ResikoSwakelola from './Statistik/Paket/PerPPK/ResikoSwakelola';
+import NilaiPaketKontraktual from './Statistik/Paket/PerPPK/NilaiPaketKontraktual';
+import NilaiPaketSwakelola from './Statistik/Paket/PerPPK/NilaiPaketSwakelola';
 
 const root = {
     id: '/',
@@ -155,8 +157,7 @@ const root = {
         ]},   
         { text: 'Manajemen Resiko', navIcon: 'icon-basic-list', children: [
                 {text: 'Paket Kontraktual Beresiko', component: PaketKontraktualResiko, layout: 'center', navIcon: 'icon-basic-list'},
-                {text: 'Paket Swakelola Beresiko', component: PaketSwakelolaResiko, layout: 'center', navIcon: 'icon-basic-list'},
-                {text: 'Forum Diskusi', component: ForumDiskusi, layout: 'center', navIcon: 'icon-basic-list'}
+                {text: 'Paket Swakelola Beresiko', component: PaketSwakelolaResiko, layout: 'center', navIcon: 'icon-basic-list'}
         ]},  
         { text: 'Kalender', navIcon: 'icon-calendar', children: [
             {text: 'Kalender Lengkap', component: TampilLengkap, layout: 'center', navIcon: 'icon-basic-list'},
@@ -166,12 +167,14 @@ const root = {
         ]}, 
         { text: 'Statistik', navIcon: 'icon-pie-charts', children: [
             { text: 'Kontraktual', layout: 'center', navIcon: 'icon-charts', children: [
-                { text: 'Jumlah Paket Kontraktual per PPK', component: JumlahPaketKontraktual, navIcon: 'icon-bar-basic' },
-                { text: 'Jumlah Paket Kontraktual dan Paket Beresiko', component: ResikoKontraktual, navIcon: 'icon-bar-stacked' }
+                { text: 'Jumlah Paket per PPK', component: JumlahPaketKontraktual, navIcon: 'icon-bar-basic' },
+                { text: 'Nilai Paket per PPK', component: NilaiPaketKontraktual, navIcon: 'icon-bar-stacked' },
+                { text: 'Jumlah Total Paket dan Paket Beresiko', component: ResikoKontraktual, navIcon: 'icon-bar-stacked' } 
             ]},
             {text: 'Swakelola', layout: 'center', navIcon: 'icon-charts', children: [   
                 { text: 'Jumlah Paket Swakelola per PPK', component: JumlahPaketSwakelola, navIcon: 'icon-bar-basic' }, 
-                { text: 'Jumlah Paket Swakelola an Paket Beresiko', component: ResikoSwakelola, navIcon: 'icon-bar-stacked' }
+                { text: 'Nilai Paket per PPK', component: NilaiPaketSwakelola, navIcon: 'icon-bar-stacked' },
+                { text: 'Jumlah Total Paket dan Paket Beresiko', component: ResikoSwakelola, navIcon: 'icon-bar-stacked' }
             ]}
         ]}
     ]

@@ -1,26 +1,74 @@
 [
   {
-    "id": "1",
-    "kodepaket": "46.1",
+    "id": 1,
+    "kodepaket": 46.1,
     "rencanapenyerapan": "Penarikan Termin I",
-    "tanggalpencairan": "19/5/2017",
+    "tanggalpencairan": "5/9/2017",
     "persentase": "30%",
     "dokumenpendukung": ""
   },
   {
-    "id": "2",
-    "kodepaket": "46.1",
+    "id": 2,
+    "kodepaket": 46.1,
     "rencanapenyerapan": "Penarikan Termin II",
     "tanggalpencairan": "21/7/2017",
     "persentase": "40%",
     "dokumenpendukung": ""
   },
   {
-    "id": "3",
-    "kodepaket": "46.1",
+    "id": 3,
+    "kodepaket": 46.1,
     "rencanapenyerapan": "Penarikan Termin III",
     "tanggalpencairan": "18/9/2017",
     "persentase": "30%",
     "dokumenpendukung": ""
+  },
+  {
+    "id": 4,
+    "kodepaket": 2.1,
+    "rencanapenyerapan": "Penarikan Termin I",
+    "tanggalpencairan": "19/5/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": 5,
+    "kodepaket": 2.1,
+    "rencanapenyerapan": "Penarikan Termin II",
+    "tanggalpencairan": "21/7/2017",
+    "persentase": "40%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": 6,
+    "kodepaket": 2.1,
+    "rencanapenyerapan": "Penarikan Termin III",
+    "tanggalpencairan": "18/9/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": 7,
+    "kodepaket": 3.1,
+    "rencanapenyerapan": "Penarikan Termin I",
+    "tanggalpencairan": "2/6/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": 8,
+    "kodepaket": 3.1,
+    "rencanapenyerapan": "Penarikan Termin II",
+    "tanggalpencairan": "4/8/2017",
+    "persentase": "40%",
+    "dokumenpendukung": ""
+  },
+  {
+    "id": 9,
+    "kodepaket": 3.1,
+    "rencanapenyerapan": "Penarikan Termin III",
+    "tanggalpencairan": "2/10/2017",
+    "persentase": "30%",
+    "dokumenpendukung": ""
   }
-]
+ ]

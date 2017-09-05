@@ -1,82 +1,192 @@
 [
   {
-    "id": "1",
-    "kodepaket": "46.1",
+    "id": 1,
+    "kodepaket": 2.1,
+    "sasaran": "Tersedianya program dan materi peningkatan manajemen kinerja PPP Unit di Kementerian PUPR"
+  },
+  {
+    "id": 2,
+    "kodepaket": 3.1,
+    "sasaran": "Tersusunnya draft pedoman perencanaan dan evaluasi program pembinaan konstruksi;"
+  },
+  {
+    "id": 3,
+    "kodepaket": 3.1,
+    "sasaran": "Tersedianya materi sosialisasi pedoman perencanaan dan evaluasi program pembinaan konstruksi."
+  },
+  {
+    "id": 4,
+    "kodepaket": 46.1,
     "sasaran": "Tersusunnya masukan konsep tata kelola PMO"
   },
   {
-    "id": "2",
-    "kodepaket": "46.1",
-    "sasaran": "Tersedianya aplikasi Sistem Informasi Project Management Office DJBK (SIPROMO)"
+    "id": 5,
+    "kodepaket": 46.1,
+    "sasaran": "Tersedianya aplikasi Sistem Informasi Project Management Office DJBK (SIPROMO); dan"
   },
   {
-    "id": "3",
-    "kodepaket": "46.1",
+    "id": 6,
+    "kodepaket": 46.1,
     "sasaran": "Tersusunnya manual aplikasi SIPROMO"
   },
   {
-    "id": "3",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya kerangka model kerjasama dan pemberdayaan antar stakeholders konstruksi nasional yang harmonis dan sinergis untuk peningkatan kompetensi SDM konstruksi nasional"
+    "id": 7,
+    "kodepaket": 22.1,
+    "sasaran": "Tersediannya Perhitungan TKDN Proyek Strategis Konstruksi PUPR sebagai benchmark Roadmap TKDN PUPR."
   },
   {
-    "id": "3",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya instrumen monitoring kerjasama dan pemberdayaan antar stakeholders nasional"
+    "id": 8,
+    "kodepaket": 28.1,
+    "sasaran": "Tersedianya Rekomendasikan regulasi terkait dengan tipologi produk (dimensi dan spesifiaksi), peralatan pendukung produksi dan instalasi beton pracetak dan prategang."
   },
   {
-    "id": "4",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya pengukuran efektifitas pelaksanaan kegiatan mitra kerja"
+    "id": 9,
+    "kodepaket": 17.1,
+    "sasaran": "Draft Kebijakan Peningkatan Penggunaan Penyedia Jasa Pekerjaan Konstruksi Spesialis: Rekomendasi Kebijakan Penggunaan Pekerjaan Konstruksi spesialis, Pedoman Pelaksanaan Pekerjaan Penyedia Jasa Konsultan Kajian"
   },
   {
-    "id": "5",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya perhitungan dan analisa jumlah asesor serta instruktur"
+    "id": 10,
+    "kodepaket": 13.2,
+    "sasaran": "Penyusunan perencanaan pelaksanaan kegiatan (tindak lanjut dan koordinasi dengan balai dilingkungan DJBK)."
   },
   {
-    "id": "6",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya petunjuk pelaksanaan pemantauan dan evaluasi pelaksanaan kerja sama dan pemberdayaan"
+    "id": 11,
+    "kodepaket": 13.2,
+    "sasaran": "Pengendalian sasaran output, outcome dan program"
   },
   {
-    "id": "7",
-    "kodepaket": "25.1",
-    "sasaran": "Tersusunnya kerangka rencana program kerjasama dan pemberdayaan"
+    "id": 12,
+    "kodepaket": 13.2,
+    "sasaran": "Monitoring dan evaluasi pelaksanaan kegiatan "
   },
   {
-    "id": "8",
-    "kodepaket": "25.1",
+    "id": 13,
+    "kodepaket": 13.1,
+    "sasaran": "Tersediannya sumber data dan profil terkait asosiasi perushaan dan asosiasi profesi di Indonesia"
+  },
+  {
+    "id": 14,
+    "kodepaket": 13.1,
+    "sasaran": "Tersediannya sistem informasi profil asosiasi perusahaan dan asosiasi profesi yang terintegrasiSIPJAKI"
+  },
+  {
+    "id": 15,
+    "kodepaket": 25.1,
+    "sasaran": "Memberikan acuan bagi Kementerian Pekerjaan Umum Perumahan Rakyat dan Pemerintah Daerah dalam penyusunan regulasi investasi infrastruktur selama kurun waktu 2016-2019"
+  },
+  {
+    "id": 16,
+    "kodepaket": 26.1,
+    "sasaran": "Tersedianya road map penyelenggaraan tugas simpul KPBU"
+  },
+  {
+    "id": 17,
+    "kodepaket": 28.1,
+    "sasaran": "Tersusunnya rancangan peraturan Menteri PUPR tentang Pelaksanaan Bundling Project KPBU Infrastruktur PUPR  yang dapat digunakan oleh stakeholder termasuk kelembagaan yang memiliki tugas dan fungsi mendukung investasi infrastruktur"
+  },
+  {
+    "id": 18,
+    "kodepaket": 32.1,
+    "sasaran": "Tersedianya web atau sistem informasi yang memberikan layanan konsultasi investasi infrastruktur PUPR kepada pemangku kepentingan"
+  },
+  {
+    "id": 19,
+    "kodepaket": 34.1,
+    "sasaran": "Tersedianya profil fasilitasi investasi infrastruktur oleh pemerintah daerah di wilayah Jawa, Bali Dan Nusa Tenggara"
+  },
+  {
+    "id": 20,
+    "kodepaket": 35.1,
+    "sasaran": "Tersusunnya peta profil risiko investasi infrastruktur yang spesifik di wilayah Jawa, Bali dan Nusa Tenggara beserta pola penanganannya."
+  },
+  {
+    "id": 21,
+    "kodepaket": 39.1,
+    "sasaran": "Meningkatkan efektifitas alokasi investasi di sektor infrastruktur PUPR untuk menunjang  pembangunan infrastruktur untuk kemakmuran masyarakat"
+  },
+  {
+    "id": 22,
+    "kodepaket": 40.1,
+    "sasaran": "Memberikan landasan dan acuan pengambilan keputusan untuk penyusunan kebijakan investasi infrastruktur terutama berkaitan dengan target peningkatan kapitalisasi konstruksi nasional oleh investor lokal."
+  },
+  {
+    "id": 23,
+    "kodepaket": 42.1,
+    "sasaran": "Memberikan gambaran bagi semua kalangan baik kalangan swasta maupun pemerintah pusat / daerah dalam menghadapi liberalisasi perdagangan jasa konstruksi internasional."
+  },
+  {
+    "id": 24,
+    "kodepaket": 20.1,
+    "sasaran": "Tersedianya dukungan konsultansi teknis dan keahlian terhadap proses manajerial yang dilakukan oleh direktorat bina investasi infrastruktur agar dapat Terukurnya pencapaian outcome TA 2017, Tersusunnya rencana upaya pencapaian outcome TA 2018 dan Tersusunnya profil pencapaian Renstra DBII 2015-2019 untuk TA 2017"
+  },
+  {
+    "id": 25,
+    "kodepaket": 46.1,
+    "sasaran": "Memberikan acuan bagi Kementerian Pekerjaan Umum Perumahan Rakyat dalam merumuskan kebijakan investasi infrastruktur dengan skema KPBU khususnya bidang PUPR"
+  },
+  {
+    "id": 26,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya kerangka model kerjasama dan pemberdayaan antar stakeholders konstruksi nasional yang harmonis dan sinergis untuk peningkatan kompetensi SDM konstruksi nasional;"
+  },
+  {
+    "id": 27,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya instrumen monitoring kerjasama dan pemberdayaan antar stakeholders nasional;"
+  },
+  {
+    "id": 28,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya pengukuran efektifitas pelaksanaan kegiatan mitra kerja;"
+  },
+  {
+    "id": 29,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya perhitungan dan analisa jumlah asesor serta instruktur;"
+  },
+  {
+    "id": 30,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya petunjuk pelaksanaan pemantauan dan evaluasi pelaksanaan kerja sama dan pemberdayaan;"
+  },
+  {
+    "id": 31,
+    "kodepaket": 25.1,
+    "sasaran": "Tersusunnya kerangka rencana program kerjasama dan pemberdayaan;"
+  },
+  {
+    "id": 32,
+    "kodepaket": 25.1,
     "sasaran": "Tersusunnya konsep pengaturan Bidang Kerjasama dan Pemberdayaan"
   },
   {
-    "id": "9",
-    "kodepaket": "20.1",
-    "sasaran": "Teridentifikasinya gambaran Proses Bisnis K/L/D/I yang berada dalam Dunia Pendidikan dan Pelatihan serta Dunia Konstruksi"
+    "id": 33,
+    "kodepaket": 20.1,
+    "sasaran": "Teridentifikasinya gambaran Proses Bisnis K/L/D/I yang berada dalam Dunia Pendidikan dan Pelatihan serta Dunia Konstruksi;"
   },
   {
-    "id": "10",
-    "kodepaket": "20.1",
-    "sasaran": "Teridentifikasinya analisis permasalahan (GAP analisyst) keterpadupanan antara output SDM hasil dunia diklat dan input SDM  dunia konstruksi"
+    "id": 34,
+    "kodepaket": 20.1,
+    "sasaran": "Teridentifikasinya analisis permasalahan (GAP analisyst) keterpadupanan antara output SDM hasil dunia diklat dan input SDM  dunia konstruksi;"
   },
   {
-    "id": "11",
-    "kodepaket": "20.1",
-    "sasaran": "Teridenfikasinya Kebutuhan dan Analisis Kebijakan dan Strategi Direktorat Kerja Sama dan Pemberdayaan, Antar Para Pihak K/L/D/I dan Pelaku Usaha untuk memperkuatkan keterhubungan dan kepadupadanan Proses Bisnis Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi"
+    "id": 35,
+    "kodepaket": 20.1,
+    "sasaran": "Teridenfikasinya Kebutuhan dan Analisis Kebijakan dan Strategi Direktorat Kerja Sama dan Pemberdayaan, Antar Para Pihak K/L/D/I dan Pelaku Usaha untuk memperkuatkan keterhubungan dan kepadupadanan Proses Bisnis Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi;"
   },
   {
-    "id": "12",
-    "kodepaket": "20.1",
-    "sasaran": "Tersusunnya Rancangan Substansi dan Skema Kerjasama Pengembangan SDM Konstruksi Antar K/L/D/I/ Pelaku di Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi"
+    "id": 36,
+    "kodepaket": 20.1,
+    "sasaran": "Tersusunnya Rancangan Substansi dan Skema Kerjasama Pengembangan SDM Konstruksi Antar K/L/D/I/ Pelaku di Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi; "
   },
   {
-    "id": "13",
-    "kodepaket": "20.1",
-    "sasaran": "Tersusunnya Rancangan Sistem Penjaminan Mutu Kompetensi Tenaga Kerja atau SDM Konstruksi Terampil"
+    "id": 37,
+    "kodepaket": 20.1,
+    "sasaran": "Tersusunnya Rancangan Sistem Penjaminan Mutu Kompetensi Tenaga Kerja atau SDM Konstruksi Terampil; dan"
   },
   {
-    "id": "14",
-    "kodepaket": "20.1",
-    "sasaran": "Tersusunnya Rancangan Modul Program Kerjasama dan Pemberdayaan K/L/D/I Dunia Diklat Trampil (SMK) dan Dunia Konstruksi untuk memperkuat keterhubungan (link) dan kepadu-padanan (match) antara proses bisnis dunia diklat dan dunia konstruksi"
+    "id": 38,
+    "kodepaket": 20.1,
+    "sasaran": "Tersusunnya Rancangan Modul Program Kerjasama dan Pemberdayaan K/L/D/I Dunia Diklat Trampil (SMK) dan Dunia Konstruksi untuk memperkuat keterhubungan (link) dan kepadu-padanan (match) antara proses bisnis dunia diklat dan dunia konstruksi."
   }
-]
+ ]
