@@ -92,7 +92,7 @@ export default class LengkapiKontraktualTenagaAhli extends Component {
                     text="<b>Kode</b>" 
                     dataIndex="kodepaket" 
                     width="140"
-                    align="center"
+                    align="left"
                     summaryRenderer={this.summarizerecord} />
                 <Column 
                     text="<b>Tahun</b>" 

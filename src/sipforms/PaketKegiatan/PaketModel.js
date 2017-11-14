@@ -18,5 +18,7 @@ export default Ext.define('sipromo.model.Paket', {
         { name: 'nospmk' },
         { name: 'penyediajasa' },
         { name: 'tanggalpenyelesaian' },
+        { name: 'dir' },
+        { name: 'rating' }
     ]
 });

@@ -67,13 +67,19 @@ export default class SeluruhPaket extends Component {
                 text="<b>Kode</b>" 
                 dataIndex="kodepaket" 
                 width="140"
-                align="center"
+                align="left"
                 summaryRenderer={this.summarizerecord} />
             <Column 
                 text="<b>Tahun</b>" 
                 dataIndex="tahun" 
                 width="80"
                 align="center"
+                hidden />    
+            <Column 
+                text="<b>Direktorat</b>" 
+                dataIndex="dir" 
+                width="150"
+                align="center" 
                 hidden />               
             <Column 
                 text="<b>Nama Paket</b>" 
@@ -144,12 +150,20 @@ export default class SeluruhPaket extends Component {
                 dataIndex="penyediajasa" 
                 width="150" 
                 align="center"
-                hidden />
+                hidden />     
             <Column 
-                text="<b>Tgl. Penyelesaian</b>" 
-                dataIndex="tanggalpenyelesaian" 
-                width="150"
-                align="center" />           
+                text="<b>Prioritas</b>" 
+                dataIndex="rating"
+                summaryCell="numbercell"
+                groupHeaderTpl='{value:repeat("★")} ({value:plural("Star")})'
+                    cell={{
+                        xtype: 'widgetcell',
+                        widget: {
+                            xtype: 'rating',
+                            tip: 'Set to {tracking:plural("Star")}'
+                        }
+                    }}
+            />     
         </Grid>
         )
     }

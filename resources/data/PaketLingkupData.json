@@ -111,32 +111,32 @@
   },
   {
     "id": 23,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Membuat Dokumen Rencana Mutu;"
   },
   {
     "id": 24,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Melakukan kompilasi dan pemetaan data proyek atau kegiatan di Direktorat Jenderal Bina Konstruksi Tahun Anggaran 2015 sampai dengan 2017;"
   },
   {
     "id": 25,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Melakukan literature review terkait project management office;"
   },
   {
     "id": 26,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Melakukan benchmarking organisasi atau institusi yang melaksanakan project management office;"
   },
   {
     "id": 27,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Menyusun instrumen yang akan digunakan dalam project management office;"
   },
   {
     "id": 28,
-    "kodepaket": 46.1,
+    "kodepaket": ,
     "lingkup": "Melakukan analisis terhadap data yang diperoleh dan mengeluarkan rekomendasi;"
   },
   {
@@ -833,5 +833,85 @@
     "id": 167,
     "kodepaket": 20.1,
     "lingkup": "Merancang Modul Program Kerjasama dan  Pemberdayaan K/L/D/I Dunia Diklat Trampil (SMK) dan Dunia Konstruksi untuk memperkuat keterhubungan (link) dan kepadu-padanan (match) antara proses bisnis dunia diklat dan dunia konstruksi."
+  },
+  {
+    "id": 168,
+    "kodepaket": 29.1,
+    "lingkup": "Stakeholder Jasa Konstruksi"
+  },
+  {
+    "id": 169,
+    "kodepaket": 20.1,
+    "lingkup": "FGD Penyusunan Indikator Unjuk Kerja (IUK);"
+  },
+  {
+    "id": 170,
+    "kodepaket": 20.1,
+    "lingkup": "FGD Penyusunan Kurikulum Pelatihan Berbasis Kompetensi (KPBK);"
+  },
+  {
+    "id": 171,
+    "kodepaket": 20.1,
+    "lingkup": "Workshop Materi Uji Kompetensi (MUK);"
+  },
+  {
+    "id": 172,
+    "kodepaket": 20.1,
+    "lingkup": "dan FGD Penyusunan Modul"
+  },
+  {
+    "id": 173,
+    "kodepaket": 18.1,
+    "lingkup": "FGD Penyusunan Indikator Unjuk Kerja (IUK);"
+  },
+  {
+    "id": 174,
+    "kodepaket": 18.1,
+    "lingkup": "FGD Penyusunan Kurikulum Pelatihan Berbasis Kompetensi (KPBK);"
+  },
+  {
+    "id": 175,
+    "kodepaket": 18.1,
+    "lingkup": "Workshop Materi Uji Kompetensi (MUK);"
+  },
+  {
+    "id": 176,
+    "kodepaket": 18.1,
+    "lingkup": "dan FGD Penyusunan Modul"
+  },
+  {
+    "id": 177,
+    "kodepaket": 17.1,
+    "lingkup": "Membuat Dokumen Rencana Mutu;"
+  },
+  {
+    "id": 178,
+    "kodepaket": 17.1,
+    "lingkup": "Focus Group Discussion;"
+  },
+  {
+    "id": 179,
+    "kodepaket": 17.1,
+    "lingkup": "Workshop SKKNI;"
+  },
+  {
+    "id": 180,
+    "kodepaket": 17.1,
+    "lingkup": "Verifikasi Internal;"
+  },
+  {
+    "id": 181,
+    "kodepaket": 17.1,
+    "lingkup": "Pra-Konvensi;"
+  },
+  {
+    "id": 182,
+    "kodepaket": 17.1,
+    "lingkup": "Verifikasi Eksternal;"
+  },
+  {
+    "id": 183,
+    "kodepaket": 17.1,
+    "lingkup": "dan Konvensi & Penetapan SKKNI oleh Kementerian Ketenagakerjaan Republik Indonesia"
   }
  ]

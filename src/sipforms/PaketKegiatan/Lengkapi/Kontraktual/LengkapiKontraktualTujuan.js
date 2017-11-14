@@ -87,7 +87,7 @@ export default class LengkapiKontraktualTujuan extends Component {
                     text="<b>Kode</b>" 
                     dataIndex="kodepaket" 
                     width="140"
-                    align="center"
+                    align="left"
                     summaryRenderer={this.summarizerecord} />
                 <Column 
                     text="<b>Tahun</b>" 
@@ -219,8 +219,8 @@ export default class LengkapiKontraktualTujuan extends Component {
                             />
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
-                            <Button text="Batal" />
-                            <Button text="Simpan" />
+                            <Button text="Batal" handle={this.onBatal}/>
+                            <Button text="Simpan" handler={this.onSimpan}/>
                         </Toolbar>
                     </FormPanel>
                 </Container> 
@@ -233,5 +233,9 @@ export default class LengkapiKontraktualTujuan extends Component {
     }
     
     summarizerecord = (grid, context) => 'Total: ' +context.records.length + ' data';
+
+    onSimpan = (grid, context) => console.log("Simpan");
+
+    onBatal = (grid, context) => console.log("Batal");
 
 }

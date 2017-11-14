@@ -1,4 +1,62 @@
-[{
-    "kodesatker": "DJBK",
-    "namasatker": "Satuan Kerja Direktorat Jenderal Bina Konstruksi"
-}]
+[
+    {
+        "kodesatker": "DJBK",
+        "namasatker": "Satuan Kerja Direktorat Jenderal Bina Konstruksi"
+    },
+    {
+        "kodesatker": "BAII",
+        "namasatker": "Bina Investasi Infrastruktur"
+    },
+    {
+        "kodesatker": "BKSD",
+        "namasatker": "Bina Kelembagaan dan Sumber Daya Jasa Konstruksi"
+    },
+    {
+        "kodesatker": "BPJK",
+        "namasatker": "Bina Penyelenggaraan Jasa Konstruksi"
+    },
+    {
+        "kodesatker": "BKPK",
+        "namasatker": "Bina Kompetensi dan Produktivitas Konstruksi"
+    },
+    {
+        "kodesatker": "KEPA",
+        "namasatker": "Kerjasama dan Pemberdayaan"
+    },
+    {
+        "kodesatker": "BLA1",
+        "namasatker": "Balai Jasa Konstruksi Wilayah I Banda Aceh"
+    },
+    {
+        "kodesatker": "BLA2",
+        "namasatker": "Balai Jasa Konstruksi Wilayah II Palembang"
+    },
+    {
+        "kodesatker": "BLA3",
+        "namasatker": "Balai Jasa Konstruksi Wilayah III Jakarta"
+    },
+    {
+        "kodesatker": "BLA4",
+        "namasatker": "Balai Jasa Konstruksi Wilayah IV Surabaya"
+    },
+    {
+        "kodesatker": "BLA5",
+        "namasatker": "Balai Jasa Konstruksi Wilayah V Banjarmasin"
+    },
+    {
+        "kodesatker": "BLA6",
+        "namasatker": "Balai Jasa Konstruksi Wilayah VI Makassar"
+    },
+    {
+        "kodesatker": "BLA7",
+        "namasatker": "Balai Jasa Konstruksi Wilayah VII Jayapura"
+    },
+    {
+        "kodesatker": "BMPK",
+        "namasatker": "Balai Material dan Peralatan Konstruksi"
+    },
+    {
+        "kodesatker": "BPTK",
+        "namasatker": "Balai Penerapan Teknologi Konstruksi"
+    }
+]

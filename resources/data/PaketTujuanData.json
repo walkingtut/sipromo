@@ -158,5 +158,25 @@
     "id": "32",
     "kodepaket": 46.1,
     "lingkup": "Sebagai acuan bagi Kementerian PUPR dalam menyusun kebijakan, konsep dan strategi dalam pelaksanaan KPBU yang lebih efektif di bidang PUPR;"
+  },
+  {
+    "id": 33,
+    "kodepaket": 29.1,
+    "tujuan": "menyiapkan Rancangan Standar Kompetensi Kerja Nasional Indonesia (RSKKNI), pada suatu jabatan kerja tertentu di sektor konstruksi."
+  },
+  {
+    "id": 34,
+    "kodepaket": 20.1,
+    "tujuan": "Menyiapkan Materi Kompetensi yang terdiri dari Indikator Unjuk Kerja (IUK), Kurikulum Pelatihan Berbasis Kompetensi (KPBK), Materi Uji Kompetensi (MUK) dan Modul Pelatihan (Buku Informasi, Buku Kerja, Buku Penilaian)"
+  },
+  {
+    "id": 35,
+    "kodepaket": 18.1,
+    "tujuan": "Menyiapkan Materi Kompetensi yang terdiri dari Indikator Unjuk Kerja (IUK), Kurikulum Pelatihan Berbasis Kompetensi (KPBK), Materi Uji Kompetensi (MUK) dan Modul Pelatihan (Buku Informasi, Buku Kerja, Buku Penilaian)"
+  },
+  {
+    "id": 36,
+    "kodepaket": 17.1,
+    "tujuan": "Untuk merumuskan Peta Kompetensi (Analisis Fungsi) sampai dengan menyusun Rancangan Standar Kompetensi Kerja Nasional Indonesia (RSKKNI) sektor Jasa Konstruksi"
   }
 ]

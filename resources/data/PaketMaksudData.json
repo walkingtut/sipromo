@@ -1,107 +1,127 @@
 [
   {
     "id": 1,
-    "kodepaket": 2.1,
+    "kodepaket": "DRI.2.1",
     "maksud": "Menyiapkan expert yang dapat memberikan advice dan pendampingan terkait implementasi KPBU/PPP di PUPR, sekaligus untuk meningkatkan manajemen kinerja PPP Unit"
   },
   {
     "id": 2,
-    "kodepaket": 3.1,
+    "kodepaket": "DRI.3.1",
     "maksud": "meningkatkan tertib administrasi proses perencanaan dan evaluasi program kepada seluruh pemangku kepentingan"
   },
   {
     "id": 3,
-    "kodepaket": 46.1,
+    "kodepaket": "DRI.46.1",
     "maksud": "Menyusun Aplikasi Sistem Informasi Project Management Office (SIPROMO) Direktorat Jenderal Bina Konstruksi yang dapat digunakan oleh seluruh pegawai di Direktorat Jenderal Bina Konstruksi"
   },
   {
     "id": 4,
-    "kodepaket": 22.1,
+    "kodepaket": "ARY.22.1",
     "maksud": "Maksud : Melaksanakan pemetaan TKDN pada proyek strategis di PUPR"
   },
   {
     "id": 5,
-    "kodepaket": 28.1,
+    "kodepaket": "EHP.28.1",
     "maksud": "Maksud dari kerangka acuan kerja ini adalah sebagai pedoman penugasan yang harus diikuti bagi  konsultan  dalam  melaksanakan pekerjaannya"
   },
   {
     "id": 6,
-    "kodepaket": 17.1,
+    "kodepaket": "ARY.17.1",
     "maksud": "Maksud Kajian ini adalah merumuskan kebijakan berupa NSPK untuk regulasi Peraturan Pemerintah dan Peraturan Menteri."
   },
   {
     "id": 7,
-    "kodepaket": 13.2,
+    "kodepaket": "ARY.13.2",
     "maksud": "Maksud kegiatan ini adalah meningkatkan pengelolaan sumber daya dan pelaksanaa kegiatan pembinaan kelembagaan dan sumber daya jasa konstruksi."
   },
   {
     "id": 8,
-    "kodepaket": 13.1,
+    "kodepaket": "ARY.13.1",
     "maksud": "Maksud kegiatan ini adalah Mengembangkan basisdata asosiasi perusahaan dan asosiasi profesi jasa konstruksi untuk mendukung pembinaan peningkatan kinerja asosiasi  "
   },
   {
     "id": 9,
-    "kodepaket": 25.1,
+    "kodepaket": "EHP.25.1",
     "maksud": "untuk mengevaluasi penyelenggaraan tata kelola KPBU Infrastruktur di bidang PUPR sesuai dengan amanat Perpres No.38/2015 dan Permen BAPPENAS No.4/2015."
   },
   {
     "id": 10,
-    "kodepaket": 26.1,
+    "kodepaket": "EHP.26.1",
     "maksud": "Maksud dari kegiatan ini adalah tersedianya road map penyelenggaraan tugas simpul KPBU tahun 2017-2019"
   },
   {
     "id": 11,
-    "kodepaket": 28.1,
+    "kodepaket": "EHP.28.1",
     "maksud": "merancang produk hukum tentang  Pedoman Bundling Project KPBU Infrastruktur PUPR  "
   },
   {
     "id": 12,
-    "kodepaket": 32.1,
+    "kodepaket": "EHP.32.1",
     "maksud": "tersedianya layanan konsultasi investasi infrastruktur berbasis web kepada seluruh pemangku kepentingan"
   },
   {
     "id": 13,
-    "kodepaket": 34.1,
+    "kodepaket": "DRI.34.1",
     "maksud": "memetakan dan menganalisis kesiapan pemerintah daerah di wilayah Jawa, Bali dan Nusa Tenggara dalam menyelenggarakan KPBU"
   },
   {
     "id": 14,
-    "kodepaket": 35.1,
+    "kodepaket": "EHP.35.1",
     "maksud": "memetakan dan menganalisis tingkat risiko di investasi infrastruktur di daerah"
   },
   {
     "id": 15,
-    "kodepaket": 39.1,
+    "kodepaket": "EHP.39.1",
     "maksud": "sebagai bahan masukan dan rekomendasi kebijakan tentang perilaku para pelaku usaha di pasar investasi infrastruktur di Indonesia"
   },
   {
     "id": 16,
-    "kodepaket": 40.1,
+    "kodepaket": "EHP.40.1",
     "maksud": "untuk memberikan gambaran dari kekuatan dan potensi/peluang investasi dari para investor lokal dalam mendukung pembiayaan rencana pembangunan infrastruktur di daerahnya"
   },
   {
     "id": 17,
-    "kodepaket": 42.1,
+    "kodepaket": "EHP.42.1",
     "maksud": "memberikan gambaran komprehensif mengenai iklim ekonomi liberalisasi perdagangan jasa konstruksi internasional bagi pasar infrastruktur."
   },
   {
     "id": 18,
-    "kodepaket": 20.1,
+    "kodepaket": "EHP.20.1",
     "maksud": "menyediakan dukungan teknis dan keahlian bagi direktorat bina investasi infrastruktur guna melaksanakan tugas dan fungsi serta dapat mencapai target rencana strategis yang telah ditetapkan serta memantau pelaksanaan kebijakan dan kegiatan DBII"
   },
   {
     "id": 19,
-    "kodepaket": 46.1,
+    "kodepaket": "EHP.46.1",
     "maksud": "untuk mendapatkan model KPBU yang teritegrasi dalam manajemen konstruksi sebagai alat kendali pada pelaksanaan proyek penyediaan infrastruktur."
   },
   {
     "id": 20,
-    "kodepaket": 25.1,
+    "kodepaket": "AME.25.1",
     "maksud": "untuk memberikan kerangka model kerjasama dan pemberdayaan antar berbagai stakeholders dan pemetaan potensi dan kekuatan masing-masing kelembagaan dalam rangka pemberdayaan tenaga kerja konstruksi yang kompeten, handal, profesional dan kompetitif"
   },
   {
     "id": 21,
-    "kodepaket": 20.1,
+    "kodepaket": "AME.20.1",
     "maksud": "Meningkatkan keselarasan hubungan interoperatibilitas dan keterpadupadanan kerjasama pengembangan SDM Konstruksi dalam dunia pendidikan dan konstruksi. "
+  },
+  {
+    "id": 22,
+    "kodepaket": "YMT.29.1",
+    "maksud": "untuk menyiapkan bakuan kompetensi sebagai acuan pelatihan dan uji kompetensi tenaga kerja konstruksi."
+  },
+  {
+    "id": 23,
+    "kodepaket": "YMT.20.1",
+    "maksud": "Menyiapkan Materi Kompetensi yang Komprehensif untuk Pelatihan Tenaga Kerja Konstruksi yang Kompeten dan memiliki Daya Saing"
+  },
+  {
+    "id": 24,
+    "kodepaket": "YMT.18.1",
+    "maksud": "Menyiapkan Materi Kompetensi yang Komprehensif untuk Pelatihan Tenaga Kerja Konstruksi yang Kompeten dan memiliki Daya Saing"
+  },
+  {
+    "id": 25,
+    "kodepaket": "YMT.17.1",
+    "maksud": "Menyiapkan Standar Kompetensi Tenaga Kerja Konstruksi sebagai acuan Sertifikasi Tenaga Kerja Konstruksi dan acuan dalam pembuatan Materi Kompetensi"
   }
  ]

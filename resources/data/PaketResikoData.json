@@ -19,5 +19,26 @@
     "statusresiko": "Rendah",
     "alasan": "Pelaksanaan workshop terlambat dari jadwal yang direncanakan",
     "rekomendasi": "Pelaksaan worshop dapat segera dilakukan sebelum tanggal penyelesaian: 30/9/2017"    
+  },
+  {
+    "id": 2,
+    "kodepaket": 20.1,
+    "tahun": 2017,
+    "namapaket": "Manajemen Pelaksanaan Pembinaan Investasi Infrastruktur",
+    "satker": "Bina Investasi Infrastruktur",
+    "namappk": "Encik Hardiansyah Pranata Putra, ST, M.Sc",
+    "penanggungjawab": "",
+    "nilaipaket": "756745000",
+    "nokontrak": "",
+    "tglkontrak": "7/6/2017",
+    "jenispaket": "KONTRAKTUAL",
+    "durasikegiatan": "6",
+    "satuandurasi": "bulan",
+    "nospmk": "",
+    "penyediajasa": "PT. CAKRABUANA CONSULTANTS",
+    "tanggalpenyelesaian": "7/12/2017",
+    "statusresiko": "Tinggi",
+    "alasan": "Tenaga ahli mengalami duplikasi dengan paket kegiatan lain",
+    "rekomendasi": "Segera lakukan ademdum tenaga ahli"    
   }
 ]
