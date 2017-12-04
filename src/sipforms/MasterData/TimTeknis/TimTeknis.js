@@ -9,9 +9,11 @@ import {
     Button, 
     Grid, 
     Column, 
-    RendererCell 
+    RendererCell,
+    ComboBoxField 
 } from '@extjs/ext-react';
 import model from './TimTeknisModel';
+import posisi from './posisi';
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',
@@ -63,27 +65,31 @@ export default class TimTeknis extends Component {
                         <Column 
                             text="<b>Nama</b>" 
                             dataIndex="nama" 
-                            width="200"
+                            width="250"
                             summaryRenderer={this.summarizerecord}/>
                         <Column 
                             text="<b>SK Tim Teknis</b>" 
                             width="150" 
-                            dataIndex="sktimteknis"/>
+                            dataIndex="nosktimteknis"/>
                         <Column 
-                            text="<b>Kategori</b>" 
-                            width="100" 
-                            dataIndex="kategori"/>
-                        <Column 
-                            text="<b>Posisi</b>" 
-                            width="100"
+                            text="<b>Posisi Dalam Tim</b>" 
+                            width="150"
                             dataIndex="posisi"/>
                     </Grid>
                     <FormPanel flex="4" height="400">
                         <FieldSet title="<h4>Input/Edit Master Data Tim Teknis</h4>">
                             <TextField label="Nama"/>
-                            <TextField label="SK Tim Teknis"/>
-                            <TextField label="Kategori"/>
-                            <TextField label="Posisi"/>
+                            <TextField label="No. SK Tim Teknis"/>
+                            <ComboBoxField
+                                width={200}
+                                label="Posisi Dalam Tim"
+                                store={posisi}
+                                displayField="posisi"
+                                valueField="posisi"
+                                queryMode="local"
+                                labelAlign="placeholder"
+                                clearable
+                            />
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />

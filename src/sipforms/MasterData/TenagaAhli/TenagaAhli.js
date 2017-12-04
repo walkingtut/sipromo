@@ -9,9 +9,13 @@ import {
     Button, 
     Grid, 
     Column, 
-    RendererCell 
+    RendererCell,
+    ComboBoxField 
 } from '@extjs/ext-react';
 import model from './TenagaAhliModel';
+import pendidikan from './pendidikan';
+import jurusan from './jurusan';
+
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',
@@ -67,33 +71,46 @@ export default class TenagaAhli extends Component {
                             summaryRenderer={this.summarizerecord}/>
                         <Column 
                             text="<b>Pendidikan Terakhir</b>" 
-                            width="160" 
+                            width="150" 
                             dataIndex="pendidikanTerakhir" />
                         <Column 
-                            text="<b>Kualifikasi</b>" 
-                            width="100" 
-                            dataIndex="kualifikasi"/>
+                            text="<b>Jurusan</b>" 
+                            width="160" 
+                            dataIndex="jurusan" />    
                         <Column 
-                            text="<b>Lama Pengalaman</b>" 
+                            text="<b>Keahlian</b>" 
                             width="150" 
+                            dataIndex="Keahlian"/>
+                        <Column 
+                            text="<b>Lama Pengalaman (Tahun)</b>" 
+                            width="190" 
                             dataIndex="lamaPengalaman"/>
-                        <Column 
-                            text="<b>Sertifikasi Keahlian</b>" 
-                            width="120" 
-                            dataIndex="sertifikatKeahlian" />
-                        <Column 
-                            text="<b>Billing Rate</b>" 
-                            width="120" 
-                            dataIndex="billingRate" />
                     </Grid>
                     <FormPanel flex="3" height="500">
                         <FieldSet title="<h3>Input/Edit Master Data Tenaga Ahli</h3>">
                             <TextField label="Nama"/>
-                            <TextField label="Pendidikan Terakhir"/>
-                            <TextField label="Kualifikasi"/>
-                            <TextField label="Lama Pengalaman"/>
-                            <TextField label="Sertifikasi Keahlian"/>
-                            <TextField label="Billing Rate"/>
+                            <ComboBoxField
+                                width={200}
+                                label="Pendidikan Terakhir"
+                                store={pendidikan}
+                                displayField="name"
+                                valueField="abbrev"
+                                queryMode="local"
+                                labelAlign="placeholder"
+                                clearable
+                            />
+                            <ComboBoxField
+                                width={200}
+                                label="Jurusan"
+                                store={jurusan}
+                                displayField="jurusan"
+                                valueField="akronim"
+                                queryMode="local"
+                                labelAlign="placeholder"
+                                clearable
+                            />
+                            <TextField label="Keahlian"/>
+                            <TextField label="Lama Pengalaman (Tahun)"/>
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />

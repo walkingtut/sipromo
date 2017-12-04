@@ -9,9 +9,11 @@ import {
     Button, 
     Grid, 
     Column, 
-    RendererCell 
+    RendererCell,
+    ComboBoxField 
 } from '@extjs/ext-react';
 import model from './PembuatKomitmenModel';
+import satker from '../../../../resources/data/SatkerData.json';
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',
@@ -76,9 +78,18 @@ export default class PembuatKomitmen extends Component {
                     </Grid>
                     <FormPanel flex="4.5" height="350">
                         <FieldSet title="<h3>Input/Edit Master Data PPK</h3>">
+                            <TextField label="Kode"/>
                             <TextField label="Nama"/>
-                            <TextField label="Satker"/>
-                            <TextField label="Direktorat"/>
+                            <ComboBoxField
+                                width={300}
+                                label="Satker"
+                                store={satker}
+                                displayField="namasatker"
+                                valueField="kodesatker"
+                                queryMode="local"
+                                labelAlign="placeholder"
+                                clearable
+                            />
                         </FieldSet>
                         <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                             <Button text="Batal" />
