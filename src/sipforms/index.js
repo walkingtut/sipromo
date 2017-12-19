@@ -8,57 +8,22 @@ import TimTeknis from './MasterData/TimTeknis/TimTeknis';
 // Paket Kegiatan
 // Daftar Paket Kegiatan
 import DaftarSeluruhPaket from './PaketKegiatan/DaftarPaket/DaftarSeluruhPaket';
-//import DaftarPaketKontraktual from './PaketKegiatan/DaftarPaket/DaftarPaketKontraktual';
-//import DaftarPaketSwakelola from './PaketKegiatan/DaftarPaket/DaftarPaketSwakelola';
 
 // Lengkapi Paket Kegiatan
-import LengkapiKontraktualMaksud from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualMaksud';
-//import LengkapiKontraktualTujuan from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualTujuan';
-//import LengkapiKontraktualSasaran from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualSasaran';
-//import LengkapiKontraktualLingkup from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualLingkup';
-//import LengkapiKontraktualLuaran from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualLuaran';
-//import LengkapiKontraktualTimTeknis from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualTimTeknis';
-//import LengkapiKontraktualTenagaAhli from './PaketKegiatan/Lengkapi/Kontraktual/LengkapiKontraktualTenagaAhli';
-
-//import LengkapiSwakelolaMaksud from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaMaksud';
-//import LengkapiSwakelolaTujuan from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaTujuan';
-//import LengkapiSwakelolaSasaran from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaSasaran';
-//import LengkapiSwakelolaLingkup from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaLingkup';
-//import LengkapiSwakelolaLuaran from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaLuaran';
-//import LengkapiSwakelolaTimTeknis from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaTimTeknis';
-//import LengkapiSwakelolaTenagaAhli from './PaketKegiatan/Lengkapi/Swakelola/LengkapiSwakelolaTenagaAhli';
+import LengkapiKontraktual from './PaketKegiatan/Lengkapi/LengkapiKontraktual';
+import LengkapiSwakelola from './PaketKegiatan/Lengkapi/LengkapiSwakelola';
 
 // Kelola Paket Kegiatan
-import KelolaKontraktualTahapan from './PaketKegiatan/Kelola/Kontraktual/KelolaKontraktualTahapan';
-//import KelolaKontraktualJadwal from './PaketKegiatan/Kelola/Kontraktual/KelolaKontraktualJadwal';
-//import KelolaKontraktualPenyerapan from './PaketKegiatan/Kelola/Kontraktual/KelolaKontraktualPenyerapan';
-
-//import KelolaSwakelolaTahapan from './PaketKegiatan/Kelola/Swakelola/KelolaSwakelolaTahapan';
-//import KelolaSwakelolaJadwal from './PaketKegiatan/Kelola/Swakelola/KelolaSwakelolaJadwal';
-//import KelolaSwakelolaPenyerapan from './PaketKegiatan/Kelola/Swakelola/KelolaSwakelolaPenyerapan';
+import KelolaKontraktual from './PaketKegiatan/Kelola/KelolaKontraktual';
+import KelolaSwakelola from './PaketKegiatan/Kelola/KelolaSwakelola';
 
 // Amandemen Paket Kegiatan
-import AmandemenKontraktualMaksud from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualMaksud';
-//import AmandemenKontraktualTujuan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTujuan';
-//import AmandemenKontraktualSasaran from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualSasaran';
-//import AmandemenKontraktualLingkup from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualLingkup';
-//import AmandemenKontraktualLuaran from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualLuaran';
-//import AmandemenKontraktualTimTeknis from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTimTeknis';
-//import AmandemenKontraktualTenagaAhli from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTenagaAhli';
-//import AmandemenKontraktualTahapan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualTahapan';
-//import AmandemenKontraktualJadwal from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualJadwal';
-//import AmandemenKontraktualPenyerapan from './PaketKegiatan/Amandemen/Kontraktual/AmandemenKontraktualPenyerapan';
+import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktual';
+import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelola';
 
-//import AmandemenSwakelolaMaksud from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaMaksud';
-//import AmandemenSwakelolaTujuan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTujuan';
-//import AmandemenSwakelolaSasaran from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaSasaran';
-//import AmandemenSwakelolaLingkup from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaLingkup';
-//import AmandemenSwakelolaLuaran from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaLuaran';
-//import AmandemenSwakelolaTimTeknis from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTimTeknis';
-//import AmandemenSwakelolaTenagaAhli from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTenagaAhli';
-//import AmandemenSwakelolaTahapan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaTahapan';
-//import AmandemenSwakelolaJadwal from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaJadwal';
-//import AmandemenSwakelolaPenyerapan from './PaketKegiatan/Amandemen/Swakelola/AmandemenSwakelolaPenyerapan';
+// Amandemen Paket Kegiatan
+import RealisasiKontraktual from './PaketKegiatan/Realisasi/RealisasiKontraktual';
+import RealisasiSwakelola from './PaketKegiatan/Realisasi/RealisasiSwakelola';
 
 // Manajemen Resiko
 import PaketKontraktualResiko from './Resiko/PaketKontraktualResiko';
@@ -67,9 +32,6 @@ import ForumDiskusi from './Resiko/ForumDiskusi';
 
 // Kalender
 import TampilLengkap from './Kalender/Lengkap/TampilLengkap';
-//import TampilBulanan from './Kalender/Bulanan/TampilBulanan';
-//import TampilMingguan from './Kalender/Mingguan/TampilMingguan';
-//import TampilHarian from './Kalender/Harian/TampilHarian';
 
 // Statistik
 import JumlahPaketKontraktual from './Statistik/Paket/PerPPK/JumlahPaketKontraktual';
@@ -91,10 +53,22 @@ const root = {
         ]},
         { text: 'Paket Kegiatan', navIcon: 'icon-basic-list', children: [
             {text: 'Daftar Paket Kegiatan', component: DaftarSeluruhPaket, layout: 'center', navIcon: 'icon-basic-list'},           
-            {text: 'Lengkapi Data', component: LengkapiKontraktualMaksud, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Kelola Kegiatan', component: KelolaKontraktualTahapan, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Amandemen Kegiatan', component: AmandemenKontraktualMaksud, layout: 'center', navIcon: 'icon-basic-list'},
-            {text: 'Realisasi Kegiatan', layout: 'center', navIcon: 'icon-basic-list'},         
+            {text: 'Lengkapi', navIcon: 'icon-basic-list', children: [
+                {text: 'Kontraktual', component: LengkapiKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: LengkapiSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+            ]},
+            {text: 'Kelola', navIcon: 'icon-basic-list', children: [
+                {text: 'Kontraktual', component: KelolaKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: KelolaSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+            ]},
+            {text: 'Amandemen', navIcon: 'icon-basic-list', children: [
+                {text: 'Kontraktual', component: AmandemenKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: AmandemenSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+            ]},
+            {text: 'Realisasi', navIcon: 'icon-basic-list', children: [
+                {text: 'Kontraktual', component: RealisasiKontraktual, layout: 'center', navIcon: 'icon-basic-list'},
+                {text: 'Swakelola', component: RealisasiSwakelola, layout: 'center', navIcon: 'icon-basic-list'}
+            ]},    
         ]},   
         { text: 'Manajemen Resiko', component: PaketKontraktualResiko, layout: 'center', navIcon: 'icon-basic-list'},  
         { text: 'Kalender', component: TampilLengkap, layout: 'center', navIcon: 'icon-basic-list'}, 

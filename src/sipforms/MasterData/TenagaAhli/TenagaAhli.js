@@ -13,8 +13,10 @@ import {
     ComboBoxField 
 } from '@extjs/ext-react';
 import model from './TenagaAhliModel';
-import pendidikan from './pendidikan';
-import jurusan from './jurusan';
+//import pendidikan from './pendidikan';
+import pendidikan from '../../../../resources/data/PendidikanData.json';
+//import jurusan from './jurusan';
+import jurusan from '../../../../resources/data/JurusanData.json';
 
 
 Ext.require([

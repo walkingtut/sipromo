@@ -1,917 +1,917 @@
 [
   {
-    "id": 1,
-    "kodepaket": 2.1,
+    "id": "1",
+    "kodepaket": "2.1",
     "lingkup": "Membuat Dokumen Rencana Mutu;"
   },
   {
-    "id": 2,
-    "kodepaket": 2.1,
+    "id": "2",
+    "kodepaket": "2.1",
     "lingkup": "Melakukan review literatur terkait KPBU;"
   },
   {
-    "id": 3,
-    "kodepaket": 2.1,
+    "id": "3",
+    "kodepaket": "2.1",
     "lingkup": "Pengumpulan Data dan Sumber Data;"
   },
   {
-    "id": 4,
-    "kodepaket": 2.1,
+    "id": "4",
+    "kodepaket": "2.1",
     "lingkup": "Data diperoleh dan dikumpulkan sebagai materi untuk analisis kebutuhan peningkatan manajemen kinerja PPP unit. Pengumpulan data dilakukan menggunakan data primer dan sekunder. Data sekunder dalam kajian ini lebih dominan menggunakan desk study atau literatur;"
   },
   {
-    "id": 5,
-    "kodepaket": 2.1,
+    "id": "5",
+    "kodepaket": "2.1",
     "lingkup": "Menyusun program peningkatan kinerja PPP Unit, yang meliputi Pengantar KPBU secara umum dan Konsep Penyelenggaraan KPBU;"
   },
   {
-    "id": 6,
-    "kodepaket": 2.1,
+    "id": "6",
+    "kodepaket": "2.1",
     "lingkup": "Penyusunan materi substansi KPBU/PPP yang meliputi: Kelayakan Hukum dan Kelembagaan Proyek KPBU, Kelayakan Teknis, Lingkungan dan Dampak Sosial Proyek KPBU, Kelayakan Ekonomi dan Finansial Proyek KPBU, Analisis Risiko Proyek KPBU, Dukungan Kelayakan dan Jaminan Pemerintah terhadap Proyek KPBU, Bentuk Kerjasama Proyek KPBU, Konsep Perjanjian Proyek KPBU;"
   },
   {
-    "id": 7,
-    "kodepaket": 2.1,
+    "id": "7",
+    "kodepaket": "2.1",
     "lingkup": "Menyusun Konsep Monitoring dan Evaluasi Perjanjian KPBU;"
   },
   {
-    "id": 8,
-    "kodepaket": 2.1,
+    "id": "8",
+    "kodepaket": "2.1",
     "lingkup": "Menyelenggarakan kegiatan FGD/Workshop dan pembahasan/Rapat Teknis terkait PPP serta melakukan studi banding, dalam dan luar negeri, dalam rangka mendapatkan masukan dari berbagai pihak terkait;"
   },
   {
-    "id": 9,
-    "kodepaket": 2.1,
+    "id": "9",
+    "kodepaket": "2.1",
     "lingkup": "Penyusunan toolkit (pedoman teknis);"
   },
   {
-    "id": 10,
-    "kodepaket": 2.1,
+    "id": "10",
+    "kodepaket": "2.1",
     "lingkup": "Penyiapan dokumen rekomendasi-rekomendasi."
   },
   {
-    "id": 11,
-    "kodepaket": 3.1,
+    "id": "11",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun Dokumen Rencana Mutu;"
   },
   {
-    "id": 12,
-    "kodepaket": 3.1,
+    "id": "12",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan reviu seluruh produk pengaturan maupun pedoman tentang proses perencanaan dan evaluasi;"
   },
   {
-    "id": 13,
-    "kodepaket": 3.1,
+    "id": "13",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan reviu seluruh dokumen perencanaan (renstra, RKP, RPJMN) dan evaluasi (LAKIP);"
   },
   {
-    "id": 14,
-    "kodepaket": 3.1,
+    "id": "14",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan identifikasi dan analisis terhadap siklus proses perencanaan dan evaluasi program Ditjen Bina Konstruksi dan kaitannya dengan pemangku kepentingan;"
   },
   {
-    "id": 15,
-    "kodepaket": 3.1,
+    "id": "15",
+    "kodepaket": "3.1",
     "lingkup": "Mengidentifikasi pembagian peran, tugas dan fungsi yang tegas dari setiap unit kerja;"
   },
   {
-    "id": 16,
-    "kodepaket": 3.1,
+    "id": "16",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan identifikasi kebutuhan penyusunan program kerja tahunan;"
   },
   {
-    "id": 17,
-    "kodepaket": 3.1,
+    "id": "17",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun kalender program kerja tahunan;"
   },
   {
-    "id": 18,
-    "kodepaket": 3.1,
+    "id": "18",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun standar format isian yang diperlukan;"
   },
   {
-    "id": 19,
-    "kodepaket": 3.1,
+    "id": "19",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun siklus tahunan proses perencanaan dan evaluasi"
   },
   {
-    "id": 20,
-    "kodepaket": 3.1,
+    "id": "20",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun bahan sosialisasi pedoman perencanaan dan evaluasi program;"
   },
   {
-    "id": 21,
-    "kodepaket": 3.1,
+    "id": "21",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan FGD, workshop atau upaya lainnya yang terkait;"
   },
   {
-    "id": 22,
-    "kodepaket": 3.1,
+    "id": "22",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun Ringkasan Eksekutif."
   },
   {
-    "id": 23,
-    "kodepaket": ,
+    "id": "23",
+    "kodepaket": "3.1",
     "lingkup": "Membuat Dokumen Rencana Mutu;"
   },
   {
-    "id": 24,
-    "kodepaket": ,
+    "id": "24",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan kompilasi dan pemetaan data proyek atau kegiatan di Direktorat Jenderal Bina Konstruksi Tahun Anggaran 2015 sampai dengan 2017;"
   },
   {
-    "id": 25,
-    "kodepaket": ,
+    "id": "25",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan literature review terkait project management office;"
   },
   {
-    "id": 26,
-    "kodepaket": ,
+    "id": "26",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan benchmarking organisasi atau institusi yang melaksanakan project management office;"
   },
   {
-    "id": 27,
-    "kodepaket": ,
+    "id": "27",
+    "kodepaket": "3.1",
     "lingkup": "Menyusun instrumen yang akan digunakan dalam project management office;"
   },
   {
-    "id": 28,
-    "kodepaket": ,
+    "id": "28",
+    "kodepaket": "3.1",
     "lingkup": "Melakukan analisis terhadap data yang diperoleh dan mengeluarkan rekomendasi;"
   },
   {
-    "id": 29,
-    "kodepaket": 46.1,
+    "id": "29",
+    "kodepaket": "46.1",
     "lingkup": "Membuat aplikasi sistem informasi project management office baik dalam bentuk website maupun software mobile phone; dan"
   },
   {
-    "id": 30,
-    "kodepaket": 46.1,
+    "id": "30",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan Transfer Knowledge, melalui kegiatan workshop, terkait sistem informasi project management office yang telah dibangun kepada pegawai di Direktorat Jenderal Bina Konstruksi;"
   },
   {
-    "id": 31,
-    "kodepaket": 46.1,
+    "id": "31",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan pembahasan dengan Tim Teknis atau Narasumber terkait secara berkala;"
   },
   {
-    "id": 32,
-    "kodepaket": 46.1,
+    "id": "32",
+    "kodepaket": "46.1",
     "lingkup": "Membuat dokumen ringkasan eksekutif."
   },
   {
-    "id": 33,
-    "kodepaket": 22.1,
+    "id": "33",
+    "kodepaket": "22.1",
     "lingkup": "Pengumpulan pengaturan terkait TKDN. Adapun tingkatan pengaturan tersebut adalah: Undang undang, Peraturan Pemerintah, Peraturan Presiden, Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat\n"
   },
   {
-    "id": 34,
-    "kodepaket": 22.1,
+    "id": "34",
+    "kodepaket": "22.1",
     "lingkup": "Pengumpulan pengaturan terkait TKDN yang terbit oleh kementerian/lembaga non  Pekerjaan Umum dan Perumahan Rakyat. Adapun pengaturan tersebut adalah Peraturan menteri/lembaga"
   },
   {
-    "id": 35,
-    "kodepaket": 22.1,
+    "id": "35",
+    "kodepaket": "22.1",
     "lingkup": "Mereview tata cara perhitungan TKDN untuk sektor konstruksi, sesuai dengan peraturan Kementerian Perindustrian dievaluasi keterkaitannya dengan AHSP yang telah dikeluarkan oleh Kementerian PUPR"
   },
   {
-    "id": 36,
-    "kodepaket": 22.1,
+    "id": "36",
+    "kodepaket": "22.1",
     "lingkup": "Penentuan sampling proyek strategis di lingkungan PUPR. Sampling disini adalah proyek strategis yang mewakili seluruh bidang PUPR (Jalan Jembatan, SDA, Cipta Karya, dan Perumahan)"
   },
   {
-    "id": 37,
-    "kodepaket": 22.1,
+    "id": "37",
+    "kodepaket": "22.1",
     "lingkup": "Pelaksanaan perhitungan TKDN pada proyek strategis PUPR. Adapun perhitungan ini dilakukan pada proyek yang sudah selesai, dihitung sampai dengan layer ke-2 (subkontraktor) dan layer ke-3 (industri material serta peralatan)"
   },
   {
-    "id": 38,
-    "kodepaket": 22.1,
+    "id": "38",
+    "kodepaket": "22.1",
     "lingkup": "Menyusun Laporan hasil perhitungan TKDN pada proyek strategis PUPR. Untuk selanjutnya dikaji sebagai benchmark untuk penerapan roadmap pendayagunaan TKDN pada Kementerian PUPR"
   },
   {
-    "id": 39,
-    "kodepaket": 28.1,
+    "id": "39",
+    "kodepaket": "28.1",
     "lingkup": "Tahap Pengumpulan Data Sekunder: Data katalog produk industri beton pracetak dan prategang, Data perumusan formula  penghitungan kebutuhan penggunaan beton pracetak dan prategang dari Rencana Strategis Infrastruktur, Data kebutuhan konstruksi dari Rencana Strategis Infrastruktur 2015 - 2019 dari Badan Perencanaan Infrastruktur Wilayah Kementerian Pekerjaan Umum dan Perumahan Rakyat, Data peralatan pendukung produksi dan instalasi beton pracetak dan prategang beserta penyedia jasanya dari asosiasi perusahaan terkait"
   },
   {
-    "id": 40,
-    "kodepaket": 17.1,
+    "id": "40",
+    "kodepaket": "17.1",
     "lingkup": "Rekomendasi Kebijakan Penggunaan Pekerjaan Konstruksi spesialis\na. Struktur Usaha Pekerjaan Konstruksi Spesialis\ni. Menambah jumlah subklasifikasi pekerjaan konstruksi spesialis\nii. Mengubah aturan sehingga klasifikasi usaha pekerjaan konstruksi umum haruspunya klasifikasi usaha pekerjaan konstruksi spesialis\niii. Klasifikasi usaha pekerjaan konstruksi spesialis dapat menjadi konstraktor utama, jika nilai satu pekerjaan konstruksi spesialis lebih besar dari 50 % dari nilai kontrak\nb. Sistem Pasar bagi Pekerjaan Konstruksi Spesialis\ni. Membuat regulasi, sehingga pada setiap pekerjaan konstruksi menggunakan konstraktor spesialis\nii. Memperbanyak pasar konstruksi spesialis, dengan mengidentifikasi pekerjaan spesialis di bidang PUPR\n2. Pedoman Pelaksanaan Pekerjaan Penyedia Jasa Konsultan Kajian"
   },
   {
-    "id": 41,
-    "kodepaket": 17.1,
+    "id": "41",
+    "kodepaket": "17.1",
     "lingkup": "Desk Work: Kompilasi data sekunder, Menyusun rencana kerja serta  formulasi metoda kajian, Menyusun kajian berdasarkan dari hasil survey data primer, pengolahan data dan focus group discussion"
   },
   {
-    "id": 42,
-    "kodepaket": 17.1,
+    "id": "42",
+    "kodepaket": "17.1",
     "lingkup": "Survey untuk Pengambilan Data Primer: Survey dan pengambilan data penyedia jasa ke industri pracetak dan prategang, Survey dan pengambilan data ke industri pendukung produksi beton pracetak dan prategang, baik dari dalam negeri maupun luar negeri, Survey dan pengambilan data ke industri pendukung instalasi beton pracetak dan prategang, baik dari dalam negeri maupun luar negeri, Survey dan pengambilan data regulasi pedoman teknis terkait produk pracetak dan prategang yang sudah ada ke instansi penentu kebijakan. "
   },
   {
-    "id": 43,
-    "kodepaket": 17.1,
+    "id": "43",
+    "kodepaket": "17.1",
     "lingkup": "Focus Group Discussion (FGD): FGD Pertama dilakukan untuk membahas hasil pengumpulan data sekunder, rencana kerja dan usulan metoda kerja kajian, serta rencana survey pengambilan data primer, FGD kedua dilakukan untuk membahas hasil pengumpulan data primer dan hasil kajian peningkatan efisiensi tipologi produk serta efektifitas penggunaan alat pendukung produksi dan instalasi beton pracetak dan prategang"
   },
   {
-    "id": 44,
-    "kodepaket": 13.2,
+    "id": "44",
+    "kodepaket": "13.2",
     "lingkup": "Identifikasi dan menyusun rencana operasional\n"
   },
   {
-    "id": 45,
-    "kodepaket": 13.2,
+    "id": "45",
+    "kodepaket": "13.2",
     "lingkup": "Koordinasi dengan Unit Pelaksana Swakelola, Kontraktual, dan Balai Direktorat Jenderal Bina Konsruksiterkait pelaksanaan tugas."
   },
   {
-    "id": 46,
-    "kodepaket": 13.2,
+    "id": "46",
+    "kodepaket": "13.2",
     "lingkup": "Monitoring , mengukur efektifitas dan memberi masukan pencapaian pelaksanaan kegiatan, output dan outcome"
   },
   {
-    "id": 47,
-    "kodepaket": 13.2,
+    "id": "47",
+    "kodepaket": "13.2",
     "lingkup": "Rekomendasi Pengembangan Program Pembinaan"
   },
   {
-    "id": 48,
-    "kodepaket": 13.1,
+    "id": "48",
+    "kodepaket": "13.1",
     "lingkup": "Menyiapkan Data: Data Profil Asosiasi Perusahaan Jasa Konstruksi, Data Profil Asosiasi Profesi Jasa Konsruksi, Sistem Database yang dapat menggambarkan Profil Asosiasi Perusahaan dan Profesi terbaru"
   },
   {
-    "id": 49,
-    "kodepaket": 13.1,
+    "id": "49",
+    "kodepaket": "13.1",
     "lingkup": "Melaksanakan Desk Work: Kompilasi data, Menyusun draft peta sebaran asosiasi, Mengintegarasikan data asosiasi dengan SIPJAKI, pengolahan data dan FGD"
   },
   {
-    "id": 50,
-    "kodepaket": 13.1,
+    "id": "50",
+    "kodepaket": "13.1",
     "lingkup": "Membangun sistem data base informasi profil asosiasi perusahaan dan profesi"
   },
   {
-    "id": 51,
-    "kodepaket": 13.1,
+    "id": "51",
+    "kodepaket": "13.1",
     "lingkup": "Melaksanakan Survey Pengambilan Data (bila diperlukan)"
   },
   {
-    "id": 52,
-    "kodepaket": 13.1,
+    "id": "52",
+    "kodepaket": "13.1",
     "lingkup": "MengIntegrasikan data dengan program website SIPJAKI"
   },
   {
-    "id": 53,
-    "kodepaket": 13.1,
+    "id": "53",
+    "kodepaket": "13.1",
     "lingkup": "Memetakan profil asosiasi perusahaan dan profesi di seluruh Indonesia"
   },
   {
-    "id": 54,
-    "kodepaket": 13.1,
+    "id": "54",
+    "kodepaket": "13.1",
     "lingkup": "Mengujicoba aplikasi software yang terintegrasi"
   },
   {
-    "id": 55,
-    "kodepaket": 13.1,
+    "id": "55",
+    "kodepaket": "13.1",
     "lingkup": "Melakukan perawatan usai terbangunnya sistem data (software) "
   },
   {
-    "id": 56,
-    "kodepaket": 13.1,
+    "id": "56",
+    "kodepaket": "13.1",
     "lingkup": "Pelaporan hasil kegiatan"
   },
   {
-    "id": 57,
-    "kodepaket": 25.1,
+    "id": "57",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan inventarisasi dan updating regulasi yang terkait dengan investasi infrastruktur di Indonesia dan di Kementerian PUPR;"
   },
   {
-    "id": 58,
-    "kodepaket": 25.1,
+    "id": "58",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan inventarisasi dan updating proyek infrastruktur skema KPBU yang sudah pernah maupun akan dilaksanakan di Kementerian PUPR;"
   },
   {
-    "id": 59,
-    "kodepaket": 25.1,
+    "id": "59",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan inventarisasi dan updating struktur organisasi dan kelembagaan terkait penyelenggaraan investasi infrastruktur di Kementerian PUPR;"
   },
   {
-    "id": 60,
-    "kodepaket": 25.1,
+    "id": "60",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis pelaksanaan proyek KPBU di Kementerian PUPR dengan mengambil studi kasus pelaksanaan  salah satu bidang infrastruktur PUPR, dengan periode waktu minimal 10 tahun sebagai bahan analisis.  "
   },
   {
-    "id": 61,
-    "kodepaket": 25.1,
+    "id": "61",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan pengumpulan data primer dan data sekunder yang terkait dengan proyek infrastruktur KPBU di Indonesia. Pengumpulan data primer termasuk di dalamnya interview atau FGD kepada stakeholder, sedangkan pengumpulan data sekunder termasuk di dalamnya penelaahan kajian terdahulu, data dan jurnal akademis terkait;"
   },
   {
-    "id": 62,
-    "kodepaket": 25.1,
+    "id": "62",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis kelembagaan KPBU di Indonesia dan di Kementerian PUPR, terkait peran dan fungsinya;"
   },
   {
-    "id": 63,
-    "kodepaket": 25.1,
+    "id": "63",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis  atas kebutuhan atau overlap kelembagaan KPBU di Indonesia pada umumnya dan di Kementerian PUPR pada khususnya; "
   },
   {
-    "id": 64,
-    "kodepaket": 25.1,
+    "id": "64",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis dan rekonstruksi penyelenggaraan tatakelola KPBU di Kementerian PUPR dalam tataran makro sehingga dapat menghasilkan regulasi, kebijakan dan strategi dalam meningkatkan peran serta swasta;"
   },
   {
-    "id": 65,
-    "kodepaket": 25.1,
+    "id": "65",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis dan rekonstruksi  penyelenggaraan tatakelola KPBU di Kementerian PUPR dalam tataran messo sehingga dapat  menghasilkan mekanisme dan konsep interaksi kelembagaan yang ideal  dalam penyelenggaraan investasi infrastruktur skema KPBU  bidang PUPR;"
   },
   {
-    "id": 66,
-    "kodepaket": 25.1,
+    "id": "66",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan analisis dan rekonstruksi  penyelenggaraan tatakelola KPBU di Kementerian PUPR dalam tataran mikro sehingga dapat   menciptakan nilai dan budaya yang mendukung penyelenggaraan investasi infrastruktur skema KPBU bidang PUPR;"
   },
   {
-    "id": 67,
-    "kodepaket": 25.1,
+    "id": "67",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan penyusunan hasil penilaian akhir mengenai tatakelola penyelenggaraan investasi infrastruktur bidang  PUPR  skema KPBU; "
   },
   {
-    "id": 68,
-    "kodepaket": 25.1,
+    "id": "68",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan penyusunan rekomendasi konsep tatakelola penyelenggaraan tatakelola KPBU bidang PUPR, berdasarkan hasil evaluasi dan landasan teori terkait PPP and governance;"
   },
   {
-    "id": 69,
-    "kodepaket": 25.1,
+    "id": "69",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan penyusunan draft kajian evaluasi tatakelola KPBU pada infrastruktur bidang PUPR"
   },
   {
-    "id": 70,
-    "kodepaket": 26.1,
+    "id": "70",
+    "kodepaket": "26.1",
     "lingkup": "memetakan proses bisnis simpul KPBU;"
   },
   {
-    "id": 71,
-    "kodepaket": 26.1,
+    "id": "71",
+    "kodepaket": "26.1",
     "lingkup": "menemukenali ekspektasi stakeholder terhadap simpul KPBU"
   },
   {
-    "id": 72,
-    "kodepaket": 26.1,
+    "id": "72",
+    "kodepaket": "26.1",
     "lingkup": "menyusun road map penyelenggaraan tugas simpul KPBU yang meliputi, namun tidak terbatas pada: kegiatan setiap tahun anggaran, indikator kinerja setiap kegiatan, goal yang dituju untuk setiap masing masing kegiatan, rencana anggaran yang dibutuhkan, penanggung jawab dari setiap kegiatan."
   },
   {
-    "id": 73,
-    "kodepaket": 26.1,
+    "id": "73",
+    "kodepaket": "26.1",
     "lingkup": "menyusun buku panduan pelaksanaan road map tugas simpul KPBU."
   },
   {
-    "id": 74,
-    "kodepaket": 28.1,
+    "id": "74",
+    "kodepaket": "28.1",
     "lingkup": "Melakukan review terhadap studi sebelumnya mengenai pelaksanaan Bundling Project KPBU Infrastruktur PUPR."
   },
   {
-    "id": 75,
-    "kodepaket": 28.1,
+    "id": "75",
+    "kodepaket": "28.1",
     "lingkup": "Melakukan pemutakhiran kebijakan mengenai pelaksanaan Bundling Project KPBU;"
   },
   {
-    "id": 76,
-    "kodepaket": 28.1,
+    "id": "76",
+    "kodepaket": "28.1",
     "lingkup": "Draft awal (outline awal) pedoman pelaksanaan Bundling Project KPBU Infrastruktur PUPR;"
   },
   {
-    "id": 77,
-    "kodepaket": 28.1,
+    "id": "77",
+    "kodepaket": "28.1",
     "lingkup": "Menganalisa kendala dan potensi Bundling Project berdasarkan salah satu contoh Bundling Project bidang PUPR;"
   },
   {
-    "id": 78,
-    "kodepaket": 28.1,
+    "id": "78",
+    "kodepaket": "28.1",
     "lingkup": "Analisis setiap prosedur dan profil efektivitas dan efisiensi dari setiap prosedur."
   },
   {
-    "id": 79,
-    "kodepaket": 28.1,
+    "id": "79",
+    "kodepaket": "28.1",
     "lingkup": "Melakukan focus group discussion (FGD), dengan pihak  / instansi terkait (Pemerintah, Pemda, BU, dll);"
   },
   {
-    "id": 80,
-    "kodepaket": 28.1,
+    "id": "80",
+    "kodepaket": "28.1",
     "lingkup": "Penyusunan telaah substansi pedoman pelaksanaan Bundling Project KPBU Infrastruktur PUPR."
   },
   {
-    "id": 81,
-    "kodepaket": 28.1,
+    "id": "81",
+    "kodepaket": "28.1",
     "lingkup": "Memberikan rekomendasi mekanisme koordinasi pelaksanaan Bundling Project bidang PUPR;"
   },
   {
-    "id": 82,
-    "kodepaket": 28.1,
+    "id": "82",
+    "kodepaket": "28.1",
     "lingkup": "Kesimpulan Kajian;"
   },
   {
-    "id": 83,
-    "kodepaket": 28.1,
+    "id": "83",
+    "kodepaket": "28.1",
     "lingkup": "Rekomendasi kebijakan pelaksanaan Bundling Project KPBU Infrastruktur PUPR;"
   },
   {
-    "id": 84,
-    "kodepaket": 28.1,
+    "id": "84",
+    "kodepaket": "28.1",
     "lingkup": "Menyusun outline pedoman pelaksanaan Bundling Project KPBU Infrastruktur PUPR."
   },
   {
-    "id": 85,
-    "kodepaket": 28.1,
+    "id": "85",
+    "kodepaket": "28.1",
     "lingkup": "Menyusun Legal Draft Peraturan Menteri PUPR tentang pedoman pelaksanaan Bundling Project KPBU Infrastruktur PUPR "
   },
   {
-    "id": 86,
-    "kodepaket": 32.1,
+    "id": "86",
+    "kodepaket": "32.1",
     "lingkup": "memetakan proses bisnis layanan konsultasi investasi infrastruktur;"
   },
   {
-    "id": 87,
-    "kodepaket": 32.1,
+    "id": "87",
+    "kodepaket": "32.1",
     "lingkup": "menemukenali data, sumber data, periode updating data, yang terkait dengan proses bisnis layanan konsultasi investasi infrastruktur PUPR;"
   },
   {
-    "id": 88,
-    "kodepaket": 32.1,
+    "id": "88",
+    "kodepaket": "32.1",
     "lingkup": "mengembangkan algoritma pemrograman sistem informasi layanan konsultasi investasi infrastruktur PUPR beserta;"
   },
   {
-    "id": 89,
-    "kodepaket": 32.1,
+    "id": "89",
+    "kodepaket": "32.1",
     "lingkup": "mengembangkan sistem databasenya;"
   },
   {
-    "id": 90,
-    "kodepaket": 32.1,
+    "id": "90",
+    "kodepaket": "32.1",
     "lingkup": "mengembangkan buku SOP/manual pengoperasian, pemeliharaan, pengadministrasian sistem informasi layanan konsultasi investasi infrastruktur PUPR;"
   },
   {
-    "id": 91,
-    "kodepaket": 32.1,
+    "id": "91",
+    "kodepaket": "32.1",
     "lingkup": "mengembangkan web site sebagai interface layanan konsutlasi investasi infrastruktur berbasis web serta interface administrator;"
   },
   {
-    "id": 92,
-    "kodepaket": 32.1,
+    "id": "92",
+    "kodepaket": "32.1",
     "lingkup": "menyusun kesimpulan kegiatan"
   },
   {
-    "id": 93,
-    "kodepaket": 34.1,
+    "id": "93",
+    "kodepaket": "34.1",
     "lingkup": "Review metodologi pemetaan kapasitas daerah dalam memfasilitasi investasi infrastruktur yang sudah dikembangkan dalam kajian sebelumnya;"
   },
   {
-    "id": 94,
-    "kodepaket": 34.1,
+    "id": "94",
+    "kodepaket": "34.1",
     "lingkup": "Validasi hasil review indikator kapasitas daerah dalam memfasilitasi investasi infrastruktur kepada pakar;"
   },
   {
-    "id": 95,
-    "kodepaket": 34.1,
+    "id": "95",
+    "kodepaket": "34.1",
     "lingkup": "Penyempurnaan metodologi pemetaan kapasitas daerah dalam memfasilitasi investasi infrastruktur hasil review dan validasi;"
   },
   {
-    "id": 96,
-    "kodepaket": 34.1,
+    "id": "96",
+    "kodepaket": "34.1",
     "lingkup": "Penyelenggaraan survey kapasitas daerah dalam memfasilitasi investasi infrastruktur untuk di wilayah Jawa, Bali Dan Nusa Tenggara;"
   },
   {
-    "id": 97,
-    "kodepaket": 34.1,
+    "id": "97",
+    "kodepaket": "34.1",
     "lingkup": "Penyusunan pemeringkatan kapasitas daerah dalam memfasilitasi investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara;"
   },
   {
-    "id": 98,
-    "kodepaket": 34.1,
+    "id": "98",
+    "kodepaket": "34.1",
     "lingkup": "Analisis hasil pemetaan kapasitas daerah dalam memfasilitasi investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara; "
   },
   {
-    "id": 99,
-    "kodepaket": 34.1,
+    "id": "99",
+    "kodepaket": "34.1",
     "lingkup": "Penyusunan pola pembinaan terhadap daerah hasil dari analisis pemetaan kapasitas daerah; dan"
   },
   {
-    "id": 100,
-    "kodepaket": 34.1,
+    "id": "100",
+    "kodepaket": "34.1",
     "lingkup": "Penyusunan road map kebijakan peningkatan kapasitas daerah dalam fasilitasi investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara."
   },
   {
-    "id": 101,
-    "kodepaket": 35.1,
+    "id": "101",
+    "kodepaket": "35.1",
     "lingkup": "Review metodologi dan indikator risiko investasi infrastruktur dan pola penanganan untuk sektor SPAM, Jalan Tol dan Pengolahan Sampah di daerah berdasarkan kajian terdahulu;"
   },
   {
-    "id": 102,
-    "kodepaket": 35.1,
+    "id": "102",
+    "kodepaket": "35.1",
     "lingkup": "Validasi hasil review metodologi dan indikator risiko investasi infrastruktur dan pola penanganan untuk sektor SPAM, Jalan Tol dan Pengolahan Sampah;"
   },
   {
-    "id": 103,
-    "kodepaket": 35.1,
+    "id": "103",
+    "kodepaket": "35.1",
     "lingkup": "Penyempurnaan metodologi dan indikator risiko investasi infrastruktur dan pola penanganan untuk sektor SPAM, Jalan Tol dan Pengolahan Sampah"
   },
   {
-    "id": 104,
-    "kodepaket": 35.1,
+    "id": "104",
+    "kodepaket": "35.1",
     "lingkup": "Penyelenggaraan survey risiko investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara sektor SPAM, Jalan Tol dan Persampahan;"
   },
   {
-    "id": 105,
-    "kodepaket": 35.1,
+    "id": "105",
+    "kodepaket": "35.1",
     "lingkup": "Penyusunan pemeringkatan daerah berdasarkan tingkat risiko investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara sektor SPAM, Jalan Tol dan Persampahan;"
   },
   {
-    "id": 106,
-    "kodepaket": 35.1,
+    "id": "106",
+    "kodepaket": "35.1",
     "lingkup": "Analisis hasil pemetaan risiko investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara sektor SPAM, Jalan Tol dan Persampahan; dan"
   },
   {
-    "id": 107,
-    "kodepaket": 35.1,
+    "id": "107",
+    "kodepaket": "35.1",
     "lingkup": "Penyusunan pola penanganan risiko berdasarkan profil yang telah tersusun sektor SPAM, Jalan Tol dan Persampahan; dan"
   },
   {
-    "id": 108,
-    "kodepaket": 35.1,
+    "id": "108",
+    "kodepaket": "35.1",
     "lingkup": "Penyusunan road map kebijakan pola penanganan risiko investasi infrastruktur di wilayah Jawa, Bali Dan Nusa Tenggara;"
   },
   {
-    "id": 109,
-    "kodepaket": 39.1,
+    "id": "109",
+    "kodepaket": "39.1",
     "lingkup": "Melakukan studi analisa dan pemetaan terhadap faktor-faktor yang mempengaruhi struktur, perilaku, dan kinerja dalam pasar investasi infrastruktur di Indonesia, terutama di bidang Infrastruktur ke-PUPR-an. Kajian ekonomi tersebut mencakup berbagai aspek seperti teori perusahaan, struktur persaingan, perilaku pasar, analisis kinerja, dan kebijakan pemerintah terkait industri dan kebijakan perusahaan; "
   },
   {
-    "id": 110,
-    "kodepaket": 39.1,
+    "id": "110",
+    "kodepaket": "39.1",
     "lingkup": "Melakukan studi analisa terhadap struktur pasar investasi infrastruktur di Indonesia berdasarkan taksonomi dasar struktur pasar;"
   },
   {
-    "id": 111,
-    "kodepaket": 39.1,
+    "id": "111",
+    "kodepaket": "39.1",
     "lingkup": "Mengumpulkan data-data terkait jumlah pelaku pasar investasi infrastruktur di dalam negeri; serta melakukan analisa terhadap hambatan dalam akses pasar investasi infrastruktur di Indonesia;"
   },
   {
-    "id": 112,
-    "kodepaket": 39.1,
+    "id": "112",
+    "kodepaket": "39.1",
     "lingkup": "Melakukan Identifikasi terhadap pengaruh dari Kebijakan pemerintah terhadap perilaku (conduct) para pelaku usaha di pasar investasi infrastruktur di Indonesia."
   },
   {
-    "id": 113,
-    "kodepaket": 39.1,
+    "id": "113",
+    "kodepaket": "39.1",
     "lingkup": "Membuat tools, indikator dan melakukan analisis terhadap kinerja (performance level) dari para pelaku usaha di pasar investasi infrastruktur di Indonesia."
   },
   {
-    "id": 114,
-    "kodepaket": 39.1,
+    "id": "114",
+    "kodepaket": "39.1",
     "lingkup": "Memberikan masukan terhadap bahan penyusunan kebijakan yang mengatur tentang perilaku para pelaku usaha di pasar investasi infrastruktur di Indonesia"
   },
   {
-    "id": 115,
-    "kodepaket": 40.1,
+    "id": "115",
+    "kodepaket": "40.1",
     "lingkup": "Melakukan identifikasi awal data investor lokal;"
   },
   {
-    "id": 116,
-    "kodepaket": 40.1,
+    "id": "116",
+    "kodepaket": "40.1",
     "lingkup": "Menggali informasi detail tentang kapasitas investor lokal;"
   },
   {
-    "id": 117,
-    "kodepaket": 40.1,
+    "id": "117",
+    "kodepaket": "40.1",
     "lingkup": "Melakukan analisa untuk memberikan informasi akan potensi investor lokal dalam mendukung pembiayaan rencana proyek infrastruktur;"
   },
   {
-    "id": 118,
-    "kodepaket": 40.1,
+    "id": "118",
+    "kodepaket": "40.1",
     "lingkup": "Menyusun strategi dan rekomendasi program pembinaan investasi infrastruktur untuk memenuhi target peningkatan kapitalisasi konstruksi nasional oleh investor lokal."
   },
   {
-    "id": 119,
-    "kodepaket": 42.1,
+    "id": "119",
+    "kodepaket": "42.1",
     "lingkup": "Melakukan review kebijakan liberalisasi perdagangan jasa konstruksi internasional saat ini yang memuat tentang:"
   },
   {
-    "id": 120,
-    "kodepaket": 42.1,
+    "id": "120",
+    "kodepaket": "42.1",
     "lingkup": "a. Mengumpulkan data kebijakan liberalisasi perdagangan jasa konstruksi internasional (perjanjian-perjanjian bilateral, regional, dan multirateral Indonesia dengan sejumlah negara);"
   },
   {
-    "id": 121,
-    "kodepaket": 42.1,
+    "id": "121",
+    "kodepaket": "42.1",
     "lingkup": "b. Mengidentifikasi kesepakatan yang terjadi dalam setiap perundingan;"
   },
   {
-    "id": 122,
-    "kodepaket": 42.1,
+    "id": "122",
+    "kodepaket": "42.1",
     "lingkup": "c. Melakukan analisa dan evaluasi berbagai alternatif kebijakan domestik (domestic regulations) maupun pengaruh eksternal dari liberalisasi perdagangan yang akan memiliki dampak ekonomi terhadap pasar infrastruktur Indonesia di masa mendatang"
   },
   {
-    "id": 123,
-    "kodepaket": 20.1,
+    "id": "123",
+    "kodepaket": "20.1",
     "lingkup": "Pemberian konsultansi teknis pembinaan investasi infrastruktur kepada Direktur Bina Investasi Infrastruktur;"
   },
   {
-    "id": 124,
-    "kodepaket": 20.1,
+    "id": "124",
+    "kodepaket": "20.1",
     "lingkup": "Penyediaan keahlian kepada Direktur Bina Investasi Infrastruktur dalam pembinaan investasi infrastruktur yang meliputi: keahlian di bidang kebijakan publik atau regulasinya atau peraturan perundangan khususnya yang terkait dengan investasi infrastruktur atau pengembangan jasa konstruksi nasional, keahlian di bidang pola pembiayaan investasi infrastruktur atau finansial, keahlian di bidang pengembangan mitigasi risiko investasi infrastruktur / manajemen risiko dan penyelesian permasalahan dan sengketa investasi infrastruktur, keahlian di bidang ekonomi dalam menyusun penghitungan kuantitatif terhadap kelayakan ekonomi dari suatu investasi infrastruktur atau proyek konstruksi, keahlian dibidang kebijakan publik atau regulasinya khususnya yang terkait dengan investasi infrastruktur atau pengembangan jasa konstruksi nasional, keahlian dibidang monitoring dan evaluasi program-program pemerintah khususnya yang terkait  dengan investasi infrastruktur atau pengembangan jasa konstruksi nasional, keahlian di bidang Market Intellegence / Market Research atau pasar infrastruktur nasional maupun internasional;"
   },
   {
-    "id": 125,
-    "kodepaket": 20.1,
+    "id": "125",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan monitoring dan evaluasi terhadap hasil pencapaian outcome  DBII TA 2017;"
   },
   {
-    "id": 126,
-    "kodepaket": 20.1,
+    "id": "126",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan penyusunan rencana upaya pencapaian outcome  DBII TA 2018;"
   },
   {
-    "id": 127,
-    "kodepaket": 20.1,
+    "id": "127",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan penyusunan profil pencapaian Renstra DBII 2015-2019 untuk TA 2017;"
   },
   {
-    "id": 128,
-    "kodepaket": 20.1,
+    "id": "128",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan analisis kegiatan atau program kerja baik yang bersifat kontraktual maupun swakelola oleh Direktorat Bina Investasi Infrastruktur pada tahun anggaran 2017;"
   },
   {
-    "id": 129,
-    "kodepaket": 20.1,
+    "id": "129",
+    "kodepaket": "20.1",
     "lingkup": "Penyusunan rekomendasi bahan kebijakan pembinaan investasi infrastruktur."
   },
   {
-    "id": 130,
-    "kodepaket": 46.1,
+    "id": "130",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan inventarisasi dan updating model manajemen konstruksi pada penyelenggaraan investasi infrastruktur di proyek jalan tol;"
   },
   {
-    "id": 131,
-    "kodepaket": 46.1,
+    "id": "131",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan pengumpulan data primer dan data sekunder yang terkait dengan proyek infrastruktur KPBU jalan tol. Pengumpulan data primer termasuk di dalamnya interview atau FGD kepada stakeholder, sedangkan pengumpulan data sekunder termasuk di dalamnya penelaahan kajian terdahulu, data dan jurnal akademis terkait;"
   },
   {
-    "id": 132,
-    "kodepaket": 46.1,
+    "id": "132",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan analisis pelaksanaan proyek KPBU di Kementerian PUPR pada studi kasus KPBU jalan tol pada periode waktu antara 2005-2015 dengan mengambil contoh pelaksanaan manajemen kontruksi pada salah satu ruas pembangunan proyek jalan tol."
   },
   {
-    "id": 133,
-    "kodepaket": 46.1,
+    "id": "133",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan analisis atas kebutuhan penggunaan Manajemen Konstruksi untuk meningkatkan kinerja penyelenggaraan proyek jalan tol dengan skema KPBU;  "
   },
   {
-    "id": 134,
-    "kodepaket": 46.1,
+    "id": "134",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan analisis kesesuaian penggunaan model Manajemen Konstruksi pada penyelenggaraan proyek KPBU khususnya di jalan tol;"
   },
   {
-    "id": 135,
-    "kodepaket": 46.1,
+    "id": "135",
+    "kodepaket": "46.1",
     "lingkup": "Mengkonstruksikan model KPBU terintegrasi dalam manajemen konstruksi berdasarkan metodologi system thinking "
   },
   {
-    "id": 136,
-    "kodepaket": 46.1,
+    "id": "136",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan penyusunan model KPBU terintegrasi dalam manajemen konstruksi yang efektif dan efisien pada penyelenggaraan proyek kerjasama pemerintah dengan badan usaha (KPBU) bidang PUPR;"
   },
   {
-    "id": 137,
-    "kodepaket": 46.1,
+    "id": "137",
+    "kodepaket": "46.1",
     "lingkup": "Melakukan penyusunan rekomendasi penerapan dan implementasi model kerjasama pemerintah dengan badan usaha (KPBU) yang teritegrasi dalam manajemen konstruksi sebagai alat kendali proyek penyediaan infrastruktur"
   },
   {
-    "id": 138,
-    "kodepaket": 25.1,
+    "id": "138",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan koordinasi awal dengan Tim teknis dan internal Direktorat Kerja Sama dan Pemberdayaan;"
   },
   {
-    "id": 139,
-    "kodepaket": 25.1,
+    "id": "139",
+    "kodepaket": "25.1",
     "lingkup": "Memberikan masukan Direktorat Kerja Sama dalam proses penyusunan  dokumen kerjasama;"
   },
   {
-    "id": 140,
-    "kodepaket": 25.1,
+    "id": "140",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan identifikasi kebutuhan NSPK di bidang Kerja Sama dan Pemberdayaan (family tree);"
   },
   {
-    "id": 141,
-    "kodepaket": 25.1,
+    "id": "141",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan kaji ulang terhadap draft NSPK bidang kerjasama dan pemberdayaan yang sudah ada;"
   },
   {
-    "id": 142,
-    "kodepaket": 25.1,
+    "id": "142",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan koordinasi dengan balai, pemerintah provinsi serta pemangku kepentingan terkait lainnya dalam penyelenggaraan pembinaan jasa konstruksi;"
   },
   {
-    "id": 143,
-    "kodepaket": 25.1,
+    "id": "143",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan identifikasi dalam rangka penyusunan petunjuk pelaksanaan pemantauan dan evaluasi pelaksanaan kerja sama dan pemberdayaan;"
   },
   {
-    "id": 144,
-    "kodepaket": 25.1,
+    "id": "144",
+    "kodepaket": "25.1",
     "lingkup": "Melakukan identifikasi kebutuhan rencana kerjasama dan pemberdayaan;"
   },
   {
-    "id": 145,
-    "kodepaket": 25.1,
+    "id": "145",
+    "kodepaket": "25.1",
     "lingkup": "Memetakan potensi dan kekuatan dari masing-masing stakeholders;"
   },
   {
-    "id": 146,
-    "kodepaket": 25.1,
+    "id": "146",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun kerangka model kerjasama antar berbagai stakeholders;"
   },
   {
-    "id": 147,
-    "kodepaket": 25.1,
+    "id": "147",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun matriks rencana aksi kerjasama dan pemberdayaan."
   },
   {
-    "id": 148,
-    "kodepaket": 25.1,
+    "id": "148",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun instrumen monitoring dan evaluasi kerjasama dan pemberdayaan antar berbagai stakeholders;"
   },
   {
-    "id": 149,
-    "kodepaket": 25.1,
+    "id": "149",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun instrumen pengukuran efektifitas capaian pelaksanaan kegiatan terhadap capaian output Direktorat Kerja Sama dan Pemberdayaan;"
   },
   {
-    "id": 150,
-    "kodepaket": 25.1,
+    "id": "150",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun pengukuran Jumlah Asesor dan Instruktur dalam kurun waktu 10 tahun kedepan;"
   },
   {
-    "id": 151,
-    "kodepaket": 25.1,
+    "id": "151",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun petunjuk pelaksanaan pemantauan dan evaluasi pelaksanaan kerja sama dan pemberdayaan;"
   },
   {
-    "id": 152,
-    "kodepaket": 25.1,
+    "id": "152",
+    "kodepaket": "25.1",
     "lingkup": "Menyusun konsep pengaturan Bidang Kerjasama dan Pemberdayaan."
   },
   {
-    "id": 153,
-    "kodepaket": 20.1,
+    "id": "153",
+    "kodepaket": "20.1",
     "lingkup": "Pemberdayaan; "
   },
   {
-    "id": 154,
-    "kodepaket": 20.1,
+    "id": "154",
+    "kodepaket": "20.1",
     "lingkup": "Menyusun Dokumen Rencana Mutu;"
   },
   {
-    "id": 155,
-    "kodepaket": 20.1,
+    "id": "155",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan review kebijakan atau regulasi terkait penyelenggaraan kerja sama dan pemberdayaan di lingkungan Direktorat Jenderal Bina Konstruksi;"
   },
   {
-    "id": 156,
-    "kodepaket": 20.1,
+    "id": "156",
+    "kodepaket": "20.1",
     "lingkup": "Mengidentifikasi K/L/D/I dan Proses Bisnis dalam dunia diklat tingkat Menengah Kejuruan (SMK) dan dunia konstruksi bidang Pekerjaan Umum dan Perumahan Rakyat;"
   },
   {
-    "id": 157,
-    "kodepaket": 20.1,
+    "id": "157",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan Pemetaan Program � Program Stategis Konstruksi di bidang Pekerjaan Umum dan Perumahan Rakyat;"
   },
   {
-    "id": 158,
-    "kodepaket": 20.1,
+    "id": "158",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan Penilaian dan analisis keterhubungan antara proses bisnis antara masing-masing K/L/D/I di dunia diklat tingkat Menengah Kejuruan (SMK) dan dunia konstruksi bidang Pekerjaan Umum dan Perumahan Rakyat;"
   },
   {
-    "id": 159,
-    "kodepaket": 20.1,
+    "id": "159",
+    "kodepaket": "20.1",
     "lingkup": "Mengidentifikasi setiap tahapan dalam bisnis proses pekerjaan konstruksi oleh tenaga kerja konstruksi mulai dari tingkat perusahaan sampai proyek konstruksi;"
   },
   {
-    "id": 160,
-    "kodepaket": 20.1,
+    "id": "160",
+    "kodepaket": "20.1",
     "lingkup": "Mengidentifikasi setiap tahapan continuous profesional development tenaga kerja konstruksi trampil;"
   },
   {
-    "id": 161,
-    "kodepaket": 20.1,
+    "id": "161",
+    "kodepaket": "20.1",
     "lingkup": "Mengidentifikasi kebutuhan tenaga kerja konstruksi di setiap fleet pekerjaan proyek konstruksi;"
   },
   {
-    "id": 162,
-    "kodepaket": 20.1,
+    "id": "162",
+    "kodepaket": "20.1",
     "lingkup": "Menyusun Permodelan Neraca Link dan Match Kerjasama Pengembangan SDM Konstruksi antara proses bisnis dunia diklat (Supply) dan dunia konstruksi (Demand);"
   },
   {
-    "id": 163,
-    "kodepaket": 20.1,
+    "id": "163",
+    "kodepaket": "20.1",
     "lingkup": "Merancang Sistem Penjaminan Mutu Kompetensi Tenaga Kerja SDM Konstruksi Trampil;"
   },
   {
-    "id": 164,
-    "kodepaket": 20.1,
+    "id": "164",
+    "kodepaket": "20.1",
     "lingkup": "Menyusun Rancangan Kerjasama dan Pemberdayaan K/L/D/I sebagai perkuatan Link and Match Kerjasama Pengembangan SDM antara Dunia Diklat dan Dunia Konstruksi untuk mencapai RENSTRA Direktorat Jenderal Bina Konstruksi 2019;"
   },
   {
-    "id": 165,
-    "kodepaket": 20.1,
+    "id": "165",
+    "kodepaket": "20.1",
     "lingkup": "Melakukan Analisis Kebutuhan dan Analisis Kebijakan dan Strategi KSP Antar Para Pihak K/L/D/I dan Pelaku Usaha untuk memperkuatkan keterhubungan dan kepadupadanan Proses Bisnis Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi;"
   },
   {
-    "id": 166,
-    "kodepaket": 20.1,
+    "id": "166",
+    "kodepaket": "20.1",
     "lingkup": "Merancang Substansi & Skema Kerjasama Pengembangan SDM Antar K/L/D/I/ Pelaku di Dunia Diklat Tenaga Konstruksi Trampil dan Dunia Konstruksi;"
   },
   {
-    "id": 167,
-    "kodepaket": 20.1,
+    "id": "167",
+    "kodepaket": "20.1",
     "lingkup": "Merancang Modul Program Kerjasama dan  Pemberdayaan K/L/D/I Dunia Diklat Trampil (SMK) dan Dunia Konstruksi untuk memperkuat keterhubungan (link) dan kepadu-padanan (match) antara proses bisnis dunia diklat dan dunia konstruksi."
   },
   {
-    "id": 168,
-    "kodepaket": 29.1,
+    "id": "168",
+    "kodepaket": "29.1",
     "lingkup": "Stakeholder Jasa Konstruksi"
   },
   {
-    "id": 169,
-    "kodepaket": 20.1,
+    "id": "169",
+    "kodepaket": "20.1",
     "lingkup": "FGD Penyusunan Indikator Unjuk Kerja (IUK);"
   },
   {
-    "id": 170,
-    "kodepaket": 20.1,
+    "id": "170",
+    "kodepaket": "20.1",
     "lingkup": "FGD Penyusunan Kurikulum Pelatihan Berbasis Kompetensi (KPBK);"
   },
   {
-    "id": 171,
-    "kodepaket": 20.1,
+    "id": "171",
+    "kodepaket": "20.1",
     "lingkup": "Workshop Materi Uji Kompetensi (MUK);"
   },
   {
-    "id": 172,
-    "kodepaket": 20.1,
+    "id": "172",
+    "kodepaket": "20.1",
     "lingkup": "dan FGD Penyusunan Modul"
   },
   {
-    "id": 173,
-    "kodepaket": 18.1,
+    "id": "173",
+    "kodepaket": "18.1",
     "lingkup": "FGD Penyusunan Indikator Unjuk Kerja (IUK);"
   },
   {
-    "id": 174,
-    "kodepaket": 18.1,
+    "id": "174",
+    "kodepaket": "18.1",
     "lingkup": "FGD Penyusunan Kurikulum Pelatihan Berbasis Kompetensi (KPBK);"
   },
   {
-    "id": 175,
-    "kodepaket": 18.1,
+    "id": "175",
+    "kodepaket": "18.1",
     "lingkup": "Workshop Materi Uji Kompetensi (MUK);"
   },
   {
-    "id": 176,
-    "kodepaket": 18.1,
+    "id": "176",
+    "kodepaket": "18.1",
     "lingkup": "dan FGD Penyusunan Modul"
   },
   {
-    "id": 177,
-    "kodepaket": 17.1,
+    "id": "177",
+    "kodepaket": "17.1",
     "lingkup": "Membuat Dokumen Rencana Mutu;"
   },
   {
-    "id": 178,
-    "kodepaket": 17.1,
+    "id": "178",
+    "kodepaket": "17.1",
     "lingkup": "Focus Group Discussion;"
   },
   {
-    "id": 179,
-    "kodepaket": 17.1,
+    "id": "179",
+    "kodepaket": "17.1",
     "lingkup": "Workshop SKKNI;"
   },
   {
-    "id": 180,
-    "kodepaket": 17.1,
+    "id": "180",
+    "kodepaket": "17.1",
     "lingkup": "Verifikasi Internal;"
   },
   {
-    "id": 181,
-    "kodepaket": 17.1,
+    "id": "181",
+    "kodepaket": "17.1",
     "lingkup": "Pra-Konvensi;"
   },
   {
-    "id": 182,
-    "kodepaket": 17.1,
+    "id": "182",
+    "kodepaket": "17.1",
     "lingkup": "Verifikasi Eksternal;"
   },
   {
-    "id": 183,
-    "kodepaket": 17.1,
+    "id": "183",
+    "kodepaket": "17.1",
     "lingkup": "dan Konvensi & Penetapan SKKNI oleh Kementerian Ketenagakerjaan Republik Indonesia"
   }
  ]

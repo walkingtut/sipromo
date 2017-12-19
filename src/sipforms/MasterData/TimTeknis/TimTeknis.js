@@ -13,7 +13,8 @@ import {
     ComboBoxField 
 } from '@extjs/ext-react';
 import model from './TimTeknisModel';
-import posisi from './posisi';
+//import posisi from './posisi';
+import posisi from '../../../../resources/data/PosisiData.json';
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',
