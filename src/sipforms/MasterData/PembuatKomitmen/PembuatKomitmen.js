@@ -39,7 +39,7 @@ export default class PembuatKomitmen extends Component {
 
             <Container 
                 padding={10} 
-                width={!Ext.os.is.Phone && 900}
+                width={!Ext.os.is.Phone && 1240}
                 layout={{
                     type: 'vbox',
                     pack: 'center',
@@ -60,7 +60,7 @@ export default class PembuatKomitmen extends Component {
                         plugins={{
                             gridsummaryrow: true
                         }} 
-                        flex="5.5"
+                        flex="6"
                     >
                         <Column 
                             text="<b>Kode</b>" 
@@ -73,10 +73,10 @@ export default class PembuatKomitmen extends Component {
                             dataIndex="nama"/>
                         <Column 
                             text="<b>Satker</b>" 
-                            width="100" 
+                            width="320" 
                             dataIndex="satker"/>
                     </Grid>
-                    <FormPanel flex="4.5" height="350">
+                    <FormPanel flex="4" height="350">
                         <FieldSet title="<h3>Input/Edit Master Data PPK</h3>">
                             <TextField label="Kode"/>
                             <TextField label="Nama"/>

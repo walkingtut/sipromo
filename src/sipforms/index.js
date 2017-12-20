@@ -94,6 +94,7 @@ function transform(node, parentUrl) {
 
     if (node.text && !node.id) {
         node.id = (parentUrl === '/' ? '' : parentUrl) + '/' + node.text.toLowerCase().replace(/\s/g, '_').replace(/[^\w]/g, '');
+        //console.log(node.id);
     }
 
     node.name = node.text;

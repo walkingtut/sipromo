@@ -17,12 +17,15 @@ import {
     TextAreaField,
     TabPanel,
     TitleBar,
-    Panel
+    Panel,
+    DatePickerField,
+    ComboBoxField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import modelLingkup from '../Model/DetailLingkupModel';
 import model from '../PaketModel';
-
+import jenisEvent from '../../../../resources/data/JenisEventData.json';
+import jenisPembayaran from '../../../../resources/data/JenisPembayaranData.json';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -235,9 +238,10 @@ export default class KelolaKontraktual extends Component {
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Jadwal Kegiatan</b>" dataIndex="jadwalkegiatan" width="350" />
+                            <Column text="<b>Uraian Kegiatan</b>" dataIndex="jadwalkegiatan" width="350" />
                             <Column text="<b>Tanggal Mulai</b>" dataIndex="tanggalmulai" width="200" />
                             <Column text="<b>Tanggal Selesai</b>" dataIndex="tanggalselesai" width="200" />
+                            <Column text="<b>Status Kegiatan</b>" dataIndex="tanggalselesai" width="200" />
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -310,7 +314,7 @@ export default class KelolaKontraktual extends Component {
                     defaultFocus="#ok"
                     onHide={() => this.setState({ showJadwalDialog: false })}
                     width="600"
-                    height="500"                    
+                    height="550"                    
                 >
                     <Container 
                         autoSize 
@@ -319,11 +323,37 @@ export default class KelolaKontraktual extends Component {
                         flex={1}
                         width="500"
                     > 
-                        <FormPanel flex="10" height="350">
+                        <FormPanel flex="10" height="400">
                             <FieldSet title="Input Jadwal Paket Kegiatan">
-                                <TextField label="Jadwal Kegiatan"/>
-                                <TextField label="Tanggal Mulai"/>
-                                <TextField label="Tanggal Selesai"/>
+                                <TextField label="Uraian Kegiatan"/>
+                                <DatePickerField 
+                                    width={200}
+                                    value={new Date()}
+                                    destroyPickerOnHide
+                                    label="Tanggal Mulai"
+                                    picker={{
+                                        yearFrom: 2000
+                                }}
+                                />
+                                <DatePickerField 
+                                    width={200}
+                                    value={new Date()}
+                                    destroyPickerOnHide
+                                    label="Tanggal Selesai"
+                                    picker={{
+                                        yearFrom: 2000
+                                }}
+                                />
+                                <ComboBoxField
+                                    width={200}
+                                    label="Status Kegiatan"
+                                    store={jenisEvent}
+                                    displayField="jenis"
+                                    valueField="jenis"
+                                    queryMode="local"
+                                    labelAlign="placeholder"
+                                    clearable
+                                />                                
                             </FieldSet>
                             <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                                 <Button text="Batal" />
@@ -355,8 +385,25 @@ export default class KelolaKontraktual extends Component {
                     > 
                         <FormPanel flex="10" height="380">
                             <FieldSet title="Input Rencana Penyerapan Anggaran">
-                                <TextField label="Rencana Penyerapan"/>
-                                <TextField label="Tanggal Pencairan"/>
+                                <ComboBoxField
+                                    width={200}
+                                    label="Rencana Penyerapan"
+                                    store={jenisPembayaran}
+                                    displayField="jenisbayar"
+                                    valueField="jenisbayar"
+                                    queryMode="local"
+                                    labelAlign="placeholder"
+                                    clearable
+                                />
+                                <DatePickerField 
+                                    width={200}
+                                    value={new Date()}
+                                    destroyPickerOnHide
+                                    label="Tanggal Pencairan"
+                                    picker={{
+                                        yearFrom: 2000
+                                }}
+                                />
                                 <TextField label="Persentase (%)"/>
                                 <TextField label="Dokumen Pendukung"/>
                             </FieldSet>

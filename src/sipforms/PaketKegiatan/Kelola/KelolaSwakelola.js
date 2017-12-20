@@ -238,6 +238,7 @@ export default class KelolaSwakelola extends Component {
                             <Column text="<b>Jadwal Kegiatan</b>" dataIndex="jadwalkegiatan" width="350" />
                             <Column text="<b>Tanggal Mulai</b>" dataIndex="tanggalmulai" width="200" />
                             <Column text="<b>Tanggal Selesai</b>" dataIndex="tanggalselesai" width="200" />
+                            <Column text="<b>Status Kegiatan</b>" dataIndex="tanggalselesai" width="200" />
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -330,9 +331,35 @@ export default class KelolaSwakelola extends Component {
                     > 
                         <FormPanel flex="10" height="350">
                             <FieldSet title="Input Jadwal Paket Kegiatan">
-                                <TextField label="Jadwal Kegiatan"/>
-                                <TextField label="Tanggal Mulai"/>
-                                <TextField label="Tanggal Selesai"/>
+                                <TextField label="Uraian Kegiatan"/>
+                                <DatePickerField 
+                                    width={200}
+                                    value={new Date()}
+                                    destroyPickerOnHide
+                                    label="Tanggal Mulai"
+                                    picker={{
+                                        yearFrom: 2000
+                                }}
+                                />
+                                <DatePickerField 
+                                    width={200}
+                                    value={new Date()}
+                                    destroyPickerOnHide
+                                    label="Tanggal Selesai"
+                                    picker={{
+                                        yearFrom: 2000
+                                }}
+                                />
+                                <ComboBoxField
+                                    width={200}
+                                    label="Status Kegiatan"
+                                    store={jenisEvent}
+                                    displayField="jenis"
+                                    valueField="jenis"
+                                    queryMode="local"
+                                    labelAlign="placeholder"
+                                    clearable
+                                />                                
                             </FieldSet>
                             <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                                 <Button text="Batal" />

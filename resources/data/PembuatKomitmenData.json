@@ -3,70 +3,70 @@
     "id": 1,
     "kodeppk": "ARY",
     "nama": "Agus Raharyo, SE., M.Si",
-    "satker": "DJBK",
+    "satker": "Bina Kelembagaan dan Sumber Daya Jasa Konstruksi",
     "kodedirektorat": ""
   },
   {
     "id": 2,
     "kodeppk": "AME",
     "nama": "Andie Mai Endrijatno, ST",
-    "satker": "DJBK",
-    "kodedirektorat": ""
+    "satker": "Kerjasama dan Pemberdayaan",
+    "kodedirektorat": "" 
   },
   {
     "id": 3,
     "kodeppk": "CPE",
     "nama": "Chandra Permana, ST",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah VI Makassar",
     "kodedirektorat": ""
   },
   {
     "id": 4,
     "kodeppk": "DRI",
     "nama": "Dicky Rinaldi, ST. MT.",
-    "satker": "DJBK",
+    "satker": "Sekretariat Direktorat Jenderal Bina Konstruksi",
     "kodedirektorat": ""
   },
   {
     "id": 5,
     "kodeppk": "EDP",
     "nama": "Esthy Dwinda Praptaningjati, S.Sos, MT",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah IV Surabaya",
     "kodedirektorat": ""
   },
   {
     "id": 6,
     "kodeppk": "EIW",
     "nama": "Eddy Irwanto, ST.,M.Tech",
-    "satker": "DJBK",
+    "satker": "Balai Material dan Peralatan Konstruksi",
     "kodedirektorat": ""
   },
   {
     "id": 7,
     "kodeppk": "EKF",
     "nama": "Eko Kusumo Friatmojo, ST",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah V Banjarmasin",
     "kodedirektorat": ""
   },
   {
     "id": 8,
     "kodeppk": "EHP",
     "nama": "Encik Hardiansyah Pranata Putra, ST, M.Sc",
-    "satker": "DJBK",
+    "satker": "Bina Investasi Infrastruktur",
     "kodedirektorat": ""
   },
   {
     "id": 9,
     "kodeppk": "FRZ",
     "nama": "Faisal Rizal, ST, MT",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah I Banda Aceh",
     "kodedirektorat": ""
   },
   {
     "id": 10,
     "kodeppk": "MZQ",
     "nama": "Muzaqi, SE., M.Si",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah VII Jayapura",
     "kodedirektorat": ""
   },
   {
@@ -80,35 +80,35 @@
     "id": 12,
     "kodeppk": "RAN",
     "nama": "Riky Aditya Nazir, ST, MT",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah III Jakarta",
     "kodedirektorat": ""
   },
   {
     "id": 13,
     "kodeppk": "SET",
     "nama": "Samuel EDP Tampubolon, SE., MM",
-    "satker": "DJBK",
+    "satker": "Sekretariat Direktorat Jenderal Bina Konstruksi",
     "kodedirektorat": ""
   },
   {
     "id": 14,
     "kodeppk": "VPU",
     "nama": "Vita Puspitasari, SE",
-    "satker": "DJBK",
+    "satker": "Bina Penyelenggaraan Jasa Konstruksi",
     "kodedirektorat": ""
   },
   {
     "id": 15,
     "kodeppk": "WGN",
     "nama": "Wagino, SAP, M.Si",
-    "satker": "DJBK",
+    "satker": "Balai Jasa Konstruksi Wilayah II Palembang",
     "kodedirektorat": ""
   },
   {
     "id": 16,
     "kodeppk": "YMT",
     "nama": "Yanuar Munlait, ST., MT",
-    "satker": "DJBK",
+    "satker": "Bina Kompetensi dan Produktivitas Konstruksi",
     "kodedirektorat": ""
   },
 ]
