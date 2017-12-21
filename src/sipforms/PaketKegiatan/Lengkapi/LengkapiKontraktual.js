@@ -20,9 +20,14 @@ import {
     Panel
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import modelLingkup from '../Model/DetailLingkupModel';
 import model from '../PaketModel';
-
+import modelMaksud from '../Model/DetailMaksudModel';
+import modelTujuan from '../Model/DetailTujuanModel';
+import modelSasaran from '../Model/DetailSasaranModel';
+import modelLingkup from '../Model/DetailLingkupModel';
+import modelKeluaran from '../Model/DetailKeluaranModel';
+import modelTenagaAhli from '../Model/DetailTenagaAhliModel';
+import modelTimTeknis from '../Model/DetailTimTeknisModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -45,7 +50,7 @@ export default class LengkapiKontraktual extends Component {
         lingkup: ""
     }
 
-    store = Ext.create('Ext.data.Store', {
+    storePaket = Ext.create('Ext.data.Store', {
         autoLoad: true,
         model,
         pageSize: 0,
@@ -59,13 +64,73 @@ export default class LengkapiKontraktual extends Component {
         }]
     });
 
-    storeGrid = Ext.create('Ext.data.Store', {
+    storeMaksud = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelMaksud,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketMaksudData.json'
+        }
+    });
+
+    storeTujuan = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTujuan,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTujuanData.json'
+        }
+    });
+
+    storeSasaran = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelSasaran,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketSasaranData.json'
+        }
+    });
+
+    storeLingkup = Ext.create('Ext.data.Store', {
         autoLoad: true,
         modelLingkup,
         pageSize: 0,
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketLingkupData.json'
+        }
+    });
+
+    storeKeluaran = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelKeluaran,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketKeluaranData.json'
+        }
+    });
+
+    storeTenagaAhli = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTenagaAhli,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTenagaAhliData.json'
+        }
+    });
+
+    storeTimTeknis = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTimTeknis,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTimTeknisData.json'
         }
     });
 
@@ -126,7 +191,7 @@ export default class LengkapiKontraktual extends Component {
                 {/* Tab Daftar paket kegiatan */} 
                 <Container title="Daftar Paket">
                     <Grid
-                        store={this.store}
+                        store={this.storePaket}
                         plugins={{
                             gridviewoptions: true
                         }}
@@ -258,34 +323,34 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     > 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeMaksud} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Maksud"/>
                                 <Button text="+Tambah" handler={this.onMaksud}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Maksud</b>" dataIndex="maksud" width="300"/>
+                            <Column text="<b>Maksud</b>" dataIndex="maksud" width="355"/>
                         </Grid>
 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeTujuan} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Tujuan"/>
                                 <Button text="+Tambah" handler={this.onTujuan}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="300"/>
+                            <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="355"/>
                         </Grid>
 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeSasaran} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Sasaran"/>
                                 <Button text="+Tambah" handler={this.onSasaran}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="300"/>
+                            <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="355"/>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -324,14 +389,14 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeLingkup} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Lingkup"/>
                                 <Button text="+Tambah" handler={this.onLingkup}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Ruang Lingkup</b>" dataIndex="lingkup" width="1100"/>
+                            <Column text="<b>Ruang Lingkup</b>" dataIndex="lingkup" width="1130"/>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -370,7 +435,7 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeKeluaran} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Keluaran"/>
                                 <Button text="+Tambah" handler={this.onKeluaran}/>
@@ -419,20 +484,19 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeTenagaAhli} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tenaga Ahli"/>
                                 <Button text="+Tambah" handler={this.onTenagaAhli}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Nama Tenaga Ahli</b>" width="200" dataIndex="namatenagaahli" />
+                            <Column text="<b>Nama Tenaga Ahli</b>" width="300" dataIndex="namatenagaahli" />
                             <Column text="<b>Pendidikan Terakhir</b>" width="100" dataIndex="pendidikanterakhir"/>
-                            <Column text="<b>Lama Kontrak</b>" dataIndex="durasikontrak" width="150"/>
-                            <Column text="<b>Kualifikasi</b>" dataIndex="kualifikasi" width="150"/>
-                            <Column text="<b>Lama Pengalaman</b>" width="150" dataIndex="durasipengalaman" />
-                            <Column text="<b>Sertifikat Keahlian</b>" width="100" dataIndex="sertifikatkeahlian"/>
-                            <Column text="<b>Billing Rate</b>" dataIndex="billingrate" width="150"/>           
+                            <Column text="<b>Lama Kontrak (Bln)</b>" dataIndex="durasikontrak" width="200" align="right"/>
+                            <Column text="<b>Kualifikasi</b>" dataIndex="kualifikasi" width="200"/>
+                            <Column text="<b>Lama Pengalaman (Thn)</b>" width="180" dataIndex="durasipengalaman" align="right"/>
+                            <Column text="<b>Sertifikat Keahlian</b>" width="150" dataIndex="sertifikatkeahlian"/>           
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -473,16 +537,15 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="6" height="337">
+                        <Grid store={this.storeTimTeknis} shadow grouped flex="6" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tim Teknis"/>
                                 <Button text="+Tambah" handler={this.onTimTeknis}/>
                                 <Button text="Edit"/>
                                 <Button text="-Hapus"/>
                             </TitleBar>
-                            <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="100"/>
                             <Column text="<b>No. SK Tim Teknis</b>" dataIndex="nosktimteknis" width="150"/>
-                            <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="200" />
+                            <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="300" />
                             <Column text="<b>Kategori</b>" dataIndex="kategori" width="100" />
                             <Column text="<b>Posisi</b>" dataIndex="posisi" width="100" />
                         </Grid>
