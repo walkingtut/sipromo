@@ -64,20 +64,6 @@ export default class LengkapiSwakelola extends Component {
         }]
     });
 
-    storePaket = Ext.create('Ext.data.Store', {
-        autoLoad: true,
-        model,
-        pageSize: 0,
-        proxy: {
-            type: 'ajax',
-            url: 'resources/data/PaketData.json'
-        },
-        filters: [{
-            property: 'jenispaket',
-            value: 'KONTRAKTUAL'
-        }]
-    });
-
     storeMaksud = Ext.create('Ext.data.Store', {
         autoLoad: true,
         modelMaksud,

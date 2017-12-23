@@ -17,12 +17,17 @@ import {
     TextAreaField,
     TabPanel,
     TitleBar,
-    Panel
+    Panel,
+    DatePickerField,
+    ComboBoxField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import modelLingkup from '../Model/DetailLingkupModel';
 import model from '../PaketModel';
-
+import jenisEvent from '../../../../resources/data/JenisEventData.json';
+import jenisPembayaran from '../../../../resources/data/JenisPembayaranData.json';
+import modelJadwal from '../Model/DetailJadwalModel';
+import modelPenyerapan from '../Model/DetailPenyerapanModel';
 
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
@@ -54,13 +59,23 @@ export default class KelolaSwakelola extends Component {
         }]
     });
 
-    storeGrid = Ext.create('Ext.data.Store', {
+    storeJadwal = Ext.create('Ext.data.Store', {
         autoLoad: true,
-        modelLingkup,
+        modelJadwal,
         pageSize: 0,
         proxy: {
             type: 'ajax',
-            url: 'resources/data/PaketLingkupData.json'
+            url: 'resources/data/PaketJadwalData.json'
+        }
+    });
+
+    storePenyerapan = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelPenyerapan,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketPenyerapanData.json'
         }
     });
 
@@ -228,7 +243,7 @@ export default class KelolaSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     > 
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeJadwal} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Jadwal Kegiatan"/>
                                 <Button text="+Tambah" handler={this.onJadwal}/>
@@ -277,7 +292,7 @@ export default class KelolaSwakelola extends Component {
                             layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                             flex={8.5}
                         >
-                            <Grid store={this.storeGrid} shadow grouped flex="5" height="337">
+                            <Grid store={this.storePenyerapan} shadow grouped flex="5" height="337">
                                 <TitleBar docked="top">
                                     <Button text="Rencana Penyerapan Anggaran"/>
                                     <Button text="+Tambah" handler={this.onPenyerapan}/>

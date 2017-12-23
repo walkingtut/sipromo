@@ -20,8 +20,18 @@ import {
     Panel
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
-import modelLingkup from '../Model/DetailLingkupModel';
 import model from '../PaketModel';
+import modelMaksud from '../Model/DetailMaksudModel';
+import modelTujuan from '../Model/DetailTujuanModel';
+import modelSasaran from '../Model/DetailSasaranModel';
+import modelLingkup from '../Model/DetailLingkupModel';
+import modelKeluaran from '../Model/DetailKeluaranModel';
+import modelTenagaAhli from '../Model/DetailTenagaAhliModel';
+import modelTimTeknis from '../Model/DetailTimTeknisModel';
+import modelJadwal from '../Model/DetailJadwalModel';
+import modelPenyerapan from '../Model/DetailPenyerapanModel';
+import jenisEvent from '../../../../resources/data/JenisEventData.json';
+import jenisPembayaran from '../../../../resources/data/JenisPembayaranData.json';
 
 
 Ext.require([
@@ -59,13 +69,73 @@ export default class AmandemenKontraktual extends Component {
         }]
     });
 
-    storeGrid = Ext.create('Ext.data.Store', {
+    storeMaksud = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelMaksud,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketMaksudData.json'
+        }
+    });
+
+    storeTujuan = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTujuan,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTujuanData.json'
+        }
+    });
+
+    storeSasaran = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelSasaran,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketSasaranData.json'
+        }
+    });
+
+    storeLingkup = Ext.create('Ext.data.Store', {
         autoLoad: true,
         modelLingkup,
         pageSize: 0,
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketLingkupData.json'
+        }
+    });
+
+    storeKeluaran = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelKeluaran,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketKeluaranData.json'
+        }
+    });
+
+    storeTenagaAhli = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTenagaAhli,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTenagaAhliData.json'
+        }
+    });
+
+    storeTimTeknis = Ext.create('Ext.data.Store', {
+        autoLoad: true,
+        modelTimTeknis,
+        pageSize: 0,
+        proxy: {
+            type: 'ajax',
+            url: 'resources/data/PaketTimTeknisData.json'
         }
     });
 
@@ -258,7 +328,7 @@ export default class AmandemenKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     > 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeMaksud} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Maksud"/>
                                 <Button text="+Ubah" handler={this.onMaksud}/>
@@ -266,7 +336,7 @@ export default class AmandemenKontraktual extends Component {
                             <Column text="<b>Maksud</b>" dataIndex="maksud" width="300"/>
                         </Grid>
 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeTujuan} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Tujuan"/>
                                 <Button text="+Ubah" handler={this.onTujuan}/>
@@ -274,7 +344,7 @@ export default class AmandemenKontraktual extends Component {
                             <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="300"/>
                         </Grid>
 
-                        <Grid store={this.storeGrid} grouped flex="3" border>
+                        <Grid store={this.storeSasaran} grouped flex="3" border>
                             <TitleBar docked="top">
                                 <Button text="Sasaran"/>
                                 <Button text="+Ubah" handler={this.onSasaran}/>
@@ -318,7 +388,7 @@ export default class AmandemenKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeLingkup} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Lingkup"/>
                                 <Button text="+Ubah" handler={this.onLingkup}/>
@@ -362,7 +432,7 @@ export default class AmandemenKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeKeluaran} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Keluaran"/>
                                 <Button text="+Ubah" handler={this.onKeluaran}/>
@@ -409,7 +479,7 @@ export default class AmandemenKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeTenagaAhli} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tenaga Ahli"/>
                                 <Button text="+Ubah" handler={this.onTenagaAhli}/>
@@ -461,7 +531,7 @@ export default class AmandemenKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeGrid} shadow grouped flex="6" height="337">
+                        <Grid store={this.storeTimTeknis} shadow grouped flex="6" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tim Teknis"/>
                                 <Button text="+Ubah" handler={this.onTimTeknis}/>

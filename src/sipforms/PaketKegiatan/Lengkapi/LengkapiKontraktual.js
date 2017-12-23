@@ -134,11 +134,14 @@ export default class LengkapiKontraktual extends Component {
         }
     });
 
+    onPilih = (grid, info) => {
+        this.setState({ kodepaket: info.record.data.kodepaket });
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
+    }
+
     onMaksud = (grid, info) => {
         this.setState({ showMaksudDialog: true });
-        // this.setState({ kodepaket: info.record.data.kodepaket });
-        // this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
-        // this.storeGrid.filter('kodepaket', this.state.kodepaket);
+        this.storeMaksud.filter('kodepaket', this.state.kodepaket);
     }
 
     onTujuan = (grid, info) => {
@@ -206,7 +209,7 @@ export default class LengkapiKontraktual extends Component {
                                 placeholder="Cari Paket Kegiatan..."
                                 width="300"
                             />
-                            <Button text="Pilih"/>
+                            <Button text="Pilih" handler={this.onPilih} />
                         </TitleBar>
                         <Column 
                             text="<b>Kode</b>" 
