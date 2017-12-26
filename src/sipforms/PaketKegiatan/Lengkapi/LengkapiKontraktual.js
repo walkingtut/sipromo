@@ -29,10 +29,13 @@ import modelKeluaran from '../Model/DetailKeluaranModel';
 import modelTenagaAhli from '../Model/DetailTenagaAhliModel';
 import modelTimTeknis from '../Model/DetailTimTeknisModel';
 
+import colors from '../../colors';
+
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
     'Ext.grid.plugin.SummaryRow',
     'Ext.data.summary.Sum',
+    'Ext.Toast'
 ]);
 
 export default class LengkapiKontraktual extends Component {
@@ -45,7 +48,7 @@ export default class LengkapiKontraktual extends Component {
         showKeluaranDialog: false,
         showTenagaAhliDialog: false,
         showTimTeknisDialog: false,
-        judul: "",
+        judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
         kodepaket: "",
         lingkup: ""
     }
@@ -137,6 +140,7 @@ export default class LengkapiKontraktual extends Component {
     onPilih = (grid, info) => {
         this.setState({ kodepaket: info.record.data.kodepaket });
         this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
+        Ext.toast({message: 'PAKET KEGIATAN: ' + String(this.state.judul), timeout: 1500});
     }
 
     onMaksud = (grid, info) => {
@@ -209,7 +213,6 @@ export default class LengkapiKontraktual extends Component {
                                 placeholder="Cari Paket Kegiatan..."
                                 width="300"
                             />
-                            <Button text="Pilih" handler={this.onPilih} />
                         </TitleBar>
                         <Column 
                             text="<b>Kode</b>" 
@@ -225,7 +228,7 @@ export default class LengkapiKontraktual extends Component {
                         <Column 
                             text="<b>Nama Paket</b>" 
                             dataIndex="namapaket" 
-                            width="380" 
+                            width="330" 
                             align="left"/>
                         <Column 
                             text="<b>Satker</>" 
@@ -248,7 +251,7 @@ export default class LengkapiKontraktual extends Component {
                             text="<b>Nilai Paket</b>" 
                             dataIndex="nilaipaket" 
                             formatter='currency("Rp",0,false," ")' 
-                            width="150" 
+                            width="130" 
                             align="right"  />
                         <Column 
                             text="<b>No. Kontrak</b>" 
@@ -271,12 +274,12 @@ export default class LengkapiKontraktual extends Component {
                             <Column
                                 text="<b>Durasi</b>"
                                 dataIndex="durasikegiatan" 
-                                width="80"
+                                width="70"
                                 align="center" />
                             <Column
                                 text="<b>Satuan</b>"
                                 dataIndex="satuandurasi" 
-                                width="80"
+                                width="70"
                                 align="center" />    
                         </Column>
                         <Column 
@@ -295,7 +298,19 @@ export default class LengkapiKontraktual extends Component {
                             text="<b>Tanggal Penyelesaian</b>" 
                             dataIndex="tanggalpenyelesaian" 
                             width="150"
-                            align="center" />                                
+                            align="center" />     
+                        <Column 
+                            text="<b>Pilih</b>" 
+                            width="80" 
+                        >
+                        <GridCell align="center"
+                            tools={{
+                                search: {
+                                    handler: this.onPilih
+                                }
+                            }}
+                        />
+                </Column>                                 
                     </Grid>
                 </Container>
 
@@ -315,8 +330,8 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>                
@@ -380,8 +395,8 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -426,8 +441,8 @@ export default class LengkapiKontraktual extends Component {
                         flex={1.5}              
                         autoSize           
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -475,8 +490,8 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -528,8 +543,8 @@ export default class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
