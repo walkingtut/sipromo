@@ -343,8 +343,8 @@ export default class LengkapiKontraktual extends Component {
                                         handler: this.onPilih
                                     }
                                 }}
-                        />
-                </Column>                                 
+                            />
+                        </Column>                                 
                     </Grid>
                 </Container>
 
@@ -378,14 +378,12 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeMaksud} grouped flex="5" border>
                             <TitleBar docked="top">
                                 <Button text="Maksud"/>
+                                <Button text="+Tambah" handler={this.onAddMaksud}/>
                             </TitleBar>
                             <Column text="<b>Maksud</b>" dataIndex="maksud" width="475"/>
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddMaksud
-                                        },
                                         refresh: {
                                             handler: this.onEditMaksud
                                         },
@@ -404,14 +402,12 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeTujuan} grouped flex="5" border>
                             <TitleBar docked="top">
                                 <Button text="Tujuan"/>
+                                <Button text="+Tambah" handler={this.onAddTujuan}/>
                             </TitleBar>
                             <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="475"/>
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddTujuan
-                                        },
                                         refresh: {
                                             handler: this.onEditTujuan
                                         },
@@ -466,14 +462,12 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeSasaran} grouped flex="5" border>
                             <TitleBar docked="top">
                                 <Button text="Sasaran"/>
+                                <Button text="+Tambah" handler={this.onAddSasaran}/>
                             </TitleBar>
                             <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="475"/>
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddSasaran
-                                        },
                                         refresh: {
                                             handler: this.onEditSasaran
                                         },
@@ -492,14 +486,12 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeLingkup} shadow grouped flex="5" height="337">
                             <TitleBar docked="top">
                                 <Button text="Lingkup"/>
+                                <Button text="+Tambah" handler={this.onAddLingkup}/>
                             </TitleBar>
                             <Column text="<b>Ruang Lingkup</b>" dataIndex="lingkup" width="475"/>
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddLingkup
-                                        },
                                         refresh: {
                                             handler: this.onEditLingkup
                                         },
@@ -554,15 +546,13 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeKeluaran} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Keluaran"/>
+                                <Button text="+Tambah" handler={this.onAddKeluaran}/>
                             </TitleBar>
                             <Column text="<b>Keluaran</b>" width="550" dataIndex="luaran"/>
                             <Column text="<b>Jenis Keluaran</b>" width="150" dataIndex="jenisluaran"/>
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddKeluaran
-                                        },
                                         refresh: {
                                             handler: this.onEditKeluaran
                                         },
@@ -619,6 +609,7 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeTenagaAhli} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tenaga Ahli"/>
+                                <Button text="+Tambah" handler={this.onAddTA}/>
                             </TitleBar>
                             <Column text="<b>Nama Tenaga Ahli</b>" width="250" dataIndex="namatenagaahli" />
                             <Column text="<b>Pendidikan Terakhir</b>" width="100" dataIndex="pendidikanterakhir"/>
@@ -629,9 +620,6 @@ export default class LengkapiKontraktual extends Component {
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddTA
-                                        },
                                         refresh: {
                                             handler: this.onEditTA
                                         },
@@ -688,6 +676,7 @@ export default class LengkapiKontraktual extends Component {
                         <Grid store={this.storeTimTeknis} shadow grouped flex="6" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tim Teknis"/>
+                                <Button text="+Tambah" handler={this.onAddTT}/>
                             </TitleBar>
                             <Column text="<b>No. SK Tim Teknis</b>" dataIndex="nosktimteknis" width="150"/>
                             <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="300" />
@@ -696,9 +685,6 @@ export default class LengkapiKontraktual extends Component {
                             <Column text="<b>Aksi</b>" width="80" >
                                 <GridCell align="center"
                                     tools={{
-                                        plus: {
-                                            handler: this.onAddTT
-                                        },
                                         refresh: {
                                             handler: this.onEditTT
                                         },

@@ -29,10 +29,13 @@ import jenisPembayaran from '../../../../resources/data/JenisPembayaranData.json
 import modelJadwal from '../Model/DetailJadwalModel';
 import modelPenyerapan from '../Model/DetailPenyerapanModel';
 
+import colors from '../../colors';
+
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
     'Ext.grid.plugin.SummaryRow',
     'Ext.data.summary.Sum',
+    'Ext.Toast'
 ]);
 
 export default class KelolaSwakelola extends Component {
@@ -40,7 +43,7 @@ export default class KelolaSwakelola extends Component {
     state = {
         showJadwalDialog: false,
         showPenyerapanDialog: false,
-        judul: "",
+        judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
         kodepaket: "",
         lingkup: ""
     }
@@ -66,7 +69,11 @@ export default class KelolaSwakelola extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketJadwalData.json'
-        }
+        },
+        filters: [{
+            property: 'kodepaket',
+            value: '0000'
+        }]
     });
 
     storePenyerapan = Ext.create('Ext.data.Store', {
@@ -76,8 +83,20 @@ export default class KelolaSwakelola extends Component {
         proxy: {
             type: 'ajax',
             url: 'resources/data/PaketPenyerapanData.json'
-        }
+        },
+        filters: [{
+            property: 'kodepaket',
+            value: '0000'
+        }]
     });
+
+    onPilih = (grid, info) => {
+        this.setState({ kodepaket: info.record.data.kodepaket });
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
+        Ext.toast({message: 'PAKET KEGIATAN: ' + String(this.state.judul), timeout: 1500});
+        this.storeJadwal.filter('kodepaket', this.state.kodepaket);
+        this.storePenyerapan.filter('kodepaket', this.state.kodepaket);
+    }
 
     onJadwal = (grid, info) => {
         this.setState({ showJadwalDialog: true });
@@ -143,7 +162,7 @@ export default class KelolaSwakelola extends Component {
                         <Column 
                             text="<b>Nama Paket</b>" 
                             dataIndex="namapaket" 
-                            width="380" 
+                            width="330" 
                             align="left"/>
                         <Column 
                             text="<b>Satker</>" 
@@ -166,7 +185,7 @@ export default class KelolaSwakelola extends Component {
                             text="<b>Nilai Paket</b>" 
                             dataIndex="nilaipaket" 
                             formatter='currency("Rp",0,false," ")' 
-                            width="150" 
+                            width="130" 
                             align="right"  />
                         <Column 
                             text="<b>No. Kontrak</b>" 
@@ -189,12 +208,12 @@ export default class KelolaSwakelola extends Component {
                             <Column
                                 text="<b>Durasi</b>"
                                 dataIndex="durasikegiatan" 
-                                width="80"
+                                width="70"
                                 align="center" />
                             <Column
                                 text="<b>Satuan</b>"
                                 dataIndex="satuandurasi" 
-                                width="80"
+                                width="70"
                                 align="center" />    
                         </Column>
                         <Column 
@@ -213,7 +232,19 @@ export default class KelolaSwakelola extends Component {
                             text="<b>Tanggal Penyelesaian</b>" 
                             dataIndex="tanggalpenyelesaian" 
                             width="150"
-                            align="center" />                                
+                            align="center" />  
+                                                <Column 
+                            text="<b>Pilih</b>" 
+                            width="80" 
+                        >
+                            <GridCell align="center"
+                                tools={{
+                                    search: {
+                                        handler: this.onPilih
+                                    }
+                                }}
+                            />
+                        </Column>                                  
                     </Grid>
                 </Container>
 
@@ -232,8 +263,8 @@ export default class KelolaSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>                
@@ -247,13 +278,27 @@ export default class KelolaSwakelola extends Component {
                             <TitleBar docked="top">
                                 <Button text="Jadwal Kegiatan"/>
                                 <Button text="+Tambah" handler={this.onJadwal}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
                             </TitleBar>
                             <Column text="<b>Jadwal Kegiatan</b>" dataIndex="jadwalkegiatan" width="350" />
                             <Column text="<b>Tanggal Mulai</b>" dataIndex="tanggalmulai" width="200" />
                             <Column text="<b>Tanggal Selesai</b>" dataIndex="tanggalselesai" width="200" />
                             <Column text="<b>Status Kegiatan</b>" dataIndex="tanggalselesai" width="200" />
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditMaksud
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteMaksud
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -280,8 +325,8 @@ export default class KelolaSwakelola extends Component {
                             layout={{ type: Ext.os.is.Phone ? 'vbox' : 'hbox', pack: 'center', align: 'stretch' }}
                             flex={1.5}
                         >
-                            <Panel>
-                                Paket Pekerjaan
+                            <Panel shadow margin="0 0 0 0">
+                                <div style={colors.card.red}><b>{this.state.judul}</b></div>
                             </Panel>
 
                         </Container>
@@ -312,6 +357,22 @@ export default class KelolaSwakelola extends Component {
                                 <Column text="<b>Oktober</b>" dataIndex="persentase" width="100" align="right" formatter='currency("Rp",0,false," ")'/>
                                 <Column text="<b>November</b>" dataIndex="persentase" width="100" align="right" formatter='currency("Rp",0,false," ")'/>
                                 <Column text="<b>Desember</b>" dataIndex="persentase" width="100" align="right" formatter='currency("Rp",0,false," ")'/>
+                                <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditMaksud
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteMaksud
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                             </Grid>
 
                             <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>

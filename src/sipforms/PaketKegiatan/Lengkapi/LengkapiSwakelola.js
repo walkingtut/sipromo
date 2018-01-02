@@ -29,10 +29,13 @@ import modelKeluaran from '../Model/DetailKeluaranModel';
 import modelTenagaAhli from '../Model/DetailTenagaAhliModel';
 import modelTimTeknis from '../Model/DetailTimTeknisModel';
 
+import colors from '../../colors';
+
 Ext.require([
     'Ext.grid.plugin.ViewOptions',
     'Ext.grid.plugin.SummaryRow',
     'Ext.data.summary.Sum',
+    'Ext.Toast'
 ]);
 
 export default class LengkapiSwakelola extends Component {
@@ -45,7 +48,7 @@ export default class LengkapiSwakelola extends Component {
         showKeluaranDialog: false,
         showTenagaAhliDialog: false,
         showTimPelaksanaDialog: false,
-        judul: "",
+        judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
         kodepaket: "",
         lingkup: ""
     }
@@ -134,11 +137,21 @@ export default class LengkapiSwakelola extends Component {
         }
     });
 
+    onPilih = (grid, info) => {
+        this.setState({ kodepaket: info.record.data.kodepaket });
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
+        Ext.toast({message: 'PAKET KEGIATAN: ' + String(this.state.judul), timeout: 1500});
+        this.storeMaksud.filter('kodepaket', this.state.kodepaket);
+        this.storeTujuan.filter('kodepaket', this.state.kodepaket);
+        this.storeSasaran.filter('kodepaket', this.state.kodepaket);
+        this.storeLingkup.filter('kodepaket', this.state.kodepaket);
+        this.storeKeluaran.filter('kodepaket', this.state.kodepaket);
+        this.storeTenagaAhli.filter('kodepaket', this.state.kodepaket);
+        this.storeTimPelaksana.filter('kodepaket', this.state.kodepaket);
+    }
+
     onMaksud = (grid, info) => {
         this.setState({ showMaksudDialog: true });
-        // this.setState({ kodepaket: info.record.data.kodepaket });
-        // this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
-        // this.storeGrid.filter('kodepaket', this.state.kodepaket);
     }
 
     onTujuan = (grid, info) => {
@@ -206,7 +219,6 @@ export default class LengkapiSwakelola extends Component {
                                 placeholder="Cari Paket Kegiatan..."
                                 width="300"
                             />
-                            <Button text="Pilih"/>
                         </TitleBar>
                         <Column 
                             text="<b>Kode</b>" 
@@ -222,7 +234,7 @@ export default class LengkapiSwakelola extends Component {
                         <Column 
                             text="<b>Nama Paket</b>" 
                             dataIndex="namapaket" 
-                            width="380" 
+                            width="330" 
                             align="left"/>
                         <Column 
                             text="<b>Satker</>" 
@@ -245,7 +257,7 @@ export default class LengkapiSwakelola extends Component {
                             text="<b>Nilai Paket</b>" 
                             dataIndex="nilaipaket" 
                             formatter='currency("Rp",0,false," ")' 
-                            width="150" 
+                            width="130" 
                             align="right"  />
                         <Column 
                             text="<b>No. Kontrak</b>" 
@@ -268,12 +280,12 @@ export default class LengkapiSwakelola extends Component {
                             <Column
                                 text="<b>Durasi</b>"
                                 dataIndex="durasikegiatan" 
-                                width="80"
+                                width="70"
                                 align="center" />
                             <Column
                                 text="<b>Satuan</b>"
                                 dataIndex="satuandurasi" 
-                                width="80"
+                                width="70"
                                 align="center" />    
                         </Column>
                         <Column 
@@ -292,12 +304,24 @@ export default class LengkapiSwakelola extends Component {
                             text="<b>Tanggal Penyelesaian</b>" 
                             dataIndex="tanggalpenyelesaian" 
                             width="150"
-                            align="center" />                                
+                            align="center" />      
+                        <Column 
+                            text="<b>Pilih</b>" 
+                            width="80" 
+                        >
+                            <GridCell align="center"
+                                tools={{
+                                    search: {
+                                        handler: this.onPilih
+                                    }
+                                }}
+                            />
+                        </Column>     
                     </Grid>
                 </Container>
 
                 {/* Tab Info Dasar: Maksud, Tujuan, dan Sasaran */}
-                <Container title="Info Dasar"
+                <Container title="Maksud & Tujuan"
                     padding={10} 
                     layout={{
                         type: 'vbox',
@@ -312,8 +336,8 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>                
@@ -323,34 +347,52 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     > 
-                        <Grid store={this.storeMaksud} grouped flex="3" border>
+                        <Grid store={this.storeMaksud} grouped flex="5" border>
                             <TitleBar docked="top">
                                 <Button text="Maksud"/>
-                                <Button text="+Tambah" handler={this.onMaksud}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onAddMaksud}/>
                             </TitleBar>
-                            <Column text="<b>Maksud</b>" dataIndex="maksud" width="300"/>
+                            <Column text="<b>Maksud</b>" dataIndex="maksud" width="475"/>
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditMaksud
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteMaksud
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
-                        <Grid store={this.storeTujuan} grouped flex="3" border>
+                        <Grid store={this.storeTujuan} grouped flex="5" border>
                             <TitleBar docked="top">
                                 <Button text="Tujuan"/>
-                                <Button text="+Tambah" handler={this.onTujuan}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onAddTujuan}/>
                             </TitleBar>
-                            <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="300"/>
-                        </Grid>
-
-                        <Grid store={this.storeSasaran} grouped flex="3" border>
-                            <TitleBar docked="top">
-                                <Button text="Sasaran"/>
-                                <Button text="+Tambah" handler={this.onSasaran}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
-                            </TitleBar>
-                            <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="300"/>
+                            <Column text="<b>Tujuan</b>" dataIndex="tujuan" width="475"/>
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditTujuan
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteTujuan
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -362,7 +404,7 @@ export default class LengkapiSwakelola extends Component {
                 </Container>
 
                 {/* Tab Ruang Lingkup kegiatan */}
-                <Container title="Lingkup"
+                <Container title="Sasaran dan Lingkup"
                     padding={10} 
                     layout={{
                         type: 'vbox',
@@ -377,8 +419,8 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -389,14 +431,52 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={8.5}
                     >
-                        <Grid store={this.storeLingkup} shadow grouped flex="10" height="337">
+                        <Grid store={this.storeSasaran} grouped flex="5" border>
+                            <TitleBar docked="top">
+                                <Button text="Sasaran"/>
+                                <Button text="+Tambah" handler={this.onAddSasaran}/>
+                            </TitleBar>
+                            <Column text="<b>Sasaran</b>" dataIndex="sasaran" width="475"/>
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditSasaran
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteSasaran
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
+                        </Grid>
+
+                        <Grid store={this.storeLingkup} shadow grouped flex="5" height="337">
                             <TitleBar docked="top">
                                 <Button text="Lingkup"/>
-                                <Button text="+Tambah" handler={this.onLingkup}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onAddLingkup}/>
                             </TitleBar>
-                            <Column text="<b>Ruang Lingkup</b>" dataIndex="lingkup" width="1100"/>
+                            <Column text="<b>Ruang Lingkup</b>" dataIndex="lingkup" width="475"/>
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditLingkup
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteLingkup
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -423,8 +503,8 @@ export default class LengkapiSwakelola extends Component {
                         flex={1.5}              
                         autoSize           
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -438,12 +518,26 @@ export default class LengkapiSwakelola extends Component {
                         <Grid store={this.storeKeluaran} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Keluaran"/>
-                                <Button text="+Tambah" handler={this.onKeluaran}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onAddKeluaran}/>
                             </TitleBar>
                             <Column text="<b>Keluaran</b>" width="550" dataIndex="luaran"/>
                             <Column text="<b>Jenis Keluaran</b>" width="150" dataIndex="jenisluaran"/>
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditKeluaran
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteKeluaran
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -472,8 +566,8 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -487,17 +581,30 @@ export default class LengkapiSwakelola extends Component {
                         <Grid store={this.storeTenagaAhli} shadow grouped flex="10" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tenaga Ahli"/>
-                                <Button text="+Tambah" handler={this.onTenagaAhli}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onAddTA}/>
                             </TitleBar>
-                            <Column text="<b>Nama Tenaga Ahli</b>" width="200" dataIndex="namatenagaahli" />
+                            <Column text="<b>Nama Tenaga Ahli</b>" width="250" dataIndex="namatenagaahli" />
                             <Column text="<b>Pendidikan Terakhir</b>" width="100" dataIndex="pendidikanterakhir"/>
-                            <Column text="<b>Lama Kontrak</b>" dataIndex="durasikontrak" width="150"/>
-                            <Column text="<b>Kualifikasi</b>" dataIndex="kualifikasi" width="150"/>
-                            <Column text="<b>Lama Pengalaman</b>" width="150" dataIndex="durasipengalaman" />
-                            <Column text="<b>Sertifikat Keahlian</b>" width="100" dataIndex="sertifikatkeahlian"/>
-                            <Column text="<b>Billing Rate</b>" dataIndex="billingrate" width="150"/>           
+                            <Column text="<b>Lama Kontrak (Bln)</b>" dataIndex="durasikontrak" width="200" align="right"/>
+                            <Column text="<b>Kualifikasi</b>" dataIndex="kualifikasi" width="200"/>
+                            <Column text="<b>Lama Pengalaman (Thn)</b>" width="170" dataIndex="durasipengalaman" align="right"/>
+                            <Column text="<b>Sertifikat Keahlian</b>" width="150" dataIndex="sertifikatkeahlian"/>        
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditTA
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteTA
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>   
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
@@ -526,8 +633,8 @@ export default class LengkapiSwakelola extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1.5}
                     >
-                        <Panel>
-                            Paket Pekerjaan
+                        <Panel shadow margin="0 0 0 0">
+                            <div style={colors.card.red}><b>{this.state.judul}</b></div>
                         </Panel>
 
                     </Container>
@@ -541,15 +648,29 @@ export default class LengkapiSwakelola extends Component {
                         <Grid store={this.storeTimPelaksana} shadow grouped flex="6" height="337">
                             <TitleBar docked="top">
                                 <Button text="Tim Pelaksana"/>
-                                <Button text="+Tambah" handler={this.onTimTeknis}/>
-                                <Button text="Edit"/>
-                                <Button text="-Hapus"/>
+                                <Button text="+Tambah" handler={this.onTimPelaksana}/>
                             </TitleBar>
                             <Column text="<b>Kode Paket</b>" dataIndex="kodepaket" width="100"/>
                             <Column text="<b>No. SK Tim Teknis</b>" dataIndex="nosktimteknis" width="150"/>
                             <Column text="<b>Nama</b>" dataIndex="namatimteknis" width="200" />
                             <Column text="<b>Kategori</b>" dataIndex="kategori" width="100" />
                             <Column text="<b>Posisi</b>" dataIndex="posisi" width="100" />
+                            <Column text="<b>Aksi</b>" width="80" >
+                                <GridCell align="center"
+                                    tools={{
+                                        refresh: {
+                                            handler: this.onEditTA
+                                        },
+                                        minus: {
+                                            handler: this.onDeleteTA
+                                        }
+                                    }}
+                                />
+                                <ToolTip showOnTap align="tl-tr" anchorToTarget anchor>
+                                    <p>Pilih tombol aksi untuk (+) menambah, (o) mengubah, atau (-) menghapus record</p>
+                                    <p>Anda akan mendapati dialog untuk melakukan fungsi yang Anda pilih</p>
+                                </ToolTip>
+                            </Column>
                         </Grid>
 
                         <Toolbar border shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
