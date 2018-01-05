@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { filterChange } from './actions';
+import { filterChange } from '../actions';
 import { 
     Grid, 
     Column, 

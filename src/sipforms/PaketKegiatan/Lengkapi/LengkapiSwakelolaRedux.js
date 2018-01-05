@@ -6,7 +6,7 @@ import { Grid,
 } from '@extjs/ext-react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { reducer } from './reducer';
+import { reducer } from '../reducer';
 import LengkapiSwakelola from './LengkapiSwakelola';
 
 const store = createStore(reducer);
