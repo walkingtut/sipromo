@@ -10,8 +10,8 @@ import TimTeknis from './MasterData/TimTeknis/TimTeknis';
 import DaftarSeluruhPaket from './PaketKegiatan/DaftarPaket/DaftarSeluruhPaket';
 
 // Lengkapi Paket Kegiatan
-import LengkapiKontraktual from './PaketKegiatan/Lengkapi/LengkapiKontraktual';
-import LengkapiSwakelola from './PaketKegiatan/Lengkapi/LengkapiSwakelola';
+import LengkapiKontraktual from './PaketKegiatan/Lengkapi/LengkapiKontraktualRedux';
+import LengkapiSwakelola from './PaketKegiatan/Lengkapi/LengkapiSwakelolaRedux';
 
 // Kelola Paket Kegiatan
 import KelolaKontraktual from './PaketKegiatan/Kelola/KelolaKontraktual';
