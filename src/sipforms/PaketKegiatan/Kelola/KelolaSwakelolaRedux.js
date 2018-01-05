@@ -7,17 +7,17 @@ import { Grid,
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { reducer } from '../reducer';
-import LengkapiKontraktual from './LengkapiKontraktual';
+import KelolaSwakelola from './KelolaSwakelola';
 
 const store = createStore(reducer);
 
-export default class LengkapiKontraktualRedux extends Component {
+export default class KelolaSwakelolaRedux extends Component {
 
     render() {
         return (
             <Provider store={store}>
                 <Container layout="fit" padding="10">
-                    <LengkapiKontraktual/>
+                    <KelolaSwakelola/>
                 </Container>
             </Provider>
         )

@@ -7,19 +7,19 @@ import TimTeknis from './MasterData/TimTeknis/TimTeknis';
 
 // Paket Kegiatan
 // Daftar Paket Kegiatan
-import DaftarSeluruhPaket from './PaketKegiatan/DaftarPaket/DaftarSeluruhPaket';
+import DaftarSeluruhPaket from './PaketKegiatan/DaftarPaket/DaftarPaketRedux';
 
 // Lengkapi Paket Kegiatan
 import LengkapiKontraktual from './PaketKegiatan/Lengkapi/LengkapiKontraktualRedux';
 import LengkapiSwakelola from './PaketKegiatan/Lengkapi/LengkapiSwakelolaRedux';
 
 // Kelola Paket Kegiatan
-import KelolaKontraktual from './PaketKegiatan/Kelola/KelolaKontraktual';
-import KelolaSwakelola from './PaketKegiatan/Kelola/KelolaSwakelola';
+import KelolaKontraktual from './PaketKegiatan/Kelola/KelolaKontraktualRedux';
+import KelolaSwakelola from './PaketKegiatan/Kelola/KelolaSwakelolaRedux';
 
 // Amandemen Paket Kegiatan
-import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktual';
-import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelola';
+import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktualRedux';
+import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelolaRedux';
 
 // Amandemen Paket Kegiatan
 import RealisasiKontraktual from './PaketKegiatan/Realisasi/RealisasiKontraktual';

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { filterChange } from '../actions';
 import { 
     Grid, 
     Column, 
@@ -44,7 +46,7 @@ Ext.require([
     'Ext.Toast'
 ]);
 
-export default class AmandemenSwakelola extends Component {
+class AmandemenSwakelola extends Component {
 
     state = {
         showMaksudDialog: false,
@@ -167,6 +169,17 @@ export default class AmandemenSwakelola extends Component {
         }]
     });
 
+    componentDidUpdate(prevProps, prevState) {
+        let { filter } = this.props;
+
+        if (filter !== prevProps.filter) {
+            filter = filter.toLowerCase();
+            this.store.clearFilter();
+            this.store.filterBy(record => {
+                return  record.get('namapaket').toLowerCase().indexOf(filter) !== -1 
+            });
+        }
+    }
 
     onPilih = (grid, info) => {
         this.setState({ kodepaket: info.record.data.kodepaket });
@@ -211,6 +224,8 @@ export default class AmandemenSwakelola extends Component {
 
     render() {
 
+        const { dispatch } = this.props;
+
         return (
             <TabPanel 
                 flex={1}
@@ -249,8 +264,8 @@ export default class AmandemenSwakelola extends Component {
                                 align="left"
                                 placeholder="Cari Paket Kegiatan..."
                                 width="300"
+                                onChange={(me, value) => dispatch(filterChange(value))}
                             />
-                            <Button text="Pilih"/>
                         </TitleBar>
                         <Column 
                             text="<b>Kode</b>" 
@@ -946,3 +961,9 @@ export default class AmandemenSwakelola extends Component {
         )
     }    
 }
+
+const mapStateToProps = (state) => {
+    return { ...state }
+};
+
+export default connect(mapStateToProps)(AmandemenSwakelola);
