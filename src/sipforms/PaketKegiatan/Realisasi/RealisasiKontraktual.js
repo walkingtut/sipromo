@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { filterChange } from '../actions';
 import { 
     Grid, 
     Column, 
@@ -30,7 +32,7 @@ Ext.require([
     'Ext.data.summary.Sum',
 ]);
 
-export default class RealisasiKontraktual extends Component {
+class RealisasiKontraktual extends Component {
 
     state = {
         showJadwalDialog: false,
@@ -64,6 +66,26 @@ export default class RealisasiKontraktual extends Component {
         }
     });
 
+    componentDidUpdate(prevProps, prevState) {
+        let { filter } = this.props;
+
+        if (filter !== prevProps.filter) {
+            filter = filter.toLowerCase();
+            this.store.clearFilter();
+            this.store.filterBy(record => {
+                return  record.get('namapaket').toLowerCase().indexOf(filter) !== -1 
+            });
+        }
+    }
+
+    onPilih = (grid, info) => {
+        this.setState({ kodepaket: info.record.data.kodepaket });
+        this.setState({ judul: info.record.data.kodepaket + ' - ' + info.record.data.namapaket });
+        Ext.toast({message: 'PAKET KEGIATAN: ' + String(this.state.judul), timeout: 1500});
+        this.storeJadwal.filter('kodepaket', this.state.kodepaket);
+        this.storePenyerapan.filter('kodepaket', this.state.kodepaket);
+    }
+
     onJadwal = (grid, info) => {
         this.setState({ showJadwalDialog: true });
     }
@@ -73,6 +95,8 @@ export default class RealisasiKontraktual extends Component {
     }    
 
     render() {
+
+        const { dispatch } = this.props;
 
         return (
             <TabPanel 
@@ -111,8 +135,8 @@ export default class RealisasiKontraktual extends Component {
                                 align="left"
                                 placeholder="Cari Paket Kegiatan..."
                                 width="300"
+                                onChange={(me, value) => dispatch(filterChange(value))}
                             />
-                            <Button text="Pilih"/>
                         </TitleBar>
                         <Column 
                             text="<b>Kode</b>" 
@@ -128,7 +152,7 @@ export default class RealisasiKontraktual extends Component {
                         <Column 
                             text="<b>Nama Paket</b>" 
                             dataIndex="namapaket" 
-                            width="380" 
+                            width="330" 
                             align="left"/>
                         <Column 
                             text="<b>Satker</>" 
@@ -151,7 +175,7 @@ export default class RealisasiKontraktual extends Component {
                             text="<b>Nilai Paket</b>" 
                             dataIndex="nilaipaket" 
                             formatter='currency("Rp",0,false," ")' 
-                            width="150" 
+                            width="130" 
                             align="right"  />
                         <Column 
                             text="<b>No. Kontrak</b>" 
@@ -174,12 +198,12 @@ export default class RealisasiKontraktual extends Component {
                             <Column
                                 text="<b>Durasi</b>"
                                 dataIndex="durasikegiatan" 
-                                width="80"
+                                width="70"
                                 align="center" />
                             <Column
                                 text="<b>Satuan</b>"
                                 dataIndex="satuandurasi" 
-                                width="80"
+                                width="70"
                                 align="center" />    
                         </Column>
                         <Column 
@@ -198,7 +222,19 @@ export default class RealisasiKontraktual extends Component {
                             text="<b>Tanggal Penyelesaian</b>" 
                             dataIndex="tanggalpenyelesaian" 
                             width="150"
-                            align="center" />                                
+                            align="center" />      
+                        <Column 
+                            text="<b>Pilih</b>" 
+                            width="80" 
+                        >
+                            <GridCell align="center"
+                                tools={{
+                                    search: {
+                                        handler: this.onPilih
+                                    }
+                                }}
+                            />
+                        </Column>                              
                     </Grid>
                 </Container>
 
@@ -387,3 +423,9 @@ export default class RealisasiKontraktual extends Component {
 
     }    
 }
+
+const mapStateToProps = (state) => {
+    return { ...state }
+};
+
+export default connect(mapStateToProps)(RealisasiKontraktual);

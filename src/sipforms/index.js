@@ -22,8 +22,8 @@ import AmandemenKontraktual from './PaketKegiatan/Amandemen/AmandemenKontraktual
 import AmandemenSwakelola from './PaketKegiatan/Amandemen/AmandemenSwakelolaRedux';
 
 // Amandemen Paket Kegiatan
-import RealisasiKontraktual from './PaketKegiatan/Realisasi/RealisasiKontraktual';
-import RealisasiSwakelola from './PaketKegiatan/Realisasi/RealisasiSwakelola';
+import RealisasiKontraktual from './PaketKegiatan/Realisasi/RealisasiKontraktualRedux';
+import RealisasiSwakelola from './PaketKegiatan/Realisasi/RealisasiSwakelolaRedux';
 
 // Manajemen Resiko
 import PaketKontraktualResiko from './Resiko/PaketKontraktualResiko';
