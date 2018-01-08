@@ -8,9 +8,9 @@ import {
     RendererCell,
     SegmentedButton,
     Button,
-    ToolTip,
     SearchField,
-    TitleBar
+    TitleBar,
+    ToolTip
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import model from '../PaketModel';
@@ -20,6 +20,7 @@ Ext.require([
     'Ext.grid.plugin.ViewOptions',
     'Ext.grid.plugin.SummaryRow',
     'Ext.data.summary.Sum',
+    'Ext.MessageBox'
 ]);
 
 class DaftarSeluruhPaket extends Component {
@@ -84,10 +85,15 @@ class DaftarSeluruhPaket extends Component {
                     <SegmentedButton label="Grouping">
                         <Button ui="toolbar-default" pressed text="ON" handler={this.onToggleGrouping.bind(this, true)}/>
                         <Button ui="toolbar-default" text="OFF" handler={this.onToggleGrouping.bind(this, false)}/>
-                    </SegmentedButton>                
-                    <ToolTip showOnTap title="Pengaturan Kolom" trackMouse width="200">
-                        Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat
-                    </ToolTip>
+                    </SegmentedButton>      
+                    <Button text="Petunjuk" ui="action raised"> 
+                        <ToolTip showOnTap autoHide={false} title="Petunjuk" closable width="400">
+                            Klik On untuk melakukan grouping berdasarkan jenis paket (Kontraktual atau Swakelola) dan OFF untuk menonaktifkannya. 
+                            Untuk mengatur kolom pada tabel Paket Kegiatan, tekan tombol mouse kiri pada header tabel selama beberapa saat.
+                            Kolom-kolom dapat diatur dengan menekan tombol dengan simbol mata untuk menampilkan atau menyembunyikan
+                            suatu kolom tertentu. Untuk menutup dialog pengaturan kolom dapat dilakukan dengan memilih tombol done.
+                        </ToolTip>
+                    </Button>          
                 </Toolbar>
                 <Column 
                     text="<b>Kode</b>" 
