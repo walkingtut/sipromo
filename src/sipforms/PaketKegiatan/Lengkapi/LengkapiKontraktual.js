@@ -37,22 +37,58 @@ Ext.require([
     'Ext.grid.plugin.ViewOptions',
     'Ext.grid.plugin.SummaryRow',
     'Ext.data.summary.Sum',
-    'Ext.Toast'
+    'Ext.Toast',
+    'Ext.MessageBox'
 ]);
 
 class LengkapiKontraktual extends Component {
 
-    state = {
-        showMaksudDialog: false,
-        showTujuanDialog: false,
-        showSasaranDialog: false,
-        showLingkupDialog: false,
-        showKeluaranDialog: false,
-        showTenagaAhliDialog: false,
-        showTimTeknisDialog: false,
-        judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
-        kodepaket: "",
-        lingkup: ""
+    constructor(props) {
+        super(props);
+        this.state = {
+            showMaksudDialog: false,
+            showTujuanDialog: false,
+            showSasaranDialog: false,
+            showLingkupDialog: false,
+            showKeluaranDialog: false,
+            showTenagaAhliDialog: false,
+            showTimTeknisDialog: false,
+            judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
+            kodepaket: "",
+            lingkup: "",
+            maksud: "";
+            paketChoosen: false,
+            showAlert: false
+        };
+
+        this.onPilih = this.onPilih.bind(this);
+        this.onConfirmResult = this.onConfirmResult.bind(this);
+        this.onBatal = this.onBatal.bind(this);
+        this.onSimpan = this.onSimpan.bind(this);
+
+        this.onAddMaksud = this.onAddMaksud.bind(this);
+        this.onAddTujuan = this.onAddTujuan.bind(this);
+        this.onAddSasaran = this.onAddSasaran.bind(this);
+        this.onAddLingkup = this.onAddLingkup.bind(this);
+        this.onAddKeluaran = this.onAddKeluaran.bind(this);
+        this.onAddTA = this.onAddTA.bind(this);
+        this.onAddTT = this.onAddTT.bind(this);
+
+        this.onEditMaksud = this.onEditMaksud.bind(this);
+        this.onEditTujuan = this.onEditTujuan.bind(this);
+        this.onEditSasaran = this.onEditSasaran.bind(this);
+        this.onEditLingkup = this.onEditLingkup.bind(this);
+        this.onEditKeluaran = this.onEditKeluaran.bind(this);
+        this.onEditTA = this.onEditTA.bind(this);
+        this.onEditTT = this.onEditTT.bind(this);
+
+        this.onDeleteMaksud = this.onDeleteMaksud.bind(this);
+        this.onDeleteTujuan = this.onDeleteTujuan.bind(this);
+        this.onDeleteSasaran = this.onDeleteSasaran.bind(this);
+        this.onDeleteLingkup = this.onDeleteLingkup.bind(this);
+        this.onDeleteKeluaran = this.onDeleteKeluaran.bind(this);
+        this.onDeleteTA = this.onDeleteTA.bind(this);
+        this.onDeleteTT = this.onDeleteTT.bind(this);
     }
 
     store = Ext.create('Ext.data.Store', {
@@ -190,35 +226,179 @@ class LengkapiKontraktual extends Component {
         this.storeKeluaran.filter('kodepaket', this.state.kodepaket);
         this.storeTenagaAhli.filter('kodepaket', this.state.kodepaket);
         this.storeTimTeknis.filter('kodepaket', this.state.kodepaket);
+        this.setState({ paketChoosen: true });
     }
 
-    onMaksud = (grid, info) => {
+    onConfirmResult(buttonId, value, opt) {
+        if (buttonId == 'yes') {
+            Ext.toast('User clicked yes button');
+        } else {
+            Ext.toast('User clicked no button');
+        }
+        /*Ext.toast(`User clicked ${buttonId} button.`);*/
+    }
+
+    /* Batal input */
+
+    onBatal = () => {    
+        if (this.state.showMaksudDialog) {
+            this.setState({ showMaksudDialog: false});
+            Ext.toast({message: 'Penginputan MAKSUD Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showTujuanDialog) {
+            this.setState({ showTujuanDialog: false});
+            Ext.toast({message: 'Penginputan TUJUAN Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showSasaranDialog) {
+            this.setState({ showSasaranDialog: false});
+            Ext.toast({message: 'Penginputan SASARAN Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showLingkupDialog) {
+            this.setState({ showLingkupDialog: false});
+            Ext.toast({message: 'Penginputan LINGKUP Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showKeluaranDialog) {
+            this.setState({ showKeluaranDialog: false});
+            Ext.toast({message: 'Penginputan KELUARAN Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showTenagaAhliDialog) {
+            this.setState({ showTenagaAhliDialog: false});
+            Ext.toast({message: 'Penginputan TENAGA AHLI Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showTimTeknisDialog) {
+            this.setState({ showTimTeknisDialog: false});
+            Ext.toast({message: 'Penginputan TIM TEKNIS Paket Kegiatan dibatalkan', timeout: 2000});
+        }    
+    }
+
+    /* Simpan input */
+
+    onSimpan = () => {
+        if (this.state.showMaksudDialog) {
+
+            this.setState({ showMaksudDialog: false});
+        }
+    }
+
+    /* Data Maksud */
+    onAddMaksud = () => {
+        if (this.state.paketChoosen) {
+            this.setState({ showMaksudDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        }  
+    }
+
+    onEditMaksud = (grid, info) => {
+        if (this.state.paketChoosen) {
+            this.setState({ showMaksudDialog: true });
+            
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
+        
+    }
+
+    onDeleteMaksud = (grid, info) => {
+    }
+
+    /* Data Tujuan */
+    onAddTujuan = () => { 
+        if (this.state.paketChoosen) {
+            this.setState({ showTujuanDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        }          
+    }
+
+    onEditTujuan = (grid, info) => {
         this.setState({ showMaksudDialog: true });
     }
 
-    onTujuan = (grid, info) => {
-        this.setState({ showTujuanDialog: true });
+    onDeleteTujuan = (grid, info) => {
     }
 
-    onSasaran = (grid, info) => {
-        this.setState({ showSasaranDialog: true });
+     /* Data Sasaran */
+    onAddSasaran = () => {
+        if (this.state.paketChoosen) {
+            this.setState({ showSasaranDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        } 
     }
 
-    onLingkup = (grid, info) => {
-        this.setState({ showLingkupDialog: true });
+    onEditSasaran = (grid, info) => {
+        this.setState({ showMaksudDialog: true });
     }
 
-    onKeluaran = (grid, info) => {
-        this.setState({ showKeluaranDialog: true });
+    onDeleteSasaran = (grid, info) => {
     }
 
-    onTenagaAhli = (grid, info) => {
-        this.setState({ showTenagaAhliDialog: true });
+    /* Data Lingkup */
+    onAddLingkup = () => {
+        if (this.state.paketChoosen) {
+            this.setState({ showLingkupDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        } 
+    }
+
+    onEditLingkup = (grid, info) => {
+        this.setState({ showMaksudDialog: true });
+    }
+
+    onDeleteLingkup = (grid, info) => {
+    }
+
+    /* Data Keluaran */
+    onAddKeluaran = () => { 
+        if (this.state.paketChoosen) {
+            this.setState({ showKeluaranDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        } 
+    }
+
+    onEditKeluaran = (grid, info) => {
+        this.setState({ showMaksudDialog: true });
+    }
+
+    onDeleteKeluaran = (grid, info) => {
+    }
+
+    /* Data Tenaga Ahli */
+    onAddTA = () => {
+        if (this.state.paketChoosen) {
+            this.setState({ showTenagaAhliDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        }
+    }
+
+    onEditTA = (grid, info) => {
+        this.setState({ showMaksudDialog: true });
+    }
+
+    onDeleteTA = (grid, info) => {
     }
     
-    onTimTeknis = (grid, info) => {
-        this.setState({ showTimTeknisDialog: true });
+    /* Data Tim Teknis */
+    onAddTT = () => {
+        if (this.state.paketChoosen) {
+            this.setState({ showTimTeknisDialog: true });
+        } else {
+            // alert
+            this.setState({showAlert: true});
+        }
     }    
+
+    onEditTT = (grid, info) => {
+        this.setState({ showMaksudDialog: true });
+    }
+
+    onDeleteTT = (grid, info) => {
+    }
 
     render() {
 
@@ -429,7 +609,7 @@ class LengkapiKontraktual extends Component {
                                             handler: this.onEditTujuan
                                         },
                                         minus: {
-                                            handler: this.onDeleteTujuan
+                                            handler: this.onDeletetTujuan
                                         }
                                     }}
                                 />
@@ -728,6 +908,27 @@ class LengkapiKontraktual extends Component {
 
                 {/* Dialog-dialog penginputan data */}    
 
+                {/* Dialog Alert */}
+                <Dialog 
+                    displayed={this.state.showAlert}
+                    title="Peringatan"
+                    closeAction="hide"
+                    bodyPadding="15"
+                    defaultFocus="#ok"
+                    onHide={() => this.setState({ showAlert: false })}
+                    width="500"
+                >
+                    <Container> 
+                        <h3>Silakan memilih paket kegiatan terlebih dahulu sebelum Anda dapat
+                        menginputkan data ke dalam detail paket kegiatan. Untuk melakukannya
+                        Anda dapat kembali pada tab Daftar Paket Kegiatan, dan memilih salah
+                        satu paket kegiatan yang diinginkan.</h3>
+                        <Toolbar shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
+                            <Button itemId="ok" text="OK" handler={() => this.setState({showAlert: false})} />
+                        </Toolbar>
+                    </Container> 
+                </Dialog>
+
                 {/* Dialog input data Maksud Paket Kegiatan */} 
                 <Dialog 
                     displayed={this.state.showMaksudDialog}
@@ -736,8 +937,8 @@ class LengkapiKontraktual extends Component {
                     closeAction="hide"
                     maskTapHandler={this.onCancel}
                     bodyPadding="20"
-                    width="600"
-                    defaultFocus="#ok"
+                    width="800"
+                    defaultFocus="#simpan"
                     onHide={() => this.setState({ showMaksudDialog: false })}
                 >
                     <Container 
@@ -757,8 +958,8 @@ class LengkapiKontraktual extends Component {
                                 />
                             </FieldSet>
                             <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
-                                <Button text="Batal" />
-                                <Button text="Simpan" />
+                                <Button text="Batal" handler={this.onBatal}/>
+                                <Button itemId="simpan" text="Simpan" handler={this.onSimpan} />
                             </Toolbar>
                         </FormPanel>
                     </Container> 
@@ -770,7 +971,7 @@ class LengkapiKontraktual extends Component {
                     title={this.state.judul}
                     closable
                     closeAction="hide"
-                    maskTapHandler={this.onCancel}
+                    maskTapHandler={this.onHide}
                     bodyPadding="20"
                     width="600"
                     defaultFocus="#ok"

@@ -45,6 +45,7 @@ const root = {
     id: '/',
     text: 'Menu',
     children: [
+        { text: 'Dashboard', layout: 'center', navIcon: 'icon-basic-list'},
         { text: 'Master Data', navIcon: 'icon-basic-list', children: [
             {text: 'Tenaga Ahli', component: TenagaAhli, layout: 'center', navIcon: 'icon-basic-list'},
             {text: 'PPK', component: PembuatKomitmen, layout: 'center', navIcon: 'icon-basic-list'},
@@ -83,8 +84,7 @@ const root = {
                 { text: 'Nilai Paket per PPK', component: NilaiPaketSwakelola, navIcon: 'icon-bar-stacked' },
                 { text: 'Jumlah Total Paket dan Paket Beresiko', component: ResikoSwakelola, navIcon: 'icon-bar-stacked' }
             ]}
-        ]},
-        { text: 'Dashboard', layout: 'center', navIcon: 'icon-basic-list'}, 
+        ]} 
     ]
 };
 
