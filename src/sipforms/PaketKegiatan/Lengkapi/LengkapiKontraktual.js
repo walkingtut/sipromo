@@ -54,9 +54,22 @@ class LengkapiKontraktual extends Component {
             showTenagaAhliDialog: false,
             showTimTeknisDialog: false,
             judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
+            /* List of Data */
             kodepaket: "",
+            maksud: "",
+            tujuan: "",
+            sasaran: "",
             lingkup: "",
-            maksud: "";
+            keluaran: "",
+            jeniskeluaran: "",
+            namatenagaahli: "",
+            pendidikanterakhir: "",
+            kualifikasi: "",
+            lamapengalaman: "",
+            sertifikatkeahlian: "",
+            lamakontrak: "",
+            timteknis: "",
+            /* Other flags */
             paketChoosen: false,
             showAlert: false
         };
@@ -243,18 +256,23 @@ class LengkapiKontraktual extends Component {
     onBatal = () => {    
         if (this.state.showMaksudDialog) {
             this.setState({ showMaksudDialog: false});
+            this.setState({maksud: ""});
             Ext.toast({message: 'Penginputan MAKSUD Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showTujuanDialog) {
             this.setState({ showTujuanDialog: false});
+            this.setState({tujuan: ""});
             Ext.toast({message: 'Penginputan TUJUAN Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showSasaranDialog) {
             this.setState({ showSasaranDialog: false});
+            this.setState({sasaran: ""});
             Ext.toast({message: 'Penginputan SASARAN Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showLingkupDialog) {
             this.setState({ showLingkupDialog: false});
+            this.setState({lingkup: ""});
             Ext.toast({message: 'Penginputan LINGKUP Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showKeluaranDialog) {
             this.setState({ showKeluaranDialog: false});
+            this.setState({keluaran: "", jeniskeluaran: ""});
             Ext.toast({message: 'Penginputan KELUARAN Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showTenagaAhliDialog) {
             this.setState({ showTenagaAhliDialog: false});
@@ -286,8 +304,8 @@ class LengkapiKontraktual extends Component {
 
     onEditMaksud = (grid, info) => {
         if (this.state.paketChoosen) {
+            this.setState({maksud: info.record.data.maksud});
             this.setState({ showMaksudDialog: true });
-            
         } else {
             //alert
             this.setState({showAlert: true});
@@ -947,13 +965,14 @@ class LengkapiKontraktual extends Component {
                         layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
                         flex={1}
                         height="300"
+                        width="700"
                     > 
                         <FormPanel flex="10" height="275">
                             <FieldSet title="Input Maksud Paket Kegiatan">
                                 <TextAreaField 
                                     label="Maksud"
                                     value={this.state.maksud}
-                                    width="500"
+                                    width="650"
                                     maxRows={10}
                                 />
                             </FieldSet>
@@ -988,7 +1007,7 @@ class LengkapiKontraktual extends Component {
                             <FieldSet title="Input Tujuan Paket Kegiatan">
                                 <TextAreaField 
                                     label="Tujuan"
-                                    value={this.state.maksud}
+                                    value={this.state.tujuan}
                                     width="500"
                                     maxRows={10}
                                 />
@@ -1024,7 +1043,7 @@ class LengkapiKontraktual extends Component {
                             <FieldSet title="Input Sasaran Paket Kegiatan">
                                 <TextAreaField 
                                     label="Tujuan"
-                                    value={this.state.maksud}
+                                    value={this.state.sasaran}
                                     width="500"
                                     maxRows={10}
                                 />
@@ -1060,7 +1079,7 @@ class LengkapiKontraktual extends Component {
                             <FieldSet title="<h4>Input Lingkup Paket Kegiatan</h4>">
                                 <TextAreaField 
                                     label="Lingkup"
-                                    value={this.state.maksud}
+                                    value={this.state.lingkup}
                                     width="500"
                                     maxRows={10}
                                 />
@@ -1094,8 +1113,8 @@ class LengkapiKontraktual extends Component {
                     > 
                         <FormPanel height="275">
                             <FieldSet title="Input Keluaran Paket Kegiatan">
-                                <TextField label="Luaran"/>
-                                <TextField label="Jenis Keluaran"/>
+                                <TextField label="Keluaran" value={this.state.keluaran}/>
+                                <TextField label="Jenis Keluaran" value={this.state.jeniskeluaran}/>
                             </FieldSet>
                             <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                                 <Button text="Batal" />
@@ -1127,13 +1146,12 @@ class LengkapiKontraktual extends Component {
                     > 
                          <FormPanel height="560">
                             <FieldSet title="Input Tenaga Ahli Paket Kegiatan">
-                                <TextField label="Nama Tenaga Ahli"/>
-                                <TextField label="Pendidikan Terakhir"/>
-                                <TextField label="Kualifikasi"/>
-                                <TextField label="Durasi Pengalaman"/>
-                                <TextField label="Sertifikat Keahlian"/>
-                                <TextField label="Billing Rate"/>
-                                <TextField label="Lama Kontrak"/>
+                                <TextField label="Nama Tenaga Ahli" value={this.state.namatenagaahli}/>
+                                <TextField label="Pendidikan Terakhir" value={this.state.pendidikanterakhir}/>
+                                <TextField label="Kualifikasi" value={this.state.kualifikasi}/>
+                                <TextField label="Durasi Pengalaman" value={this.state.lamapengalaman}/>
+                                <TextField label="Sertifikat Keahlian" value={this.state.sertifikatkeahlian}/>
+                                <TextField label="Lama Kontrak" value={this.state.lamakontrak}/>
                             </FieldSet>
                             <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
                                 <Button text="Batal" />
