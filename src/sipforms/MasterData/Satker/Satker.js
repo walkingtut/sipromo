@@ -11,7 +11,7 @@ import {
     Column, 
     RendererCell 
 } from '@extjs/ext-react';
-import model from './SatkerModel';
+import model from '../Model/SatkerModel';
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',

@@ -12,10 +12,11 @@ import {
     RendererCell,
     ComboBoxField 
 } from '@extjs/ext-react';
-import model from './TenagaAhliModel';
+import model from '../Model/TenagaAhliModel';
 import pendidikan from '../../../../resources/data/PendidikanData.json';
 import jurusan from '../../../../resources/data/JurusanData.json';
 import durasiPengalaman from '../../../../resources/data/DurasiPengalamanData.json';
+import keahlian from '../../../../resources/data/KeahlianData.json';
 
 
 Ext.require([
@@ -110,7 +111,16 @@ export default class TenagaAhli extends Component {
                                 labelAlign="placeholder"
                                 clearable
                             />
-                            <TextField label="Keahlian"/>
+                            <ComboBoxField
+                                width={300}
+                                label="Keahlian"
+                                store={keahlian}
+                                displayField="keahlian"
+                                valueField="akronim"
+                                queryMode="local"
+                                labelAlign="placeholder"
+                                clearable
+                            />
                             <ComboBoxField
                                 width={200}
                                 label="Lama Pengalaman (tahun)"

@@ -701,6 +701,27 @@ class LengkapiSwakelola extends Component {
 
                 {/* Dialog-dialog penginputan data */}    
 
+                {/* Dialog Alert */}
+                <Dialog 
+                    displayed={this.state.showAlert}
+                    title="Peringatan"
+                    closeAction="hide"
+                    bodyPadding="15"
+                    defaultFocus="#ok"
+                    onHide={() => this.setState({ showAlert: false })}
+                    width="500"
+                >
+                    <Container> 
+                        <h3>Silakan memilih paket kegiatan terlebih dahulu sebelum Anda dapat
+                        menginputkan data ke dalam detail paket kegiatan. Untuk melakukannya
+                        Anda dapat kembali pada tab Daftar Paket Kegiatan, dan memilih salah
+                        satu paket kegiatan yang diinginkan.</h3>
+                        <Toolbar shadow={true} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
+                            <Button itemId="ok" text="OK" handler={() => this.setState({showAlert: false})} />
+                        </Toolbar>
+                    </Container> 
+                </Dialog>
+
                 {/* Dialog input data Maksud Paket Kegiatan */} 
                 <Dialog 
                     displayed={this.state.showMaksudDialog}

@@ -12,7 +12,7 @@ import {
     RendererCell,
     ComboBoxField 
 } from '@extjs/ext-react';
-import model from './PembuatKomitmenModel';
+import model from '../Model/PembuatKomitmenModel';
 import satker from '../../../../resources/data/SatkerData.json';
 
 Ext.require([

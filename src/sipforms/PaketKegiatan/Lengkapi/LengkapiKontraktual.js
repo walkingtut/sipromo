@@ -19,7 +19,8 @@ import {
     TextAreaField,
     TabPanel,
     TitleBar,
-    Panel
+    Panel,
+    ComboBoxField
     } from '@extjs/ext-react';
 import { Template } from '@extjs/reactor';
 import model from '../PaketModel';
@@ -30,6 +31,8 @@ import modelLingkup from '../Model/DetailLingkupModel';
 import modelKeluaran from '../Model/DetailKeluaranModel';
 import modelTenagaAhli from '../Model/DetailTenagaAhliModel';
 import modelTimTeknis from '../Model/DetailTimTeknisModel';
+
+import tenagaahli from '../../../../resources/data/TenagaAhliData.json';
 
 import colors from '../../colors';
 
@@ -51,7 +54,8 @@ class LengkapiKontraktual extends Component {
             showSasaranDialog: false,
             showLingkupDialog: false,
             showKeluaranDialog: false,
-            showTenagaAhliDialog: false,
+            showAddTenagaAhliDialog: false,
+            showEditTenagaAhliDialog: false,
             showTimTeknisDialog: false,
             judul: "Pilihlah paket kegiatan terlebih dahulu untuk menginput data pada tab ini",
             /* List of Data */
@@ -61,14 +65,18 @@ class LengkapiKontraktual extends Component {
             sasaran: "",
             lingkup: "",
             keluaran: "",
-            jeniskeluaran: "",
-            namatenagaahli: "",
-            pendidikanterakhir: "",
-            kualifikasi: "",
-            lamapengalaman: "",
-            sertifikatkeahlian: "",
-            lamakontrak: "",
-            timteknis: "",
+            keluaranjenis: "",
+            tanama: "",
+            tapendidikanterakhir: "",
+            tajurusan: "",
+            takualifikasi: "",
+            talamapengalaman: "",
+            tasertifikatkeahlian: "",
+            talamakontrak: "",
+            ttnosk: "",
+            ttnama: "",
+            ttkategori: "",
+            ttposisi: "",
             /* Other flags */
             paketChoosen: false,
             showAlert: false
@@ -102,6 +110,8 @@ class LengkapiKontraktual extends Component {
         this.onDeleteKeluaran = this.onDeleteKeluaran.bind(this);
         this.onDeleteTA = this.onDeleteTA.bind(this);
         this.onDeleteTT = this.onDeleteTT.bind(this);
+
+        this.onNamaTenagaAhliChange = this.onNamaTenagaAhliChange.bind(this);
     }
 
     store = Ext.create('Ext.data.Store', {
@@ -274,9 +284,12 @@ class LengkapiKontraktual extends Component {
             this.setState({ showKeluaranDialog: false});
             this.setState({keluaran: "", jeniskeluaran: ""});
             Ext.toast({message: 'Penginputan KELUARAN Paket Kegiatan dibatalkan', timeout: 2000});
-        } else if (this.state.showTenagaAhliDialog) {
-            this.setState({ showTenagaAhliDialog: false});
+        } else if (this.state.showAddTenagaAhliDialog) {
+            this.setState({ showAddTenagaAhliDialog: false});
             Ext.toast({message: 'Penginputan TENAGA AHLI Paket Kegiatan dibatalkan', timeout: 2000});
+        } else if (this.state.showEditTenagaAhliDialog) {
+            this.setState({ showEditTenagaAhliDialog: false});
+            Ext.toast({message: 'Pengeditan TENAGA AHLI Paket Kegiatan dibatalkan', timeout: 2000});
         } else if (this.state.showTimTeknisDialog) {
             this.setState({ showTimTeknisDialog: false});
             Ext.toast({message: 'Penginputan TIM TEKNIS Paket Kegiatan dibatalkan', timeout: 2000});
@@ -310,7 +323,6 @@ class LengkapiKontraktual extends Component {
             //alert
             this.setState({showAlert: true});
         }
-        
     }
 
     onDeleteMaksud = (grid, info) => {
@@ -327,7 +339,13 @@ class LengkapiKontraktual extends Component {
     }
 
     onEditTujuan = (grid, info) => {
-        this.setState({ showMaksudDialog: true });
+        if (this.state.paketChoosen) {
+            this.setState({tujuan: info.record.data.tujuan});
+            this.setState({ showTujuanDialog: true });
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
     }
 
     onDeleteTujuan = (grid, info) => {
@@ -344,7 +362,13 @@ class LengkapiKontraktual extends Component {
     }
 
     onEditSasaran = (grid, info) => {
-        this.setState({ showMaksudDialog: true });
+        if (this.state.paketChoosen) {
+            this.setState({sasaran: info.record.data.sasaran});
+            this.setState({ showSasaranDialog: true });
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
     }
 
     onDeleteSasaran = (grid, info) => {
@@ -361,7 +385,13 @@ class LengkapiKontraktual extends Component {
     }
 
     onEditLingkup = (grid, info) => {
-        this.setState({ showMaksudDialog: true });
+        if (this.state.paketChoosen) {
+            this.setState({lingkup: info.record.data.lingkup});
+            this.setState({ showLingkupDialog: true });
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
     }
 
     onDeleteLingkup = (grid, info) => {
@@ -378,7 +408,14 @@ class LengkapiKontraktual extends Component {
     }
 
     onEditKeluaran = (grid, info) => {
-        this.setState({ showMaksudDialog: true });
+        if (this.state.paketChoosen) {
+            this.setState({keluaran: info.record.data.keluaran});
+            this.setState({jeniskeluaran: info.record.data.keluaranje});
+            this.setState({ showKeluaranDialog: true });
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
     }
 
     onDeleteKeluaran = (grid, info) => {
@@ -387,7 +424,7 @@ class LengkapiKontraktual extends Component {
     /* Data Tenaga Ahli */
     onAddTA = () => {
         if (this.state.paketChoosen) {
-            this.setState({ showTenagaAhliDialog: true });
+            this.setState({ showAddTenagaAhliDialog: true });
         } else {
             // alert
             this.setState({showAlert: true});
@@ -395,7 +432,16 @@ class LengkapiKontraktual extends Component {
     }
 
     onEditTA = (grid, info) => {
-        this.setState({ showMaksudDialog: true });
+        if (this.state.paketChoosen) {
+            this.setState({tanama: info.record.data.namatenagaahli});
+            this.setState({tapendidikanterakhir: info.record.data.pendidikanterakhir});
+            this.setState({takualifikasi: info.record.data.kualifikasi});
+            this.setState({tasertifikatkeahlian: indexOf.record.data.sertifikatkeahlian});
+            this.setState({ showSasaranDialog: true });
+        } else {
+            //alert
+            this.setState({showAlert: true});
+        }
     }
 
     onDeleteTA = (grid, info) => {
@@ -416,6 +462,10 @@ class LengkapiKontraktual extends Component {
     }
 
     onDeleteTT = (grid, info) => {
+    }
+
+    onNamaTenagaAhliChange = () => {
+        console.log('Combobox changed ');
     }
 
     render() {
@@ -1126,14 +1176,61 @@ class LengkapiKontraktual extends Component {
 
                 {/* Dialog input data Tenaga Ahli Paket Kegiatan */}
                 <Dialog 
-                    displayed={this.state.showTenagaAhliDialog}
+                    displayed={this.state.showAddTenagaAhliDialog}
                     title={this.state.judul}
                     closable
                     closeAction="hide"
                     maskTapHandler={this.onCancel}
                     bodyPadding="20"
                     defaultFocus="#ok"
-                    onHide={() => this.setState({ showTenagaAhliDialog: false })}
+                    onHide={() => this.setState({ showAddTenagaAhliDialog: false })}
+                    width="600"
+                    height="700"
+                >
+                    <Container 
+                        autoSize 
+                        defaults={{ flex: 1, bodyPadding: 10, shadow: true, margin: 10 }} 
+                        layout={{ type: 'hbox', pack: 'center', align: 'stretch' }}
+                        flex={1}
+                        width="500"
+                    > 
+                         <FormPanel height="560">
+                            <FieldSet title="Input Tenaga Ahli Paket Kegiatan">
+                                <ComboBoxField
+                                    width={300}
+                                    label="Nama Tenaga Ahli"
+                                    store={tenagaahli}
+                                    displayField="namatenagaahli"
+                                    valueField="id"
+                                    queryMode="local"
+                                    labelAlign="placeholder"
+                                    clearable
+                                    onChange={() => this.onNamaTenagaAhliChange}
+                                />
+                                <TextField label="Pendidikan Terakhir" value={this.state.pendidikanterakhir}/>
+                                <TextField label="Kualifikasi" value={this.state.kualifikasi}/>
+                                <TextField label="Lama Pengalaman" value={this.state.lamapengalaman}/>
+                                <TextField label="Sertifikat Keahlian" value={this.state.sertifikatkeahlian}/>
+                                <TextField label="Lama Kontrak" value={this.state.lamakontrak}/>
+                            </FieldSet>
+                            <Toolbar shadow={false} docked="bottom" layout={{ type: 'hbox', pack: 'right' }}>
+                                <Button text="Batal" />
+                                <Button text="Simpan" />
+                            </Toolbar>
+                        </FormPanel>
+                    </Container> 
+                </Dialog> 
+
+                {/* Dialog Edit data Tenaga Ahli Paket Kegiatan */}
+                <Dialog 
+                    displayed={this.state.showEditTenagaAhliDialog}
+                    title={this.state.judul}
+                    closable
+                    closeAction="hide"
+                    maskTapHandler={this.onCancel}
+                    bodyPadding="20"
+                    defaultFocus="#ok"
+                    onHide={() => this.setState({ showEditTenagaAhliDialog: false })}
                     width="600"
                     height="700"
                 >
@@ -1149,7 +1246,7 @@ class LengkapiKontraktual extends Component {
                                 <TextField label="Nama Tenaga Ahli" value={this.state.namatenagaahli}/>
                                 <TextField label="Pendidikan Terakhir" value={this.state.pendidikanterakhir}/>
                                 <TextField label="Kualifikasi" value={this.state.kualifikasi}/>
-                                <TextField label="Durasi Pengalaman" value={this.state.lamapengalaman}/>
+                                <TextField label="Lama Pengalaman" value={this.state.lamapengalaman}/>
                                 <TextField label="Sertifikat Keahlian" value={this.state.sertifikatkeahlian}/>
                                 <TextField label="Lama Kontrak" value={this.state.lamakontrak}/>
                             </FieldSet>
@@ -1159,7 +1256,7 @@ class LengkapiKontraktual extends Component {
                             </Toolbar>
                         </FormPanel>
                     </Container> 
-                </Dialog> 
+                </Dialog>
 
                 {/* Dialog input data Tim Teknis Paket Kegiatan */}
                 <Dialog 

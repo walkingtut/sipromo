@@ -7,6 +7,7 @@ export default Ext.define('sipromo.model.DetailTenagaAhli', {
         { name: 'namatenagaahli' },
         { name: 'posisi' },
         { name: 'pendidikanterakhir' },
+        { name: 'jurusan' },    
         { name: 'kualifikasi' },
         { name: 'durasipengalaman' },
         { name: 'sertifikatkeahlian' },

@@ -12,7 +12,7 @@ import {
     RendererCell,
     ComboBoxField 
 } from '@extjs/ext-react';
-import model from './TimTeknisModel';
+import model from '../Model/TimTeknisModel';
 //import posisi from './posisi';
 import posisi from '../../../../resources/data/PosisiData.json';
 

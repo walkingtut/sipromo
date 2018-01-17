@@ -11,7 +11,7 @@ import {
     Column, 
     RendererCell 
 } from '@extjs/ext-react';
-import model from './DirektoratModel';
+import model from '../Model/DirektoratModel';
 
 Ext.require([
     'Ext.grid.plugin.SummaryRow',
