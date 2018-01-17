@@ -16,7 +16,27 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | 
 ```
 Selanjutnya, masukan $NVM_HOME ke dalam ~/.bashrc atau ~/.bash_profile atau ~/.profile:
 
-
+```
+         v8.2.1
+         v8.3.0
+         v8.4.0
+         v8.5.0
+         v8.6.0
+         v8.7.0
+         v8.8.0
+         v8.8.1
+         v8.9.0   (LTS: Carbon)
+         v8.9.1   (LTS: Carbon)
+         v8.9.2   (LTS: Carbon)
+         v8.9.3   (LTS: Carbon)
+         v8.9.4   (Latest LTS: Carbon)
+         v9.0.0
+         v9.1.0
+         v9.2.0
+         v9.2.1
+         v9.3.0
+         v9.4.0
+```         
 
 If you do not have credentials, you can get them by [signing up for a trial of ExtReact](https://www.sencha.com/products/extreact/evaluate/).
 
